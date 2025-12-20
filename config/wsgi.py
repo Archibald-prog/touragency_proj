@@ -1,5 +1,5 @@
 """
-WSGI config for touragency_proj project.
+WSGI config for config project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -10,7 +10,11 @@ https://docs.djangoproject.com/en/5.2/howto/deployment/wsgi/
 import os
 
 from django.core.wsgi import get_wsgi_application
+from config.env import BASE_DIR, env
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'touragency_proj.settings')
+env.read_env(os.path.join(BASE_DIR, '.env'))
+
+os.environ.setdefault('DJANGO_SETTINGS_MODULE',
+                      'config.django.local')
 
 application = get_wsgi_application()
