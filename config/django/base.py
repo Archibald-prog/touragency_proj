@@ -18,7 +18,9 @@ ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=[])
 
 # Application definition
 
-LOCAL_APPS = []
+LOCAL_APPS = [
+    "apps.users.apps.UsersConfig",
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -89,6 +91,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTH_USER_MODEL = "users.TravelUser"
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
