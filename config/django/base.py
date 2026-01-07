@@ -20,6 +20,7 @@ ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=[])
 
 LOCAL_APPS = [
     "apps.users.apps.UsersConfig",
+    "apps.accommodations.apps.AccommodationsConfig",
 ]
 
 INSTALLED_APPS = [
