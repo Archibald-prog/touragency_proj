@@ -1,4 +1,5 @@
 from django.db import models
+from apps.accommodations.utils import gen_slug
 
 
 class Country(models.Model):
@@ -26,6 +27,11 @@ class Country(models.Model):
     def __str__(self):
         return f"{self.name}"
 
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = gen_slug(self, self.name)
+        super().save(*args, **kwargs)
+
     class Meta:
         verbose_name = "Страна"
         verbose_name_plural = "Страны"
@@ -51,6 +57,11 @@ class Region(models.Model):
 
     def __str__(self):
         return f"{self.name}"
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = gen_slug(self, self.name)
+        super().save(*args, **kwargs)
 
     class Meta:
         verbose_name = "Регион"
@@ -107,6 +118,11 @@ class Accommodation(models.Model):
 
     def __str__(self):
         return f"{self.name} ({self.country.name})"
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = gen_slug(self, self.name)
+        super().save(*args, **kwargs)
 
     class Meta:
         verbose_name = "Объект"
@@ -180,7 +196,7 @@ class AccommodationCost(models.Model):
     )
 
     def __str__(self):
-        return f"{self.accommodation__name}{self.room_class}"
+        return f"{self.accommodation.slug}-{self.room_class}"
 
     class Meta:
         verbose_name = "Стоимость номера"
@@ -202,7 +218,7 @@ class AccommodationAvailability(models.Model):
     )
 
     def __str__(self):
-        return f"{self.accommodation__name}{self.room_class}"
+        return f"{self.accommodation.slug}-{self.room_class}"
 
     class Meta:
         verbose_name = "Наличие номера"
@@ -228,7 +244,7 @@ class AccommodationFeatures(models.Model):
     )
 
     def __str__(self):
-        return f"{self.accommodation__name}"
+        return f"{self.accommodation.name}"
 
     class Meta:
         verbose_name = "Характеристика объекта"
