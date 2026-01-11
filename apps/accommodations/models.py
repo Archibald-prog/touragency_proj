@@ -1,5 +1,45 @@
 from django.db import models
+from django.db.models import F, Value
 from apps.accommodations.utils import gen_slug
+
+
+class AccommodationManager(models.Manager):
+    def get_start_price(self):
+        single_rooms = self.model.objects.filter(room_costs__room_class_id=1)
+        qs = single_rooms.annotate(
+            single_price=F('room_costs__cost_per_night')
+        ).annotate(
+            start_price=F('single_price') * Value(7) + F('flight_cost_per_one')
+        )
+        return qs
+
+    def get_single_availability(self):
+        single_rooms = self.model.objects.filter(
+            accommodationavailability__room_class_id=1)
+        return single_rooms.annotate(
+            single_availability=F("accommodationavailability__availability")
+        )
+
+    def get_standard_availability(self):
+        standard_rooms = self.model.objects.filter(
+            accommodationavailability__room_class_id=2)
+        return standard_rooms.annotate(
+            standard_availability=F("accommodationavailability__availability")
+        )
+
+    def get_comfort_availability(self):
+        comfort_rooms = self.model.objects.filter(
+            accommodationavailability__room_class_id=3)
+        return comfort_rooms.annotate(
+            comfort_availability=F("accommodationavailability__availability")
+        )
+
+    def get_deluxe_availability(self):
+        deluxe_rooms = self.model.objects.filter(
+            accommodationavailability__room_class_id=4)
+        return deluxe_rooms.annotate(
+            deluxe_availability=F("accommodationavailability__availability")
+        )
 
 
 class Country(models.Model):
@@ -115,6 +155,8 @@ class Accommodation(models.Model):
         verbose_name="Активен",
         default=True
     )
+
+    objects = AccommodationManager()
 
     def __str__(self):
         return f"{self.name} ({self.country.name})"
