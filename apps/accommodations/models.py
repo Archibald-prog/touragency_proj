@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 from django.db.models import F, Value
 from apps.accommodations.utils import gen_slug
 
@@ -165,6 +166,10 @@ class Accommodation(models.Model):
         if not self.slug:
             self.slug = gen_slug(self, self.name)
         super().save(*args, **kwargs)
+
+    def get_absolute_url(self):
+        return reverse("accommodation_detail",
+                       kwargs={"slug": self.slug})
 
     class Meta:
         verbose_name = "Объект"
