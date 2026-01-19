@@ -179,11 +179,11 @@
                                 Каталог
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end">
-<!--                                {% for link in view.get_link_menu %}-->
+                                {% for link in view.get_link_menu %}
                                 <li>
-                                    <a class="dropdown-item" href="#"></a>
+                                    <a class="dropdown-item" href="{{ link.get_absolute_url }}">{{ link.name }}</a>
                                 </li>
-<!--                                {% endfor %}-->
+                                {% endfor %}
                             </ul>
                         </li>
                     </ul>

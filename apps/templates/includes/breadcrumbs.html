@@ -6,7 +6,7 @@
                     <li><a href="{% url 'main' %}">Главная</a></li>
                     {% if accommodation %}
                     <li>
-                        <a href="#">
+                        <a href="{{ accommodation.country.get_absolute_url }}">
                         {{ accommodation.country.name }}
                         </a>
                     </li>

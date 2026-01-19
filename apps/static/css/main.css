@@ -6,6 +6,7 @@
     --gray-color: #ccc;  
     --red-color: #ee6e73;
     --light-grey-color: #eee;
+    --dark-brown-color: #31200F;
 }
 
 html, body {
@@ -204,7 +205,7 @@ ul.social-icons a:hover {
 }
 
 .offcanvas-start {
-    background-color: var(--contrast-color);
+    background-color: var(--dark-brown-color);
 }
 
 .header-bottom {

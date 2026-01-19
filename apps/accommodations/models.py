@@ -64,6 +64,9 @@ class Country(models.Model):
             self.slug = gen_slug(self, self.name)
         super().save(*args, **kwargs)
 
+    def get_absolute_url(self):
+        return reverse("country_list", kwargs={"slug": self.slug})
+
     class Meta:
         verbose_name = "Страна"
         verbose_name_plural = "Страны"

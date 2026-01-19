@@ -1,0 +1,81 @@
+{% extends 'accommodations/base_accommodations.html' %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+{% block main %}
+{% include 'includes/breadcrumbs.html' %}
+
+<div class="container-fluid">
+    <div class="row">
+        {% include 'accommodations/includes/cat_sidebar.html' %}
+
+        <div class="col-lg-9 col-md-8">
+            <div class="row mb-3">
+                <div class="col-12">
+                    <h1 class="section-title h3">
+                        <span>{{ country.name }}</span>
+                    </h1>
+                </div>
+                <div class="col-4 col-sm-2">
+                    <img src="{{ country.country_image.url }}"
+                         alt="" class="img-thumbnail">
+                </div>
+                <div class="col-8 col-sm-10">
+                    <p>{{ country.description }}</p>
+                </div>
+            </div> <!-- Category name & desc. -->
+
+            <hr>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <form action="{% url 'country_list' country.slug %}" method="get">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Сортировать:</span>
+                            <select class="form-select" name="orderby">
+                                <option value="id">По умолчанию</option>
+                                <option value="name">По названию (a-я)</option>
+                                <option value="-name">По названияю (я-а)</option>
+                                <option value="price">По цене(по возрастанию)</option>
+                                <option value="-price">По цене (по убыванию)</option>
+                            </select>
+                        </div>
+                        <div class="d-grid mb-3">
+                            <button type="submit" class="btn btn-secondary btn-lg">
+                                Показать
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div> <!-- Selection forms -->
+
+            <div class="row">
+                {% for accommodation in object_list %}
+                <div class="col-lg-4 col-sm-6 mb-3">
+                    {% include 'accommodations/includes/accommodation_card.html' %}
+                </div>
+                {% endfor %}
+            </div> <!-- Product cards -->
+
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item active" aria-current="page"><a class="page-link"
+                                                                                href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div> <!-- Pagination panel -->
+        </div>
+    </div>
+</div>
+
+{% endblock main %}
+{% endblock content %}

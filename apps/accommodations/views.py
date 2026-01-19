@@ -1,9 +1,11 @@
+from django.shortcuts import get_object_or_404
 from django.views.generic import ListView, DetailView
-from apps.accommodations.models import Accommodation
+from apps.accommodations.models import Accommodation, Country
 from apps.accommodations.utils import get_random_id
+from apps.helpers import GetAdditionalData
 
 
-class AccommodationListView(ListView):
+class AccommodationListView(ListView, GetAdditionalData):
     model = Accommodation
 
     def get_queryset(self):
@@ -21,7 +23,7 @@ class AccommodationListView(ListView):
         return context
 
 
-class AccommodationDetailView(DetailView):
+class AccommodationDetailView(DetailView, GetAdditionalData):
     queryset = Accommodation.objects.get_extra_fields()
 
     def get_context_data(self, **kwargs):
@@ -34,4 +36,22 @@ class AccommodationDetailView(DetailView):
             country=obj.country).exclude(pk=obj.pk))
         context["same_accommodations"] = same_accommodations
         context["features"] = features
+        return context
+
+
+class CountryListView(ListView, GetAdditionalData):
+    model = Accommodation
+    template_name = "accommodations/country_list.html"
+
+    def get_queryset(self):
+        country_slug = self.kwargs["slug"]
+        queryset = (Accommodation.objects.get_extra_fields().
+                    filter(country__slug=country_slug))
+        return queryset
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        country = get_object_or_404(Country, slug=self.kwargs["slug"])
+        context["title"] = "Страна -" + str(country)
+        context["country"] = country
         return context

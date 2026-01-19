@@ -6,4 +6,6 @@ urlpatterns = [
          name='main'),
     path('accommodations/<slug:slug>/', views.AccommodationDetailView.as_view(),
          name="accommodation_detail"),
+    path('countries/<slug:slug>/', views.CountryListView.as_view(),
+         name="country_list"),
 ]
