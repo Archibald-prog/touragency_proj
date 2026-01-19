@@ -1,46 +1,37 @@
 from django.db import models
 from django.urls import reverse
-from django.db.models import F, Value
+from django.db.models import F, Value, Sum, Q
 from apps.accommodations.utils import gen_slug
 
 
 class AccommodationManager(models.Manager):
-    def get_start_price(self):
-        single_rooms = self.model.objects.filter(room_costs__room_class_id=1)
-        qs = single_rooms.annotate(
-            single_price=F('room_costs__cost_per_night')
-        ).annotate(
-            start_price=F('single_price') * Value(7) + F('flight_cost_per_one')
+    def get_extra_fields(self):
+        accommodations = self.model.objects.annotate(
+            single_price=Sum(
+                F("room_costs__cost_per_night"),
+                filter=Q(room_costs__room_class_id=1),
+                distinct=True),
+            start_price=F("single_price") * Value(7) + F("flight_cost_per_one"),
+            single_availability=Sum(
+                F("accommodationavailability__availability"),
+                filter=Q(accommodationavailability__room_class_id=1),
+                distinct=True),
+            standard_availability=Sum(
+                F("accommodationavailability__availability"),
+                filter=Q(accommodationavailability__room_class_id=2),
+                distinct=True),
+            comfort_availability=Sum(
+                F("accommodationavailability__availability"),
+                filter=Q(accommodationavailability__room_class_id=3),
+                distinct=True),
+            deluxe_availability=Sum(
+                F("accommodationavailability__availability"),
+                filter=Q(accommodationavailability__room_class_id=4),
+                distinct=True),
+            total_availability=F("single_availability") + F("standard_availability") +
+                               F("comfort_availability") + F("deluxe_availability")
         )
-        return qs
-
-    def get_single_availability(self):
-        single_rooms = self.model.objects.filter(
-            accommodationavailability__room_class_id=1)
-        return single_rooms.annotate(
-            single_availability=F("accommodationavailability__availability")
-        )
-
-    def get_standard_availability(self):
-        standard_rooms = self.model.objects.filter(
-            accommodationavailability__room_class_id=2)
-        return standard_rooms.annotate(
-            standard_availability=F("accommodationavailability__availability")
-        )
-
-    def get_comfort_availability(self):
-        comfort_rooms = self.model.objects.filter(
-            accommodationavailability__room_class_id=3)
-        return comfort_rooms.annotate(
-            comfort_availability=F("accommodationavailability__availability")
-        )
-
-    def get_deluxe_availability(self):
-        deluxe_rooms = self.model.objects.filter(
-            accommodationavailability__room_class_id=4)
-        return deluxe_rooms.annotate(
-            deluxe_availability=F("accommodationavailability__availability")
-        )
+        return accommodations
 
 
 class Country(models.Model):

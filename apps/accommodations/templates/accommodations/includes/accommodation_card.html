@@ -1,0 +1,52 @@
+<div class="product-card">
+    <div class="product-card-offer">
+        {% if accommodation.is_top %}
+        <div class="offer-hit">Top</div>
+        {% endif %}
+        {% if accommodation.is_new %}
+        <div class="offer-new">New</div>
+        {% endif %}
+    </div>
+    <div class="product-thumb">
+        <a href="{{ accommodation.get_absolute_url }}">
+            {% for image in accommodation.accommodationimage_set.all %}
+            {% if image.image_type == 'c' %}
+            <img src="{{ image.image.url }}" alt="">
+            {% endif %}
+            {% endfor %}
+        </a>
+    </div>
+    <div class="product-details">
+        <h4>
+            <a href="{{ accommodation.get_absolute_url }}">
+                {{ accommodation.name }}
+            </a>
+        </h4>
+        <p class="product-excerpt">{{ accommodation.description }}</p>
+
+        {% if accommodation.total_availability > 0 %}
+        <span class="badge text-bg-dark product-stock mb-3">
+            Осталось номеров: {{accommodation.total_availability}}
+        </span>
+        {% else %}
+        <span class="badge text-bg-dark product-not-available mb-3">
+            Нет свободных номеров
+        </span>
+        {% endif %}
+
+        <div class="product-bottom-details d-flex justify-content-between">
+            <div class="product-price">
+                <small>{{ accommodation.old_price }}&#8381;</small>
+                от {{ accommodation.start_price }}&#8381;
+            </div>
+            <div class="product-links">
+                <a href="#"
+                   class="btn btn-outline-secondary add-to-cart"
+                   data-product-id="{{ accommodation.id }}">
+                    {% csrf_token %}
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

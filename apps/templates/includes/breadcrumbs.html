@@ -1,0 +1,46 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <nav class="breadcrumbs">
+                <ul>
+                    <li><a href="{% url 'main' %}">Главная</a></li>
+                    {% if accommodation %}
+                    <li>
+                        <a href="#">
+                        {{ accommodation.country.name }}
+                        </a>
+                    </li>
+                    <li><span>{{ accommodation.name }}</span></li>
+                    {% elif country %}
+                        <li><span>{{ country.name }}</span></li>
+                    {% elif contact %}
+                        <li><span>Контакты</span></li>
+                    {% elif supply %}
+                        <li><span>Поставщикам</span></li>
+                    {% elif register %}
+                        <li><span>Регистрация</span></li>
+                    {% elif edit %}
+                        <li><span>Редиктирование профиля</span></li>
+                    {% elif login %}
+                        <li><span>Авторизация</span></li>
+                    {% elif user_basket %}
+                        <li><span>Ваша корзина, {{ request.user.first_name }}</span></li>
+                    {% elif user_profile %}
+                        <li>
+                            <span>
+                            Личный кабинет пользователя {{ request.user.first_name }}
+                            </span>
+                        </li>
+                    {% else %}
+                        <li>
+                            <a href="#">
+                                Вернуться в корзину
+                            </a>
+                        </li>
+                        <li><span>Оформление заказа</span></li>
+                    {% endif %}
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>

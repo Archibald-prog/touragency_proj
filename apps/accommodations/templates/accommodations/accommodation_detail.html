@@ -1,0 +1,187 @@
+{% extends 'accommodations/base_accommodations.html' %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+{% block main %}
+{% include 'includes/breadcrumbs.html' %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-5 col-lg-4 mb-3">
+            <div class="bg-white h-100">
+                <div id="carouselExampleFade"
+                     class="carousel carousel-dark slide carousel-fade">
+                    <div class="carousel-inner">
+                    {% for image in accommodation.accommodationimage_set.all|slice:"1:" %}
+                        <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                          <img src="{{ image.image.url }}" class="d-block w-100" alt="...">
+                        </div>
+                    {% endfor %}
+                    </div>
+                    <button class="carousel-control-prev" type="button"
+                            data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button"
+                            data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-7 col-lg-8 mb-3">
+            <div class="bg-white product-content p-3 h-100">
+                <h1 class="section-title h3"><span>{{ accommodation.name }}</span></h1>
+                <div class="product-price">
+                    <small>{{ accommodation.old_price }}&#8381;</small>
+                    {{ accommodation.start_price }}&#8381;
+                </div>
+                <p>{{ accommodation.description }}</p>
+
+
+                <span class="badge text-bg-dark
+                {% if accommodation.single_availability > 0 %}product-stock{% else %}product-not-available{% endif %}
+                mb-3">
+                    Осталось номеров single: {{ accommodation.single_availability }} шт.
+                </span>
+
+                <span class="badge text-bg-dark
+                {% if accommodation.standard_availability > 0 %}product-stock{% else %}product-not-available{% endif %}
+                mb-3">
+                    Осталось номеров standard: {{ accommodation.standard_availability }} шт.
+                </span>
+
+                <span class="badge text-bg-dark
+                {% if accommodation.comfort_availability > 0 %}product-stock{% else %}product-not-available{% endif %}
+                mb-3">
+                    Осталось номеров comfort: {{ accommodation.comfort_availability }} шт.
+                </span>
+
+                 <span class="badge text-bg-dark
+                 {% if accommodation.deluxe_availability > 0 %}product-stock{% else %}product-not-available{% endif %}
+                 mb-3">
+                    Осталось номеров deluxe: {{ accommodation.deluxe_availability }} шт.
+                </span>
+
+                <div class="product-add2cart">
+                    <div class="input-group">
+                        <a href="#" class="btn btn-warning add-to-cart"
+                            data-product-id="{{ accommodation.id }}">
+                            {% csrf_token %}
+                            <i class="fas fa-shopping-cart"></i>
+                            Добавить в корзину
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-lg-4 mb-2">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fa-solid fa-shield-halved"></i>
+                                    Дополнительные услуги
+                                </h5>
+                                <ul class="list-unstyled">
+                                    <li>Бассейн</li>
+                                    <li>Тренажерный зал</li>
+                                    <li>Спутниковое ТВ</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-2">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fa-solid fa-truck-fast"></i> Транспорт</h5>
+                                <ul class="list-unstyled">
+                                    <li>Трансфер от аэропорта</li>
+                                    <li>Вызов такси </li>
+                                    <li>Аренда автомобиля</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-2">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fa-regular fa-credit-card"></i>Экскурсии</h5>
+                                <ul class="list-unstyled">
+                                    <li>Помощь в выборе направлений</li>
+                                    <li>Найм гидов</li>
+                                    <li>Интересные локации</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-12">
+            <div class="product-content-details bg-white p-4">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="description-tab" data-bs-toggle="tab"
+                                data-bs-target="#description-tab-pane" type="button" role="tab"
+                                aria-controls="description-tab-pane" aria-selected="true">Описание
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="features-tab" data-bs-toggle="tab"
+                                data-bs-target="#features-tab-pane" type="button" role="tab"
+                                aria-controls="features-tab-pane" aria-selected="false">Характеристики
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="description-tab-pane" role="tabpanel"
+                         aria-labelledby="description-tab" tabindex="0">
+                        <p>{{ features.detailed_desc }}</p>
+                    </div>
+                    <div class="tab-pane fade" id="features-tab-pane" role="tabpanel"
+                         aria-labelledby="features-tab" tabindex="0">
+                        <table class="table">
+                            <tbody>
+                            <tr>
+                                <th scope="row">Страна</th>
+                                <td>{{ features.country }}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Регион</th>
+                                <td>{{ features.region }}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="new-products">
+    <div class="container-fluid">
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="section-title">
+                    <span>Похожие предложения</span>
+                </h2>
+            </div>
+        </div>
+
+        <div class="owl-carousel owl-theme owl-carousel-full">
+            {% for accommodation in same_accommodations %}
+            {% include 'accommodations/includes/accommodation_card.html' %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock main %}
+{% endblock content %}

@@ -1,0 +1,90 @@
+{% extends 'accommodations/base_accommodations.html' %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    {% block main %}
+        {% include 'accommodations/includes/index_slider.html' %}
+        {% include 'accommodations/includes/advantages.html' %}
+
+        <section class="featured-products">
+            <div class="container-fluid">
+                <div class="row mb-5">
+                    <div class="col-12">
+                        {% if searching %}
+                        <h2 class="section-title">
+                            <span>Результаты поиска</span>
+                        </h2>
+                        {% else %}
+                        <h2 class="section-title">
+                            <span>Топовые направления</span>
+                        </h2>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <div class="row">
+                    {% for accommodation in accommodation_list %}
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                        {% include 'accommodations/includes/accommodation_card.html' %}
+                    </div>
+                    {% endfor %}
+                </div>
+
+            </div>
+        </section>
+
+        <section class="new-products">
+            <div class="container-fluid">
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h2 class="section-title">
+                            <span>Новинки</span>
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="owl-carousel owl-theme owl-carousel-full">
+                    {% for accommodation in new_accommodations %}
+                    {% include 'accommodations/includes/accommodation_card.html' %}
+                    {% endfor %}
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="about-us">
+            <div class="container fluid">
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h2 class="section-title">
+                            <span>О нас</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <p>Компания ESHOP осуществляет офлайн и онлайн-продажи мебели и предметов интерьера.
+                        На данный момент компания включает в себя оффлайновые площадки и сеть распределительных
+                        центров в трех регионах России.</p>
+                        <p>ESHOP - это не просто торговля мебелью - мы утверждаем новые подходы к обустройству жилого
+                        пространства. Наши клиенты получают максимально эстетичные и при этом наиболее рациональные
+                        с точки зрения бюджета решения.</p>
+                        <p>Чтобы добиться оптимального соотношения цены и качества, мы оптимизируем затраты в каждой
+                        точке движения товара - начиная от момента его создания, выбора дизайна и материалов и заканчивая
+                        доставкой конечному потребителю.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map">
+            <div class="container-fluid">
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.1485359040164!2d30.3457588126396!3d59.946269874814355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631744fd97e91%3A0x1375957d8f9b61b3!2z0JvQuNGC0LXQudC90YvQuSDQv9GALiwgNS8xOSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Nw!5e0!3m2!1sru!2sru!4v1753441800257!5m2!1sru!2sru"
+                width="100%" height="450" style="border:0; display: block" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    {% endblock main %}
+{% endblock content %}
