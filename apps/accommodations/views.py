@@ -1,4 +1,5 @@
 from django.shortcuts import get_object_or_404
+from django.db.models import Q
 from django.views.generic import ListView, DetailView
 from apps.accommodations.models import Accommodation, Country
 from apps.accommodations.utils import get_random_id
@@ -45,8 +46,29 @@ class CountryListView(ListView, GetAdditionalData):
 
     def get_queryset(self):
         country_slug = self.kwargs["slug"]
-        queryset = (Accommodation.objects.get_extra_fields().
-                    filter(country__slug=country_slug))
+        q_objects = Q()
+        region_lst = self.request.GET.getlist("region")
+        if region_lst:
+            q_objects.add(Q(region__in=region_lst), Q.AND)
+
+        available_lst = self.request.GET.getlist("roomclass")
+        if available_lst:
+            q_objects.add(
+                Q(accommodationavailability__room_class_id__in=available_lst),
+                Q.AND)
+            q_objects.add(
+                Q(accommodationavailability__availability__gt=0), Q.AND)
+
+        if q_objects:
+            queryset = (Accommodation.objects.get_extra_fields().
+                        filter(q_objects, country__slug=country_slug))
+        else:
+            queryset = (Accommodation.objects.get_extra_fields().
+                        filter(country__slug=country_slug))
+
+        ordering = self.get_ordering()
+        if ordering:
+            queryset = queryset.order_by(*(ordering,))
         return queryset
 
     def get_context_data(self, **kwargs):
@@ -54,4 +76,10 @@ class CountryListView(ListView, GetAdditionalData):
         country = get_object_or_404(Country, slug=self.kwargs["slug"])
         context["title"] = "Страна -" + str(country)
         context["country"] = country
+        context["country_regions"] = self.get_regions(country)
+        context["available_accommodations"] = self.get_available(country)
         return context
+
+    def get_ordering(self):
+        ordering = self.request.GET.get("orderby")
+        return ordering

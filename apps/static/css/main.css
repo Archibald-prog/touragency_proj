@@ -570,6 +570,10 @@ footer a:hover {
     color: var(--text-color);
 }
 
+.filter-subtitle {
+    color: var(--contrast-color);
+}
+
 .page-link {
     color: var(--contrast-color);
 }
@@ -597,6 +601,7 @@ footer a:hover {
 
 .btn-secondary {
     --bs-btn-bg: var(--contrast-color);
+    --bs-btn-hover-bg: #a8631f;
 }
 /* ========================== Category page ============================ */
 
