@@ -1,6 +1,5 @@
 import os
-from config.env import  APPS_DIR, BASE_DIR, env
-
+from config.env import APPS_DIR, BASE_DIR, env
 
 env.read_env(os.path.join(BASE_DIR, '.env'))
 
@@ -14,7 +13,6 @@ SECRET_KEY = env('SECRET_KEY')
 DEBUG = env.bool('DJANGO_DEBUG', default=True)
 
 ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=[])
-
 
 # Application definition
 
@@ -62,7 +60,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
@@ -72,7 +69,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
@@ -105,7 +101,6 @@ USE_I18N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
@@ -121,3 +116,7 @@ MEDIA_ROOT = os.path.join(APPS_DIR, "media")
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGOUT_REDIRECT_URL = 'main'
+LOGIN_REDIRECT_URL = 'main'
+LOGIN_URL = '/auth/login/'

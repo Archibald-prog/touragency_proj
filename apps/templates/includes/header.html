@@ -37,35 +37,35 @@
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                     Профиль
                                 </button>
-<!--                                <ul class="dropdown-menu">-->
-<!--                                    {% if request.user.is_authenticated %}-->
-<!--                                    <li>-->
-<!--                                        <form action="#" method="post">-->
-<!--                                            {% csrf_token %}-->
-<!--                                            &emsp;{{ user.username }}-->
-<!--                                            <button class="dropdown-item">-->
-<!--                                                Выйти-->
-<!--                                            </button>-->
-<!--                                        </form>-->
-<!--                                    </li>-->
-<!--                                    <li>-->
-<!--                                        <a class="dropdown-item" href="#">-->
-<!--                                            Личный кабинет-->
-<!--                                        </a>-->
-<!--                                    </li>-->
-<!--                                    {% else %}-->
-<!--                                    <li>-->
-<!--                                        <a class="dropdown-item" href="#">-->
-<!--                                            Войти-->
-<!--                                        </a>-->
-<!--                                    </li>-->
-<!--                                    <li>-->
-<!--                                        <a class="dropdown-item" href="#">-->
-<!--                                            Зарегистрироваться-->
-<!--                                        </a>-->
-<!--                                    </li>-->
-<!--                                    {% endif %}-->
-<!--                                </ul>-->
+                                <ul class="dropdown-menu">
+                                    {% if request.user.is_authenticated %}
+                                    <li>
+                                        <form action="{% url 'auth:logout' %}" method="post">
+                                            {% csrf_token %}
+                                            &emsp;{{ user.username }}
+                                            <button class="dropdown-item">
+                                                Выйти
+                                            </button>
+                                        </form>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            Личный кабинет
+                                        </a>
+                                    </li>
+                                    {% else %}
+                                    <li>
+                                        <a class="dropdown-item" href="{% url 'auth:login' %}">
+                                            Войти
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="{% url 'auth:register' %}">
+                                            Зарегистрироваться
+                                        </a>
+                                    </li>
+                                    {% endif %}
+                                </ul>
                             </div>
                         </div>
                         {% if request.user.is_authenticated and request.user.is_superuser %}
@@ -171,7 +171,7 @@
                             <a class="nav-link" href="#">Контакты</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Поставщикам</a>
+                            <a class="nav-link" href="#">Партнерам</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
