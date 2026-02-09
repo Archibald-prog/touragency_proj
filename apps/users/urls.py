@@ -13,4 +13,6 @@ urlpatterns = [
          name='register'),
     path('edit/', users.EditTravelUser.as_view(),
          name='edit'),
+    path('user-cart/', users.UserCartView.as_view(),
+         name='user_cart'),
 ]

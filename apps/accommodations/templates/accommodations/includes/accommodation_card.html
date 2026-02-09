@@ -40,9 +40,9 @@
                 от {{ accommodation.start_price }}&#8381;
             </div>
             <div class="product-links">
-                <a href="#"
+                <a href="{% url 'cart:add' %}"
                    class="btn btn-outline-secondary add-to-cart"
-                   data-product-id="{{ accommodation.id }}">
+                   data-accommodation-id="{{ accommodation.id }}">
                     {% csrf_token %}
                     <i class="fas fa-shopping-cart"></i>
                 </a>

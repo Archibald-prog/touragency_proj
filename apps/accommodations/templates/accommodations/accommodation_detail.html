@@ -67,8 +67,8 @@
 
                 <div class="product-add2cart">
                     <div class="input-group">
-                        <a href="#" class="btn btn-warning add-to-cart"
-                            data-product-id="{{ accommodation.id }}">
+                        <a href="{% url 'cart:add' %}" class="btn btn-warning add-to-cart"
+                            data-accommodation-id="{{ accommodation.id }}">
                             {% csrf_token %}
                             <i class="fas fa-shopping-cart"></i>
                             Добавить в корзину

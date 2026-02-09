@@ -28,10 +28,10 @@ class GetAdditionalData:
         """
         country_accommodations = (
             models.Accommodation.objects.get_extra_fields().
-                                  filter(country__slug=country.slug)
+            filter(country__slug=country.slug)
         )
         field_name_lst = [attr for attr in country_accommodations[0].__dict__
-                          if attr.__contains__('availability')] [:-1]
+                          if attr.__contains__('availability')][:-1]
         room_classes = models.RoomClass.objects.all()
         availability_nums = []
         for field in field_name_lst:
@@ -41,4 +41,22 @@ class GetAdditionalData:
         res_dict = {key: val for key, val in zip(room_classes, availability_nums)}
         return res_dict
 
+    @staticmethod
+    def get_user_cart(request):
+        """
+        Returns a collection of items
+        in the current user's cart.
+        """
+        from apps.carts import models
+        if request.user.is_authenticated:
+            return (models.Cart.objects.filter(user=request.user).
+                    select_related("accommodation"))
+        if not request.session.session_key:
+            request.session.create()
+        return (models.Cart.objects.filter(
+            session_key=request.session.session_key).
+                select_related("accommodation"))
 
+    @staticmethod
+    def get_roomclasses():
+        return models.RoomClass.objects.all()

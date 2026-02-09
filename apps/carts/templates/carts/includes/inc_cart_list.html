@@ -1,0 +1,109 @@
+<div class="row">
+    <div class="col-lg-12 mb-3">
+        <div class="cart-content p-3 h-100 bg-white">
+            <div class="table-responsive">
+                <table class="table align-middle table-hover">
+                    <thead class="table-dark">
+                    <tr>
+                        <th>Объект</th>
+                        <th>Номер</th>
+                        <th>Гостей</th>
+                        <th>Ночей</th>
+                        <th>Перелет</th>
+                        <th>Итого</th>
+                        <th><i class="fa-regular fa-trash-can"></i></th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    {% for item in carts %}
+                    <tr>
+                        <td>
+                            <a href="{{ item.accommodation.get_absolute_url }}"
+                               class="cart-content-title">
+                                {{ item.accommodation.name }}
+                            </a>
+                        </td>
+                        <td>
+                            {% csrf_token %}
+                            <select name="{{ item.id }}"
+                            class="form-control roomclass-change"
+                            data-cart-id="{{ item.id }}"
+                            data-cart-change-url="{% url 'cart:roomclass_edit' %}">
+                            <option>Выберите номер</option>
+                                {% for roomclass in roomclasses %}
+                                    <option value="{{ roomclass.id }}"
+                                    {% if roomclass.id == item.room_class.id %}
+                                            selected="selected" {% endif %}
+                                    >{{ roomclass.name }}</option>
+                                {% endfor %}
+                            </select>
+                        </td>
+                        <td>
+                            <input type="number" name="{{ item.id }}"
+                                   value="{{ item.guests }}"
+                                   class="form-control cart-qty guest-change"
+                                   data-cart-id="{{ item.id }}"
+                                   data-cart-change-url="{% url 'cart:guest_edit' %}">
+                                {% csrf_token %}
+                        </td>
+                        <td>
+                            <input type="number" min="3" step="4" name="{{ item.id }}"
+                                   value="{{ item.nights }}"
+                                   class="form-control cart-qty night-change"
+                                   data-cart-id="{{ item.id }}"
+                                   data-cart-change-url="{% url 'cart:night_edit' %}">
+                                {% csrf_token %}
+                        </td>
+                        <td>{{ item.flight_cost }}</td>
+                        <td>{{ item.accommodation_cost }}</td>
+                        <td>
+                            <a href="{% url 'cart:remove' %}"
+                               class="btn btn-danger remove-from-cart"
+                                data-cart-id="{{ item.id }}">
+                                {% csrf_token %}
+                                <i class="fa-regular fa-circle-xmark"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <td colspan="5" class="text-start">
+                            {% if carts %}
+                            <a href="#" class="btn btn-warning">
+                                Перейти к оформлению
+                            </a>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-12 mb-3">
+        <div class="cart-summary p-3 bg-white">
+            <h5 class="section-title"><span>Стоимость корзины</span></h5>
+            <div class="d-flex justify-content-between my-3">
+                <h6>Всего ночей</h6>
+                <h6>{{ carts.total_nights }}</h6>
+            </div>
+            <div class="d-flex justify-content-between my-3">
+                <h6>Всего туров</h6>
+                <h6>{{ carts.total_tours }}</h6>
+            </div>
+            <div class="d-flex justify-content-between my-3">
+                <h6>Стоимость перелетов</h6>
+                <h6>{{ carts.total_flights }} &#8381;</h6>
+            </div>
+            <div class="d-flex justify-content-between my-3">
+                <h3>Итого</h3>
+                <h3>
+                    {{ carts.total_price }} &#8381;
+                </h3>
+            </div>
+        </div>
+    </div>
+</div>

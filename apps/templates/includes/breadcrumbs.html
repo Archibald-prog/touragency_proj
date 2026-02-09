@@ -23,7 +23,7 @@
                         <li><span>Редиктирование профиля</span></li>
                     {% elif login %}
                         <li><span>Авторизация</span></li>
-                    {% elif user_basket %}
+                    {% elif user_cart %}
                         <li><span>Ваша корзина, {{ request.user.first_name }}</span></li>
                     {% elif user_profile %}
                         <li>

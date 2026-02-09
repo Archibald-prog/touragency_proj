@@ -1,3 +1,7 @@
+{% load cart_tags %}
+{% user_carts request as carts %}
+{% roomclass_options as roomclasses %}
+
 <header class="header">
     <div class="header-top py-1">
         <div class="container-fluid">
@@ -100,7 +104,7 @@
                         <span id="goods-in-cart-count"
                               class="badge text-bg-warning cart-badge
                               bg-warning rounded-circle">
-<!--                            {{ carts.total_quantity }}-->
+                            {{ carts.total_tours }}
                         </span>
                     </button>
                 </div>
@@ -132,12 +136,12 @@
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-            <div class="basket_items">
-
+            <div class="cart_items">
+                {% include 'carts/includes/inc_cart_list.html' %}
             </div>
 
             <div class="text-start mt-3">
-                <a href="#"
+                <a href="{% url 'auth:user_cart' %}"
                    class="btn btn-outline-warning">Перейти на страницу корзины
                 </a>
             </div>

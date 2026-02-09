@@ -1,0 +1,16 @@
+{% extends 'carts/base_carts.html' %}
+{% block title %}{{ title }}{% endblock %}
+{% load cart_tags %}
+
+{% block content %}
+{% user_carts request as carts %}
+{% roomclass_options as roomclasses %}
+{% include 'includes/breadcrumbs.html' %}
+{% block main %}
+<div class="container-fluid">
+    <div class="cart_items">
+        {% include 'carts/includes/inc_cart_list.html' %}
+    </div>
+</div>
+{% endblock main %}
+{% endblock content %}
