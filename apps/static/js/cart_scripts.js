@@ -1,4 +1,12 @@
 $(document).ready(function () {
+    var successMessage = $("#jq-notification");
+
+    var notification = $('#notification');
+    if (notification.length > 0) {
+        setTimeout(function () {
+            notification.alert('close');
+        }, 5000);
+    }
 
     $(document).on("click", ".add-to-cart", function(e) {
         e.preventDefault();
@@ -17,6 +25,12 @@ $(document).ready(function () {
             },
 
             success: function (data) {
+                successMessage.html(data.message);
+                successMessage.fadeIn(400);
+                setTimeout(function () {
+                    successMessage.fadeOut(400);
+                }, 5000);
+
                 cartCount++;
                 goodsInCartCount.text(cartCount);
 
@@ -46,6 +60,11 @@ $(document).ready(function () {
             },
 
             success: function (data) {
+                successMessage.html(data.message);
+                successMessage.fadeIn(400);
+                setTimeout(function () {
+                    successMessage.fadeOut(400);
+                }, 5000);
 
                 cartCount -= data.quantity_deleted;
                 goodsInCartCount.text(cartCount);
@@ -150,6 +169,29 @@ $(document).ready(function () {
                console.log("Ошибка при редактировании корзины");
            },
         });
+    });
+
+    // Форматирования ввода номера телефона в форме (xxx) xxx-хххx
+    document.getElementById('id_phone_number').addEventListener('input', function (e) {
+        var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+        e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+    });
+
+    // Проверяем на стороне клинта коррекность номера телефона в форме xxx-xxx-хх-хx
+    $('#create_order_form').on('submit', function (event) {
+        var phoneNumber = $('#id_phone_number').val();
+        var regex = /^\(\d{3}\) \d{3}-\d{4}$/;
+
+        if (!regex.test(phoneNumber)) {
+            $('#phone_number_error').show();
+            event.preventDefault();
+        } else {
+            $('#phone_number_error').hide();
+
+            // Очистка номера телефона от скобок и тире перед отправкой формы
+            var cleanedPhoneNumber = phoneNumber.replace(/[()\-\s]/g, '');
+            $('#id_phone_number').val(cleanedPhoneNumber);
+        }
     });
 
 });

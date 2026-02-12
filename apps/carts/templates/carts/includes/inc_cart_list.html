@@ -72,7 +72,7 @@
                     <tr>
                         <td colspan="5" class="text-start">
                             {% if carts %}
-                            <a href="#" class="btn btn-warning">
+                            <a href="{% url 'orders:create_order' %}" class="btn btn-warning">
                                 Перейти к оформлению
                             </a>
                             {% endif %}

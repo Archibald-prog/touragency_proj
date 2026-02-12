@@ -1,12 +1,16 @@
+from django.db.models import Prefetch
 from django.views.generic.edit import CreateView, UpdateView
 from django.http import HttpResponseRedirect
-from django.urls import reverse_lazy
-from django.views.generic import TemplateView
+from django.urls import reverse_lazy, reverse
+from django.shortcuts import resolve_url
+from django.conf import settings
+from django.views.generic import TemplateView, ListView
 from django.contrib.auth.views import LoginView
 from django.contrib import auth
 from apps.users.forms import (TravelUserRegisterForm, TravelUserEditForm,
                               TravelUserLoginForm)
 from apps.carts.models import Cart
+from apps.orders.models import Order, OrderItem
 from apps.helpers import GetAdditionalData
 
 
@@ -34,6 +38,12 @@ class LoginTravelUser(LoginView, GetAdditionalData):
     template_name = "users/login.html"
     extra_context = {"title": "Вход", "login": True}
 
+    def get_default_redirect_url(self):
+        if 'orders' in self.request.META.get('HTTP_REFERER'):
+            self.next_page = reverse('orders:create_order')
+            return resolve_url(self.next_page)
+        return resolve_url(settings.LOGIN_REDIRECT_URL)
+
     def form_valid(self, form):
         session_key = self.request.session.session_key
         user = form.get_user()
@@ -54,4 +64,24 @@ class UserCartView(TemplateView, GetAdditionalData):
         context = super().get_context_data(**kwargs)
         context["title"] = "корзина"
         context["user_cart"] = True
+        return context
+
+
+class UserProfileView(ListView, GetAdditionalData):
+    template_name = "users/user_profile.html"
+    context_object_name = 'orders'
+
+    def get_queryset(self):
+        orders = Order.objects.filter(user=self.request.user).prefetch_related(
+            Prefetch(
+                "orderitem_set",
+                queryset=OrderItem.objects.select_related("accommodation"),
+            )
+        ).order_by("-id")
+        return orders
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["title"] = "профиль пользователя"
+        context["user_profile"] = True
         return context

@@ -15,4 +15,6 @@ urlpatterns = [
          name='edit'),
     path('user-cart/', users.UserCartView.as_view(),
          name='user_cart'),
+    path('user-profile/', users.UserProfileView.as_view(),
+         name='user_profile'),
 ]

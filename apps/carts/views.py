@@ -25,6 +25,7 @@ class CartAdd(CartMixin, View):
                 accommodation=accommodation, nights=3
             )
         response_data = {
+            'message': 'Тур добавлен в корзину',
             'cart_items_html': self.render_cart(request)
         }
         return JsonResponse(response_data)
@@ -38,6 +39,7 @@ class CartRemove(CartMixin, View):
         quantity_deleted = 1
 
         response_data = {
+            "message": "Тур удален из корзины",
             "quantity_deleted": quantity_deleted,
             "cart_items_html": self.render_cart(request)
         }
