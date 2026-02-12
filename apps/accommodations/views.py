@@ -10,9 +10,20 @@ class AccommodationListView(ListView, GetAdditionalData):
     model = Accommodation
 
     def get_queryset(self):
-        id_list = get_random_id()
-        return (Accommodation.objects.get_extra_fields().
-                filter(pk__in=id_list))
+        search_query = self.request.GET.get('search', '')
+        if search_query:
+            queryset = Accommodation.objects.get_extra_fields().filter(
+                Q(name__iregex=search_query) |
+                Q(country__name__iregex=search_query) |
+                Q(region__name__iregex=search_query) |
+                Q(description__iregex=search_query)
+            )
+        else:
+            id_list = get_random_id()
+            queryset = Accommodation.objects.get_extra_fields().filter(
+                pk__in=id_list
+            )
+        return queryset
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -21,6 +32,8 @@ class AccommodationListView(ListView, GetAdditionalData):
         new_accommodations = (Accommodation.objects.get_extra_fields().
                               filter(pk__in=id_list))
         context["new_accommodations"] = new_accommodations
+        if 'search' in self.request.GET:
+            context['searching'] = True
         return context
 
 
