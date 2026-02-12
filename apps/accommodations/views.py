@@ -43,6 +43,8 @@ class AccommodationDetailView(DetailView, GetAdditionalData):
 class CountryListView(ListView, GetAdditionalData):
     model = Accommodation
     template_name = "accommodations/country_list.html"
+    paginate_by = 6
+    allow_empty = True
 
     def get_queryset(self):
         country_slug = self.kwargs["slug"]
