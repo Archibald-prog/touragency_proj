@@ -4,11 +4,30 @@ from apps.accommodations.models import (Country, Region, Accommodation,
                                         AccommodationCost, AccommodationAvailability,
                                         AccommodationFeatures)
 
-admin.site.register(Country)
 admin.site.register(Region)
-admin.site.register(Accommodation)
 admin.site.register(AccommodationImage)
 admin.site.register(RoomClass)
 admin.site.register(AccommodationCost)
 admin.site.register(AccommodationAvailability)
 admin.site.register(AccommodationFeatures)
+
+
+@admin.register(Country)
+class CountryAdmin(admin.ModelAdmin):
+    list_display = ["name", ]
+
+
+@admin.register(Accommodation)
+class AccommodationAdmin(admin.ModelAdmin):
+    list_display = ["name", "country", "region"]
+    search_fields = ["name", "description", "country__name", "region__name"]
+    list_filter = ["country", "region"]
+    fields = [
+        "name",
+        "country",
+        "slug",
+        "description",
+        "is_top",
+        "is_new",
+        "is_active",
+    ]
