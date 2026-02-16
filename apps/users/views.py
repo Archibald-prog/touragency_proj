@@ -6,7 +6,7 @@ from django.shortcuts import resolve_url
 from django.conf import settings
 from django.views.generic import TemplateView, ListView
 from django.contrib.auth.views import LoginView
-from django.contrib import auth
+from django.contrib import auth, messages
 from apps.users.forms import (TravelUserRegisterForm, TravelUserEditForm,
                               TravelUserLoginForm)
 from apps.carts.models import Cart
@@ -32,6 +32,14 @@ class EditTravelUser(UpdateView, GetAdditionalData):
     def get_object(self, *args, **kwargs):
         return self.request.user
 
+    def form_valid(self, form):
+        messages.success(self.request, "Аккаунт успешно обновлен")
+        return super().form_valid(form)
+
+    def form_invalid(self, form):
+        messages.error(self.request, "Произошла ошибка")
+        return super().form_invalid(form)
+
 
 class LoginTravelUser(LoginView, GetAdditionalData):
     form_class = TravelUserLoginForm
@@ -54,6 +62,7 @@ class LoginTravelUser(LoginView, GetAdditionalData):
                 obj = Cart.objects.filter(session_key=session_key)
                 obj.update(user=user)
                 obj.update(session_key=None)
+                messages.success(self.request, f"{user.first_name}, вы вошли в аккаунт")
                 return HttpResponseRedirect(self.get_default_redirect_url())
 
 

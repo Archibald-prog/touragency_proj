@@ -1,0 +1,55 @@
+{% extends 'mainapp/base_mainapp.html' %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+{% block main %}
+{% include 'includes/breadcrumbs.html' %}
+
+<section class="advantages">
+    <div class="container-fluid">
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="section-title">
+                    <span>Нашим партнерам</span>
+                </h2>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-12">
+                <p>Надежный партнер - ключевой фактор успеха нашего бизнеса. Именно поэтому
+                    мы уделяем работе с турагентствами и отелями столько внимания. Мы заинтересованы в долгосрочном
+                    сотрудничестве, условием которого является взаимная выгода и общий взгляд на то, как надо
+                    работать с конечным покупателем. Мы готовы предложить нашим партнерам:</p>
+            </div>
+        </div>
+        <div class="row gy-3 items">
+            <div class="col-lg-3 col-sm-6">
+                <div class="item">
+                    <p><i class="fa-sharp fa-solid fa-list-check" style="color: #FFD43B;"></i></p>
+                    <p>Понятные и прозрачные условия сотрудничества</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="item">
+                    <p><i class="fa-regular fa-thumbs-up" style="color: #FFD43B;"></i></p>
+                    <p>Качественный сервис и довольных клиентов</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="item">
+                    <p><i class="fa-solid fa-coins" style="color: #FFD43B;"></i></p>
+                    <p>Своевременную оплату забронированных номеров</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="item">
+                    <p><i class="fa-solid fa-comment-dots" style="color: #FFD43B;"></i></p>
+                    <p>Обратную связь от конечных потребителей</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!-- advantages -->
+
+{% endblock main %}
+{% endblock content %}

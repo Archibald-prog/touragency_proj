@@ -25,8 +25,11 @@ class AccommodationAdmin(admin.ModelAdmin):
     fields = [
         "name",
         "country",
+        "region",
         "slug",
         "description",
+        "flight_cost_per_one",
+        "old_price",
         "is_top",
         "is_new",
         "is_active",

@@ -11,7 +11,7 @@ class AccommodationManager(models.Manager):
                 F("room_costs__cost_per_night"),
                 filter=Q(room_costs__room_class_id=1),
                 distinct=True),
-            start_price=F("single_price") * Value(7) + F("flight_cost_per_one"),
+            start_price=F("single_price") * Value(3) + F("flight_cost_per_one"),
             single_availability=Sum(
                 F("accommodationavailability__availability"),
                 filter=Q(accommodationavailability__room_class_id=1),
