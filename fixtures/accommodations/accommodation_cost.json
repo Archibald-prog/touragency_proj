@@ -1,0 +1,1262 @@
+[
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 1,
+  "fields": {
+    "accommodation": 1,
+    "room_class": 1,
+    "cost_per_night": "3100.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 2,
+  "fields": {
+    "accommodation": 1,
+    "room_class": 2,
+    "cost_per_night": "5000.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 3,
+  "fields": {
+    "accommodation": 1,
+    "room_class": 3,
+    "cost_per_night": "7200.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 4,
+  "fields": {
+    "accommodation": 1,
+    "room_class": 4,
+    "cost_per_night": "9000.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 5,
+  "fields": {
+    "accommodation": 2,
+    "room_class": 1,
+    "cost_per_night": "3400.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 6,
+  "fields": {
+    "accommodation": 2,
+    "room_class": 2,
+    "cost_per_night": "5100.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 7,
+  "fields": {
+    "accommodation": 2,
+    "room_class": 3,
+    "cost_per_night": "7300.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 8,
+  "fields": {
+    "accommodation": 2,
+    "room_class": 4,
+    "cost_per_night": "9200.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 9,
+  "fields": {
+    "accommodation": 3,
+    "room_class": 1,
+    "cost_per_night": "3800.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 10,
+  "fields": {
+    "accommodation": 3,
+    "room_class": 2,
+    "cost_per_night": "5250.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 11,
+  "fields": {
+    "accommodation": 3,
+    "room_class": 3,
+    "cost_per_night": "7300.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 12,
+  "fields": {
+    "accommodation": 3,
+    "room_class": 4,
+    "cost_per_night": "9500.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 13,
+  "fields": {
+    "accommodation": 4,
+    "room_class": 1,
+    "cost_per_night": "3500.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 14,
+  "fields": {
+    "accommodation": 4,
+    "room_class": 2,
+    "cost_per_night": "5200.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 15,
+  "fields": {
+    "accommodation": 4,
+    "room_class": 3,
+    "cost_per_night": "7300.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 16,
+  "fields": {
+    "accommodation": 4,
+    "room_class": 4,
+    "cost_per_night": "9400.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 17,
+  "fields": {
+    "accommodation": 5,
+    "room_class": 1,
+    "cost_per_night": "3250.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 18,
+  "fields": {
+    "accommodation": 5,
+    "room_class": 2,
+    "cost_per_night": "5400.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 19,
+  "fields": {
+    "accommodation": 5,
+    "room_class": 3,
+    "cost_per_night": "7100.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 20,
+  "fields": {
+    "accommodation": 5,
+    "room_class": 4,
+    "cost_per_night": "9300.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 21,
+  "fields": {
+    "accommodation": 6,
+    "room_class": 1,
+    "cost_per_night": "3200.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 22,
+  "fields": {
+    "accommodation": 6,
+    "room_class": 2,
+    "cost_per_night": "5250.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 23,
+  "fields": {
+    "accommodation": 6,
+    "room_class": 3,
+    "cost_per_night": "7100.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 24,
+  "fields": {
+    "accommodation": 6,
+    "room_class": 4,
+    "cost_per_night": "9200.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 25,
+  "fields": {
+    "accommodation": 7,
+    "room_class": 1,
+    "cost_per_night": "3600.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 26,
+  "fields": {
+    "accommodation": 7,
+    "room_class": 2,
+    "cost_per_night": "5400.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 27,
+  "fields": {
+    "accommodation": 7,
+    "room_class": 3,
+    "cost_per_night": "7300.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 28,
+  "fields": {
+    "accommodation": 7,
+    "room_class": 4,
+    "cost_per_night": "9500.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 29,
+  "fields": {
+    "accommodation": 8,
+    "room_class": 1,
+    "cost_per_night": "3300.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 30,
+  "fields": {
+    "accommodation": 8,
+    "room_class": 2,
+    "cost_per_night": "5200.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 31,
+  "fields": {
+    "accommodation": 8,
+    "room_class": 3,
+    "cost_per_night": "7400.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 32,
+  "fields": {
+    "accommodation": 8,
+    "room_class": 4,
+    "cost_per_night": "9500.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 33,
+  "fields": {
+    "accommodation": 9,
+    "room_class": 1,
+    "cost_per_night": "3100.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 34,
+  "fields": {
+    "accommodation": 9,
+    "room_class": 2,
+    "cost_per_night": "5100.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 35,
+  "fields": {
+    "accommodation": 9,
+    "room_class": 3,
+    "cost_per_night": "7200.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 36,
+  "fields": {
+    "accommodation": 9,
+    "room_class": 4,
+    "cost_per_night": "9400.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 37,
+  "fields": {
+    "accommodation": 10,
+    "room_class": 1,
+    "cost_per_night": "6200.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 38,
+  "fields": {
+    "accommodation": 10,
+    "room_class": 2,
+    "cost_per_night": "10000.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 39,
+  "fields": {
+    "accommodation": 10,
+    "room_class": 3,
+    "cost_per_night": "14000.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 40,
+  "fields": {
+    "accommodation": 10,
+    "room_class": 4,
+    "cost_per_night": "18000.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 41,
+  "fields": {
+    "accommodation": 11,
+    "room_class": 1,
+    "cost_per_night": "5400.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 42,
+  "fields": {
+    "accommodation": 11,
+    "room_class": 2,
+    "cost_per_night": "8200.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 43,
+  "fields": {
+    "accommodation": 11,
+    "room_class": 3,
+    "cost_per_night": "13100.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 44,
+  "fields": {
+    "accommodation": 11,
+    "room_class": 4,
+    "cost_per_night": "16500.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 45,
+  "fields": {
+    "accommodation": 12,
+    "room_class": 1,
+    "cost_per_night": "6000.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 46,
+  "fields": {
+    "accommodation": 12,
+    "room_class": 2,
+    "cost_per_night": "8000.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 47,
+  "fields": {
+    "accommodation": 12,
+    "room_class": 3,
+    "cost_per_night": "9500.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 48,
+  "fields": {
+    "accommodation": 12,
+    "room_class": 4,
+    "cost_per_night": "13000.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 49,
+  "fields": {
+    "accommodation": 13,
+    "room_class": 1,
+    "cost_per_night": "7000.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 50,
+  "fields": {
+    "accommodation": 13,
+    "room_class": 2,
+    "cost_per_night": "9800.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 51,
+  "fields": {
+    "accommodation": 13,
+    "room_class": 3,
+    "cost_per_night": "14000.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 52,
+  "fields": {
+    "accommodation": 13,
+    "room_class": 4,
+    "cost_per_night": "18200.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 53,
+  "fields": {
+    "accommodation": 14,
+    "room_class": 1,
+    "cost_per_night": "7000.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 54,
+  "fields": {
+    "accommodation": 14,
+    "room_class": 2,
+    "cost_per_night": "9700.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 55,
+  "fields": {
+    "accommodation": 14,
+    "room_class": 3,
+    "cost_per_night": "13800.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 56,
+  "fields": {
+    "accommodation": 14,
+    "room_class": 4,
+    "cost_per_night": "16700.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 57,
+  "fields": {
+    "accommodation": 15,
+    "room_class": 1,
+    "cost_per_night": "7000.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 58,
+  "fields": {
+    "accommodation": 15,
+    "room_class": 2,
+    "cost_per_night": "8900.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 59,
+  "fields": {
+    "accommodation": 15,
+    "room_class": 3,
+    "cost_per_night": "14000.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 60,
+  "fields": {
+    "accommodation": 15,
+    "room_class": 4,
+    "cost_per_night": "17000.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 61,
+  "fields": {
+    "accommodation": 16,
+    "room_class": 1,
+    "cost_per_night": "7000.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 62,
+  "fields": {
+    "accommodation": 16,
+    "room_class": 2,
+    "cost_per_night": "9800.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 63,
+  "fields": {
+    "accommodation": 16,
+    "room_class": 3,
+    "cost_per_night": "13900.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 64,
+  "fields": {
+    "accommodation": 16,
+    "room_class": 4,
+    "cost_per_night": "17900.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 65,
+  "fields": {
+    "accommodation": 17,
+    "room_class": 1,
+    "cost_per_night": "6900.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 66,
+  "fields": {
+    "accommodation": 17,
+    "room_class": 2,
+    "cost_per_night": "9900.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 67,
+  "fields": {
+    "accommodation": 17,
+    "room_class": 3,
+    "cost_per_night": "13800.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 68,
+  "fields": {
+    "accommodation": 17,
+    "room_class": 4,
+    "cost_per_night": "17000.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 69,
+  "fields": {
+    "accommodation": 18,
+    "room_class": 1,
+    "cost_per_night": "7000.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 70,
+  "fields": {
+    "accommodation": 18,
+    "room_class": 2,
+    "cost_per_night": "9600.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 71,
+  "fields": {
+    "accommodation": 18,
+    "room_class": 3,
+    "cost_per_night": "13600.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 72,
+  "fields": {
+    "accommodation": 18,
+    "room_class": 4,
+    "cost_per_night": "17000.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 73,
+  "fields": {
+    "accommodation": 19,
+    "room_class": 1,
+    "cost_per_night": "6700.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 74,
+  "fields": {
+    "accommodation": 19,
+    "room_class": 2,
+    "cost_per_night": "8000.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 75,
+  "fields": {
+    "accommodation": 19,
+    "room_class": 3,
+    "cost_per_night": "9500.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 76,
+  "fields": {
+    "accommodation": 19,
+    "room_class": 4,
+    "cost_per_night": "10637.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 77,
+  "fields": {
+    "accommodation": 20,
+    "room_class": 1,
+    "cost_per_night": "7000.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 78,
+  "fields": {
+    "accommodation": 20,
+    "room_class": 2,
+    "cost_per_night": "8200.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 79,
+  "fields": {
+    "accommodation": 20,
+    "room_class": 3,
+    "cost_per_night": "9200.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 80,
+  "fields": {
+    "accommodation": 20,
+    "room_class": 4,
+    "cost_per_night": "9800.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 81,
+  "fields": {
+    "accommodation": 21,
+    "room_class": 1,
+    "cost_per_night": "6500.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 82,
+  "fields": {
+    "accommodation": 21,
+    "room_class": 2,
+    "cost_per_night": "7200.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 83,
+  "fields": {
+    "accommodation": 21,
+    "room_class": 3,
+    "cost_per_night": "9500.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 84,
+  "fields": {
+    "accommodation": 21,
+    "room_class": 4,
+    "cost_per_night": "10700.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 85,
+  "fields": {
+    "accommodation": 22,
+    "room_class": 1,
+    "cost_per_night": "7500.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 86,
+  "fields": {
+    "accommodation": 22,
+    "room_class": 2,
+    "cost_per_night": "8600.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 87,
+  "fields": {
+    "accommodation": 22,
+    "room_class": 3,
+    "cost_per_night": "9700.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 88,
+  "fields": {
+    "accommodation": 22,
+    "room_class": 4,
+    "cost_per_night": "12000.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 89,
+  "fields": {
+    "accommodation": 23,
+    "room_class": 1,
+    "cost_per_night": "6500.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 90,
+  "fields": {
+    "accommodation": 23,
+    "room_class": 2,
+    "cost_per_night": "8000.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 91,
+  "fields": {
+    "accommodation": 23,
+    "room_class": 3,
+    "cost_per_night": "9500.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 92,
+  "fields": {
+    "accommodation": 23,
+    "room_class": 4,
+    "cost_per_night": "10600.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 93,
+  "fields": {
+    "accommodation": 24,
+    "room_class": 1,
+    "cost_per_night": "6800.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 94,
+  "fields": {
+    "accommodation": 24,
+    "room_class": 2,
+    "cost_per_night": "7700.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 95,
+  "fields": {
+    "accommodation": 24,
+    "room_class": 3,
+    "cost_per_night": "9000.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 96,
+  "fields": {
+    "accommodation": 24,
+    "room_class": 4,
+    "cost_per_night": "10400.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 97,
+  "fields": {
+    "accommodation": 25,
+    "room_class": 1,
+    "cost_per_night": "6600.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 98,
+  "fields": {
+    "accommodation": 25,
+    "room_class": 2,
+    "cost_per_night": "8000.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 99,
+  "fields": {
+    "accommodation": 25,
+    "room_class": 3,
+    "cost_per_night": "9500.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 100,
+  "fields": {
+    "accommodation": 25,
+    "room_class": 4,
+    "cost_per_night": "10100.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 101,
+  "fields": {
+    "accommodation": 26,
+    "room_class": 1,
+    "cost_per_night": "7400.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 102,
+  "fields": {
+    "accommodation": 26,
+    "room_class": 2,
+    "cost_per_night": "8700.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 103,
+  "fields": {
+    "accommodation": 26,
+    "room_class": 3,
+    "cost_per_night": "9800.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 104,
+  "fields": {
+    "accommodation": 26,
+    "room_class": 4,
+    "cost_per_night": "11400.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 105,
+  "fields": {
+    "accommodation": 27,
+    "room_class": 1,
+    "cost_per_night": "6800.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 106,
+  "fields": {
+    "accommodation": 27,
+    "room_class": 2,
+    "cost_per_night": "7200.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 107,
+  "fields": {
+    "accommodation": 27,
+    "room_class": 3,
+    "cost_per_night": "8400.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 108,
+  "fields": {
+    "accommodation": 27,
+    "room_class": 4,
+    "cost_per_night": "10200.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 109,
+  "fields": {
+    "accommodation": 28,
+    "room_class": 1,
+    "cost_per_night": "6000.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 110,
+  "fields": {
+    "accommodation": 28,
+    "room_class": 2,
+    "cost_per_night": "7500.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 111,
+  "fields": {
+    "accommodation": 28,
+    "room_class": 3,
+    "cost_per_night": "8500.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 112,
+  "fields": {
+    "accommodation": 28,
+    "room_class": 4,
+    "cost_per_night": "10000.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 113,
+  "fields": {
+    "accommodation": 29,
+    "room_class": 1,
+    "cost_per_night": "7300.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 114,
+  "fields": {
+    "accommodation": 29,
+    "room_class": 2,
+    "cost_per_night": "8100.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 115,
+  "fields": {
+    "accommodation": 29,
+    "room_class": 3,
+    "cost_per_night": "9200.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 116,
+  "fields": {
+    "accommodation": 29,
+    "room_class": 4,
+    "cost_per_night": "10300.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 117,
+  "fields": {
+    "accommodation": 30,
+    "room_class": 1,
+    "cost_per_night": "6300.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 118,
+  "fields": {
+    "accommodation": 30,
+    "room_class": 2,
+    "cost_per_night": "7200.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 119,
+  "fields": {
+    "accommodation": 30,
+    "room_class": 3,
+    "cost_per_night": "8500.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 120,
+  "fields": {
+    "accommodation": 30,
+    "room_class": 4,
+    "cost_per_night": "10300.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 121,
+  "fields": {
+    "accommodation": 31,
+    "room_class": 1,
+    "cost_per_night": "6700.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 122,
+  "fields": {
+    "accommodation": 31,
+    "room_class": 2,
+    "cost_per_night": "7500.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 123,
+  "fields": {
+    "accommodation": 31,
+    "room_class": 3,
+    "cost_per_night": "8900.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 124,
+  "fields": {
+    "accommodation": 31,
+    "room_class": 4,
+    "cost_per_night": "10100.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 125,
+  "fields": {
+    "accommodation": 32,
+    "room_class": 1,
+    "cost_per_night": "7000.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 126,
+  "fields": {
+    "accommodation": 32,
+    "room_class": 2,
+    "cost_per_night": "8100.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 127,
+  "fields": {
+    "accommodation": 32,
+    "room_class": 3,
+    "cost_per_night": "9200.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 128,
+  "fields": {
+    "accommodation": 32,
+    "room_class": 4,
+    "cost_per_night": "11400.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 129,
+  "fields": {
+    "accommodation": 33,
+    "room_class": 1,
+    "cost_per_night": "6300.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 130,
+  "fields": {
+    "accommodation": 33,
+    "room_class": 2,
+    "cost_per_night": "7600.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 131,
+  "fields": {
+    "accommodation": 33,
+    "room_class": 3,
+    "cost_per_night": "8800.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 132,
+  "fields": {
+    "accommodation": 33,
+    "room_class": 4,
+    "cost_per_night": "10400.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 133,
+  "fields": {
+    "accommodation": 34,
+    "room_class": 1,
+    "cost_per_night": "8100.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 134,
+  "fields": {
+    "accommodation": 34,
+    "room_class": 2,
+    "cost_per_night": "9400.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 135,
+  "fields": {
+    "accommodation": 34,
+    "room_class": 3,
+    "cost_per_night": "10600.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 136,
+  "fields": {
+    "accommodation": 34,
+    "room_class": 4,
+    "cost_per_night": "12000.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 137,
+  "fields": {
+    "accommodation": 35,
+    "room_class": 1,
+    "cost_per_night": "6400.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 138,
+  "fields": {
+    "accommodation": 35,
+    "room_class": 2,
+    "cost_per_night": "7300.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 139,
+  "fields": {
+    "accommodation": 35,
+    "room_class": 3,
+    "cost_per_night": "8500.00"
+  }
+},
+{
+  "model": "accommodations.accommodationcost",
+  "pk": 140,
+  "fields": {
+    "accommodation": 35,
+    "room_class": 4,
+    "cost_per_night": "10100.00"
+  }
+}
+]

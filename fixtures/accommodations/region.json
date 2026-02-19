@@ -1,0 +1,162 @@
+[
+{
+  "model": "accommodations.region",
+  "pk": 1,
+  "fields": {
+    "name": "Кисловодск",
+    "slug": "kislovodsk",
+    "country": 1,
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.region",
+  "pk": 2,
+  "fields": {
+    "name": "Ессентуки",
+    "slug": "essentuki",
+    "country": 1,
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.region",
+  "pk": 3,
+  "fields": {
+    "name": "Черкесск",
+    "slug": "cherkessk",
+    "country": 1,
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.region",
+  "pk": 4,
+  "fields": {
+    "name": "Архыз",
+    "slug": "arhyiz",
+    "country": 1,
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.region",
+  "pk": 5,
+  "fields": {
+    "name": "Домбай",
+    "slug": "dombaj",
+    "country": 1,
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.region",
+  "pk": 6,
+  "fields": {
+    "name": "Алания",
+    "slug": "alaniya",
+    "country": 2,
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.region",
+  "pk": 7,
+  "fields": {
+    "name": "Анталия",
+    "slug": "antaliya",
+    "country": 2,
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.region",
+  "pk": 8,
+  "fields": {
+    "name": "Манила",
+    "slug": "manila",
+    "country": 4,
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.region",
+  "pk": 9,
+  "fields": {
+    "name": "Пасай",
+    "slug": "pasaj",
+    "country": 4,
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.region",
+  "pk": 10,
+  "fields": {
+    "name": "Макати",
+    "slug": "makati",
+    "country": 4,
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.region",
+  "pk": 11,
+  "fields": {
+    "name": "Гули",
+    "slug": "guli",
+    "country": 3,
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.region",
+  "pk": 12,
+  "fields": {
+    "name": "Диффуши",
+    "slug": "diffushi",
+    "country": 3,
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.region",
+  "pk": 13,
+  "fields": {
+    "name": "Дангети",
+    "slug": "dangeti",
+    "country": 3,
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.region",
+  "pk": 14,
+  "fields": {
+    "name": "Маафуши",
+    "slug": "maafushi",
+    "country": 3,
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.region",
+  "pk": 15,
+  "fields": {
+    "name": "Дигура",
+    "slug": "digura",
+    "country": 3,
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.region",
+  "pk": 16,
+  "fields": {
+    "name": "Ган",
+    "slug": "gan",
+    "country": 3,
+    "is_active": true
+  }
+}
+]

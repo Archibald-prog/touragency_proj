@@ -1,0 +1,46 @@
+[
+{
+  "model": "accommodations.country",
+  "pk": 1,
+  "fields": {
+    "name": "Россия",
+    "slug": "rossiya",
+    "description": "Россия: курорты и места отдыха в России",
+    "country_image": "country_img/russia_img.png",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.country",
+  "pk": 2,
+  "fields": {
+    "name": "Турция",
+    "slug": "turtsiya",
+    "description": "Турция: курорты и места отдыха в Турции",
+    "country_image": "country_img/turkey_img.png",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.country",
+  "pk": 3,
+  "fields": {
+    "name": "Мальдивы",
+    "slug": "maldivyi",
+    "description": "Мальдивы: курорты и места отдыха на Мальдивах",
+    "country_image": "country_img/maldives_img.png",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.country",
+  "pk": 4,
+  "fields": {
+    "name": "Филиппины",
+    "slug": "filippinyi",
+    "description": "Филиппины: курорты и места отдыха на Филиппинах",
+    "country_image": "country_img/philippines_img.png",
+    "is_active": true
+  }
+}
+]

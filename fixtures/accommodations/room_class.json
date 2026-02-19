@@ -1,0 +1,30 @@
+[
+{
+  "model": "accommodations.roomclass",
+  "pk": 1,
+  "fields": {
+    "name": "single"
+  }
+},
+{
+  "model": "accommodations.roomclass",
+  "pk": 2,
+  "fields": {
+    "name": "standard"
+  }
+},
+{
+  "model": "accommodations.roomclass",
+  "pk": 3,
+  "fields": {
+    "name": "comfort"
+  }
+},
+{
+  "model": "accommodations.roomclass",
+  "pk": 4,
+  "fields": {
+    "name": "deluxe"
+  }
+}
+]

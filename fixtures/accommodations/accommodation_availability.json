@@ -1,0 +1,1262 @@
+[
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 1,
+  "fields": {
+    "accommodation": 1,
+    "room_class": 1,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 2,
+  "fields": {
+    "accommodation": 1,
+    "room_class": 2,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 3,
+  "fields": {
+    "accommodation": 1,
+    "room_class": 3,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 4,
+  "fields": {
+    "accommodation": 1,
+    "room_class": 4,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 5,
+  "fields": {
+    "accommodation": 2,
+    "room_class": 1,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 6,
+  "fields": {
+    "accommodation": 2,
+    "room_class": 2,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 7,
+  "fields": {
+    "accommodation": 2,
+    "room_class": 3,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 8,
+  "fields": {
+    "accommodation": 2,
+    "room_class": 4,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 9,
+  "fields": {
+    "accommodation": 3,
+    "room_class": 1,
+    "availability": 0
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 10,
+  "fields": {
+    "accommodation": 3,
+    "room_class": 2,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 11,
+  "fields": {
+    "accommodation": 3,
+    "room_class": 3,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 12,
+  "fields": {
+    "accommodation": 3,
+    "room_class": 4,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 13,
+  "fields": {
+    "accommodation": 4,
+    "room_class": 1,
+    "availability": 9
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 14,
+  "fields": {
+    "accommodation": 4,
+    "room_class": 2,
+    "availability": 7
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 15,
+  "fields": {
+    "accommodation": 4,
+    "room_class": 3,
+    "availability": 4
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 16,
+  "fields": {
+    "accommodation": 4,
+    "room_class": 4,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 17,
+  "fields": {
+    "accommodation": 5,
+    "room_class": 1,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 18,
+  "fields": {
+    "accommodation": 5,
+    "room_class": 2,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 19,
+  "fields": {
+    "accommodation": 5,
+    "room_class": 3,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 20,
+  "fields": {
+    "accommodation": 5,
+    "room_class": 4,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 21,
+  "fields": {
+    "accommodation": 6,
+    "room_class": 1,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 22,
+  "fields": {
+    "accommodation": 6,
+    "room_class": 2,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 23,
+  "fields": {
+    "accommodation": 6,
+    "room_class": 3,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 24,
+  "fields": {
+    "accommodation": 6,
+    "room_class": 4,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 25,
+  "fields": {
+    "accommodation": 7,
+    "room_class": 1,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 26,
+  "fields": {
+    "accommodation": 7,
+    "room_class": 2,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 27,
+  "fields": {
+    "accommodation": 7,
+    "room_class": 3,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 28,
+  "fields": {
+    "accommodation": 7,
+    "room_class": 4,
+    "availability": 4
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 29,
+  "fields": {
+    "accommodation": 8,
+    "room_class": 1,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 30,
+  "fields": {
+    "accommodation": 8,
+    "room_class": 2,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 31,
+  "fields": {
+    "accommodation": 8,
+    "room_class": 3,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 32,
+  "fields": {
+    "accommodation": 8,
+    "room_class": 4,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 33,
+  "fields": {
+    "accommodation": 9,
+    "room_class": 1,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 34,
+  "fields": {
+    "accommodation": 9,
+    "room_class": 2,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 35,
+  "fields": {
+    "accommodation": 9,
+    "room_class": 3,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 36,
+  "fields": {
+    "accommodation": 9,
+    "room_class": 4,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 37,
+  "fields": {
+    "accommodation": 10,
+    "room_class": 1,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 38,
+  "fields": {
+    "accommodation": 10,
+    "room_class": 2,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 39,
+  "fields": {
+    "accommodation": 10,
+    "room_class": 3,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 40,
+  "fields": {
+    "accommodation": 10,
+    "room_class": 4,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 41,
+  "fields": {
+    "accommodation": 11,
+    "room_class": 1,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 42,
+  "fields": {
+    "accommodation": 11,
+    "room_class": 2,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 43,
+  "fields": {
+    "accommodation": 11,
+    "room_class": 3,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 44,
+  "fields": {
+    "accommodation": 11,
+    "room_class": 4,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 45,
+  "fields": {
+    "accommodation": 12,
+    "room_class": 1,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 46,
+  "fields": {
+    "accommodation": 12,
+    "room_class": 2,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 47,
+  "fields": {
+    "accommodation": 12,
+    "room_class": 3,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 48,
+  "fields": {
+    "accommodation": 12,
+    "room_class": 4,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 49,
+  "fields": {
+    "accommodation": 13,
+    "room_class": 1,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 50,
+  "fields": {
+    "accommodation": 13,
+    "room_class": 2,
+    "availability": 0
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 51,
+  "fields": {
+    "accommodation": 13,
+    "room_class": 3,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 52,
+  "fields": {
+    "accommodation": 13,
+    "room_class": 4,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 53,
+  "fields": {
+    "accommodation": 14,
+    "room_class": 1,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 54,
+  "fields": {
+    "accommodation": 14,
+    "room_class": 2,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 55,
+  "fields": {
+    "accommodation": 14,
+    "room_class": 3,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 56,
+  "fields": {
+    "accommodation": 14,
+    "room_class": 4,
+    "availability": 0
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 57,
+  "fields": {
+    "accommodation": 15,
+    "room_class": 1,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 58,
+  "fields": {
+    "accommodation": 15,
+    "room_class": 2,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 59,
+  "fields": {
+    "accommodation": 15,
+    "room_class": 3,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 60,
+  "fields": {
+    "accommodation": 15,
+    "room_class": 4,
+    "availability": 4
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 61,
+  "fields": {
+    "accommodation": 16,
+    "room_class": 1,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 62,
+  "fields": {
+    "accommodation": 16,
+    "room_class": 2,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 63,
+  "fields": {
+    "accommodation": 16,
+    "room_class": 3,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 64,
+  "fields": {
+    "accommodation": 16,
+    "room_class": 4,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 65,
+  "fields": {
+    "accommodation": 17,
+    "room_class": 1,
+    "availability": 8
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 66,
+  "fields": {
+    "accommodation": 17,
+    "room_class": 2,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 67,
+  "fields": {
+    "accommodation": 17,
+    "room_class": 3,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 68,
+  "fields": {
+    "accommodation": 17,
+    "room_class": 4,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 69,
+  "fields": {
+    "accommodation": 18,
+    "room_class": 1,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 70,
+  "fields": {
+    "accommodation": 18,
+    "room_class": 2,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 71,
+  "fields": {
+    "accommodation": 18,
+    "room_class": 3,
+    "availability": 0
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 72,
+  "fields": {
+    "accommodation": 18,
+    "room_class": 4,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 73,
+  "fields": {
+    "accommodation": 19,
+    "room_class": 1,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 74,
+  "fields": {
+    "accommodation": 19,
+    "room_class": 2,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 75,
+  "fields": {
+    "accommodation": 19,
+    "room_class": 3,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 76,
+  "fields": {
+    "accommodation": 19,
+    "room_class": 4,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 77,
+  "fields": {
+    "accommodation": 20,
+    "room_class": 1,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 78,
+  "fields": {
+    "accommodation": 20,
+    "room_class": 3,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 79,
+  "fields": {
+    "accommodation": 20,
+    "room_class": 2,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 80,
+  "fields": {
+    "accommodation": 20,
+    "room_class": 4,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 81,
+  "fields": {
+    "accommodation": 21,
+    "room_class": 1,
+    "availability": 3
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 82,
+  "fields": {
+    "accommodation": 21,
+    "room_class": 2,
+    "availability": 3
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 83,
+  "fields": {
+    "accommodation": 21,
+    "room_class": 3,
+    "availability": 2
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 84,
+  "fields": {
+    "accommodation": 21,
+    "room_class": 4,
+    "availability": 2
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 85,
+  "fields": {
+    "accommodation": 22,
+    "room_class": 1,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 86,
+  "fields": {
+    "accommodation": 22,
+    "room_class": 2,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 87,
+  "fields": {
+    "accommodation": 22,
+    "room_class": 3,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 88,
+  "fields": {
+    "accommodation": 22,
+    "room_class": 4,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 89,
+  "fields": {
+    "accommodation": 23,
+    "room_class": 1,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 90,
+  "fields": {
+    "accommodation": 23,
+    "room_class": 2,
+    "availability": 8
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 91,
+  "fields": {
+    "accommodation": 23,
+    "room_class": 3,
+    "availability": 4
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 92,
+  "fields": {
+    "accommodation": 23,
+    "room_class": 4,
+    "availability": 4
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 93,
+  "fields": {
+    "accommodation": 24,
+    "room_class": 1,
+    "availability": 8
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 94,
+  "fields": {
+    "accommodation": 24,
+    "room_class": 2,
+    "availability": 9
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 95,
+  "fields": {
+    "accommodation": 24,
+    "room_class": 3,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 96,
+  "fields": {
+    "accommodation": 24,
+    "room_class": 4,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 97,
+  "fields": {
+    "accommodation": 25,
+    "room_class": 1,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 98,
+  "fields": {
+    "accommodation": 25,
+    "room_class": 2,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 99,
+  "fields": {
+    "accommodation": 25,
+    "room_class": 3,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 100,
+  "fields": {
+    "accommodation": 25,
+    "room_class": 4,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 101,
+  "fields": {
+    "accommodation": 26,
+    "room_class": 1,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 102,
+  "fields": {
+    "accommodation": 26,
+    "room_class": 2,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 103,
+  "fields": {
+    "accommodation": 26,
+    "room_class": 3,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 104,
+  "fields": {
+    "accommodation": 26,
+    "room_class": 4,
+    "availability": 4
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 105,
+  "fields": {
+    "accommodation": 27,
+    "room_class": 1,
+    "availability": 8
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 106,
+  "fields": {
+    "accommodation": 27,
+    "room_class": 2,
+    "availability": 7
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 107,
+  "fields": {
+    "accommodation": 27,
+    "room_class": 3,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 108,
+  "fields": {
+    "accommodation": 27,
+    "room_class": 4,
+    "availability": 4
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 109,
+  "fields": {
+    "accommodation": 28,
+    "room_class": 1,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 110,
+  "fields": {
+    "accommodation": 28,
+    "room_class": 2,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 111,
+  "fields": {
+    "accommodation": 28,
+    "room_class": 3,
+    "availability": 6
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 112,
+  "fields": {
+    "accommodation": 28,
+    "room_class": 4,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 113,
+  "fields": {
+    "accommodation": 29,
+    "room_class": 1,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 114,
+  "fields": {
+    "accommodation": 29,
+    "room_class": 2,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 115,
+  "fields": {
+    "accommodation": 29,
+    "room_class": 3,
+    "availability": 6
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 116,
+  "fields": {
+    "accommodation": 29,
+    "room_class": 4,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 117,
+  "fields": {
+    "accommodation": 30,
+    "room_class": 1,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 118,
+  "fields": {
+    "accommodation": 30,
+    "room_class": 2,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 119,
+  "fields": {
+    "accommodation": 30,
+    "room_class": 3,
+    "availability": 4
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 120,
+  "fields": {
+    "accommodation": 30,
+    "room_class": 4,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 121,
+  "fields": {
+    "accommodation": 31,
+    "room_class": 1,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 122,
+  "fields": {
+    "accommodation": 31,
+    "room_class": 2,
+    "availability": 8
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 123,
+  "fields": {
+    "accommodation": 31,
+    "room_class": 3,
+    "availability": 3
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 124,
+  "fields": {
+    "accommodation": 31,
+    "room_class": 4,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 125,
+  "fields": {
+    "accommodation": 32,
+    "room_class": 1,
+    "availability": 9
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 126,
+  "fields": {
+    "accommodation": 32,
+    "room_class": 2,
+    "availability": 8
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 127,
+  "fields": {
+    "accommodation": 32,
+    "room_class": 3,
+    "availability": 6
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 128,
+  "fields": {
+    "accommodation": 32,
+    "room_class": 4,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 129,
+  "fields": {
+    "accommodation": 33,
+    "room_class": 1,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 130,
+  "fields": {
+    "accommodation": 33,
+    "room_class": 2,
+    "availability": 7
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 131,
+  "fields": {
+    "accommodation": 33,
+    "room_class": 3,
+    "availability": 4
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 132,
+  "fields": {
+    "accommodation": 33,
+    "room_class": 4,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 133,
+  "fields": {
+    "accommodation": 34,
+    "room_class": 1,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 134,
+  "fields": {
+    "accommodation": 34,
+    "room_class": 2,
+    "availability": 10
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 135,
+  "fields": {
+    "accommodation": 34,
+    "room_class": 3,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 136,
+  "fields": {
+    "accommodation": 34,
+    "room_class": 4,
+    "availability": 6
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 137,
+  "fields": {
+    "accommodation": 35,
+    "room_class": 1,
+    "availability": 7
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 138,
+  "fields": {
+    "accommodation": 35,
+    "room_class": 2,
+    "availability": 8
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 139,
+  "fields": {
+    "accommodation": 35,
+    "room_class": 3,
+    "availability": 5
+  }
+},
+{
+  "model": "accommodations.accommodationavailability",
+  "pk": 140,
+  "fields": {
+    "accommodation": 35,
+    "room_class": 4,
+    "availability": 4
+  }
+}
+]

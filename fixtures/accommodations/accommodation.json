@@ -1,0 +1,562 @@
+[
+{
+  "model": "accommodations.accommodation",
+  "pk": 1,
+  "fields": {
+    "name": "Солнечный",
+    "slug": "solnechnyij",
+    "description": "Живописный отель в Кисловодске",
+    "country": 1,
+    "region": 1,
+    "old_price": "80000.00",
+    "is_new": false,
+    "is_top": true,
+    "flight_cost_per_one": "30000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.accommodation",
+  "pk": 2,
+  "fields": {
+    "name": "VERTEBRA",
+    "slug": "vertebra",
+    "description": "Курортный отель в Кисловодске",
+    "country": 1,
+    "region": 1,
+    "old_price": "75000.00",
+    "is_new": false,
+    "is_top": true,
+    "flight_cost_per_one": "23000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.accommodation",
+  "pk": 3,
+  "fields": {
+    "name": "Водолей",
+    "slug": "vodolej",
+    "description": "Гостиница в Ессентуках",
+    "country": 1,
+    "region": 2,
+    "old_price": "71000.00",
+    "is_new": true,
+    "is_top": false,
+    "flight_cost_per_one": "19000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.accommodation",
+  "pk": 4,
+  "fields": {
+    "name": "Амира парк",
+    "slug": "amira-park",
+    "description": "Отель в центре Кисловодска",
+    "country": 1,
+    "region": 1,
+    "old_price": "78000.00",
+    "is_new": true,
+    "is_top": false,
+    "flight_cost_per_one": "19000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.accommodation",
+  "pk": 5,
+  "fields": {
+    "name": "Снежная королева",
+    "slug": "snezhnaya-koroleva",
+    "description": "Гостиница в центре Домбая",
+    "country": 1,
+    "region": 5,
+    "old_price": "85200.00",
+    "is_new": true,
+    "is_top": false,
+    "flight_cost_per_one": "21000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.accommodation",
+  "pk": 6,
+  "fields": {
+    "name": "Интер",
+    "slug": "inter",
+    "description": "Комфортабельный отель в Ессентуках",
+    "country": 1,
+    "region": 2,
+    "old_price": "79000.00",
+    "is_new": false,
+    "is_top": true,
+    "flight_cost_per_one": "17000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.accommodation",
+  "pk": 7,
+  "fields": {
+    "name": "Комфорт",
+    "slug": "komfort",
+    "description": "Гостевой дом \"Комфорт\" в центре станицы Ессентукской",
+    "country": 1,
+    "region": 2,
+    "old_price": "75000.00",
+    "is_new": true,
+    "is_top": false,
+    "flight_cost_per_one": "18000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.accommodation",
+  "pk": 8,
+  "fields": {
+    "name": "Радужный Архыз",
+    "slug": "raduzhnyij-arhyiz",
+    "description": "База отдыха \"Радужный Архыз\"",
+    "country": 1,
+    "region": 4,
+    "old_price": "78000.00",
+    "is_new": true,
+    "is_top": false,
+    "flight_cost_per_one": "20000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.accommodation",
+  "pk": 9,
+  "fields": {
+    "name": "Горский дом",
+    "slug": "gorskij-dom",
+    "description": "Комфортабельный отель в Домбае",
+    "country": 1,
+    "region": 5,
+    "old_price": "69000.00",
+    "is_new": true,
+    "is_top": false,
+    "flight_cost_per_one": "17000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.accommodation",
+  "pk": 10,
+  "fields": {
+    "name": "Kleopatra Life 4*",
+    "slug": "kleopatra-life-4",
+    "description": "Уютный отель в Алании",
+    "country": 2,
+    "region": 6,
+    "old_price": "161000.00",
+    "is_new": false,
+    "is_top": true,
+    "flight_cost_per_one": "30000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.accommodation",
+  "pk": 11,
+  "fields": {
+    "name": "Kemer Star Hotel 3*",
+    "slug": "kemer-star-hotel-3",
+    "description": "Отель в 40 км от Анталии",
+    "country": 2,
+    "region": 7,
+    "old_price": "150000.00",
+    "is_new": false,
+    "is_top": true,
+    "flight_cost_per_one": "28000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.accommodation",
+  "pk": 12,
+  "fields": {
+    "name": "Miss Cleopatra Hotel 2*",
+    "slug": "miss-cleopatra-hotel-2",
+    "description": "Отель в центре Алании",
+    "country": 2,
+    "region": 6,
+    "old_price": "140000.00",
+    "is_new": true,
+    "is_top": false,
+    "flight_cost_per_one": "31000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.accommodation",
+  "pk": 13,
+  "fields": {
+    "name": "Aroma Hotel Boutique",
+    "slug": "aroma-hotel-boutique",
+    "description": "Комфортабельный отель в 75 км от Анталии",
+    "country": 2,
+    "region": 7,
+    "old_price": "137000.00",
+    "is_new": true,
+    "is_top": false,
+    "flight_cost_per_one": "25000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.accommodation",
+  "pk": 14,
+  "fields": {
+    "name": "Grand Barhan 4*",
+    "slug": "grand-barhan-4",
+    "description": "Уютный отель в центре Алании",
+    "country": 2,
+    "region": 6,
+    "old_price": "97000.00",
+    "is_new": false,
+    "is_top": true,
+    "flight_cost_per_one": "35000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.accommodation",
+  "pk": 15,
+  "fields": {
+    "name": "Arsi Blue Beach 4*",
+    "slug": "arsi-blue-beach-4",
+    "description": "Комфортабельный отель в Алании",
+    "country": 2,
+    "region": 6,
+    "old_price": "81000.00",
+    "is_new": false,
+    "is_top": true,
+    "flight_cost_per_one": "28000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.accommodation",
+  "pk": 16,
+  "fields": {
+    "name": "Arsi Enfi City Beach Hotel 4*",
+    "slug": "arsi-enfi-city-beach-hotel-4",
+    "description": "Отель в километре от центра Алании",
+    "country": 2,
+    "region": 6,
+    "old_price": "91000.00",
+    "is_new": false,
+    "is_top": true,
+    "flight_cost_per_one": "25000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.accommodation",
+  "pk": 17,
+  "fields": {
+    "name": "Villa Sonata Hotel",
+    "slug": "villa-sonata-hotel",
+    "description": "Прекрасный отель в центре Алании",
+    "country": 2,
+    "region": 6,
+    "old_price": "91000.00",
+    "is_new": false,
+    "is_top": true,
+    "flight_cost_per_one": "23000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.accommodation",
+  "pk": 18,
+  "fields": {
+    "name": "Belkon Hotel 4*",
+    "slug": "belkon-hotel-4",
+    "description": "Отель  в 20 км от Анталии",
+    "country": 2,
+    "region": 7,
+    "old_price": "84000.00",
+    "is_new": false,
+    "is_top": true,
+    "flight_cost_per_one": "24000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.accommodation",
+  "pk": 19,
+  "fields": {
+    "name": "AYALA OCEAN VIEW 2*",
+    "slug": "ayala-ocean-view-2",
+    "description": "Живописный отель в Гули",
+    "country": 3,
+    "region": 11,
+    "old_price": "50000.00",
+    "is_new": true,
+    "is_top": false,
+    "flight_cost_per_one": "25000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.accommodation",
+  "pk": 20,
+  "fields": {
+    "name": "ARAAMU HOLIDAYS & SPA 2*",
+    "slug": "araamu-holidays-and-spa-2",
+    "description": "Чудесный отель на острове Диффуши",
+    "country": 3,
+    "region": 12,
+    "old_price": "51000.00",
+    "is_new": false,
+    "is_top": true,
+    "flight_cost_per_one": "25000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.accommodation",
+  "pk": 21,
+  "fields": {
+    "name": "ENDHERI SUNSET DHANGETHI GUEST HOUSES 2*",
+    "slug": "endheri-sunset-dhangethi-guest-houses-2",
+    "description": "Мини-отель в Дангети",
+    "country": 3,
+    "region": 13,
+    "old_price": "49000.00",
+    "is_new": false,
+    "is_top": true,
+    "flight_cost_per_one": "25000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.accommodation",
+  "pk": 22,
+  "fields": {
+    "name": "KUE HOTELS MAAFUSHI 3*",
+    "slug": "kue-hotels-maafushi-3",
+    "description": "Живописный отель в Маафуши",
+    "country": 3,
+    "region": 14,
+    "old_price": "48000.00",
+    "is_new": true,
+    "is_top": false,
+    "flight_cost_per_one": "25000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.accommodation",
+  "pk": 23,
+  "fields": {
+    "name": "SKY BEACH MALDIVES 2*",
+    "slug": "sky-beach-maldives-2",
+    "description": "Отель в городе Диффуши",
+    "country": 3,
+    "region": 12,
+    "old_price": "50000.00",
+    "is_new": false,
+    "is_top": true,
+    "flight_cost_per_one": "27000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.accommodation",
+  "pk": 24,
+  "fields": {
+    "name": "EQUATOR VILLAGE GAN 3*",
+    "slug": "equator-village-gan-3",
+    "description": "Курортный отель на острове Ган",
+    "country": 3,
+    "region": 16,
+    "old_price": "51000.00",
+    "is_new": true,
+    "is_top": false,
+    "flight_cost_per_one": "28000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.accommodation",
+  "pk": 25,
+  "fields": {
+    "name": "TME RETREATS DHIGURAH 2*",
+    "slug": "tme-retreats-dhigurah-2",
+    "description": "Гостевой дом в городе Дигура",
+    "country": 3,
+    "region": 15,
+    "old_price": "50000.00",
+    "is_new": true,
+    "is_top": false,
+    "flight_cost_per_one": "25000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.accommodation",
+  "pk": 26,
+  "fields": {
+    "name": "AVYANNA GULHI BEACH HOTEL 4*",
+    "slug": "avyanna-gulhi-beach-hotel-4",
+    "description": "Отель на первой линии города Гули",
+    "country": 3,
+    "region": 11,
+    "old_price": "55000.00",
+    "is_new": false,
+    "is_top": true,
+    "flight_cost_per_one": "27000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.accommodation",
+  "pk": 27,
+  "fields": {
+    "name": "KAANI BEACH HOTEL 3*",
+    "slug": "kaani-beach-hotel-3",
+    "description": "Отель на острове Маафуши",
+    "country": 3,
+    "region": 14,
+    "old_price": "51000.00",
+    "is_new": true,
+    "is_top": false,
+    "flight_cost_per_one": "26000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.accommodation",
+  "pk": 28,
+  "fields": {
+    "name": "AMELIE HOTEL MANILA",
+    "slug": "amelie-hotel-manila",
+    "description": "Отель в городе Манила",
+    "country": 4,
+    "region": 8,
+    "old_price": "60000.00",
+    "is_new": false,
+    "is_top": true,
+    "flight_cost_per_one": "30000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.accommodation",
+  "pk": 29,
+  "fields": {
+    "name": "HOLIDAY INN EXPRESS MANILA NEWPORT",
+    "slug": "holiday-inn-express-manila-newport",
+    "description": "Отель  в городе Пасай",
+    "country": 4,
+    "region": 9,
+    "old_price": "60000.00",
+    "is_new": true,
+    "is_top": false,
+    "flight_cost_per_one": "30000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.accommodation",
+  "pk": 30,
+  "fields": {
+    "name": "HOTEL CELESTE MAKATI",
+    "slug": "hotel-celeste-makati",
+    "description": "Отель в центре города Макати",
+    "country": 4,
+    "region": 10,
+    "old_price": "60000.00",
+    "is_new": true,
+    "is_top": false,
+    "flight_cost_per_one": "30000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.accommodation",
+  "pk": 31,
+  "fields": {
+    "name": "SEDA BGC",
+    "slug": "seda-bgc",
+    "description": "Отель  в самом центре Манилы",
+    "country": 4,
+    "region": 8,
+    "old_price": "60000.00",
+    "is_new": true,
+    "is_top": false,
+    "flight_cost_per_one": "30000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.accommodation",
+  "pk": 32,
+  "fields": {
+    "name": "ARUGA APARTMENTS 4*",
+    "slug": "aruga-apartments-4",
+    "description": "Великолепный отель в Макати",
+    "country": 4,
+    "region": 10,
+    "old_price": "59000.00",
+    "is_new": false,
+    "is_top": true,
+    "flight_cost_per_one": "30000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.accommodation",
+  "pk": 33,
+  "fields": {
+    "name": "CORO HOTEL MANILA 3*",
+    "slug": "coro-hotel-manila-3",
+    "description": "Отель в городе Манила",
+    "country": 4,
+    "region": 8,
+    "old_price": "58000.00",
+    "is_new": true,
+    "is_top": false,
+    "flight_cost_per_one": "30000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.accommodation",
+  "pk": 34,
+  "fields": {
+    "name": "UNWND FLATS",
+    "slug": "unwnd-flats",
+    "description": "Великолепный отель в городе Манила",
+    "country": 4,
+    "region": 8,
+    "old_price": "61000.00",
+    "is_new": false,
+    "is_top": true,
+    "flight_cost_per_one": "30000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "accommodations.accommodation",
+  "pk": 35,
+  "fields": {
+    "name": "UNWND BOUTIQUE HOTEL MAKATI 3*",
+    "slug": "unwnd-boutique-hotel-makati-3",
+    "description": "Отличный отель в Маниле",
+    "country": 4,
+    "region": 8,
+    "old_price": "59000.00",
+    "is_new": false,
+    "is_top": true,
+    "flight_cost_per_one": "30000.00",
+    "is_active": true
+  }
+}
+]
