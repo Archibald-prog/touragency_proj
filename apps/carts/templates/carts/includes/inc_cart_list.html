@@ -27,40 +27,65 @@
                         <td>
                             {% csrf_token %}
                             <select name="{{ item.id }}"
-                            class="form-control roomclass-change"
-                            data-cart-id="{{ item.id }}"
-                            data-cart-change-url="{% url 'cart:cart_edit' %}">
-                            <option>Выберите номер</option>
+                                    class="form-control form-select form-select-sm roomclass-change mb-3"
+                                    style="width: auto; min-width: 130px;"
+                                    data-cart-id="{{ item.id }}"
+                                    data-cart-change-url="{% url 'cart:cart_edit' %}">
+                                <option>Выберите номер</option>
                                 {% for roomclass in roomclasses %}
-                                    <option value="{{ roomclass.id }}"
-                                    {% if roomclass.id == item.room_class.id %}
-                                            selected="selected" {% endif %}
-                                    >{{ roomclass.name }}</option>
+                                <option value="{{ roomclass.id }}"
+                                        {% if roomclass.id == item.room_class.id %}
+                                        selected="selected" {% endif %}
+                                >{{ roomclass.name }}
+                                </option>
                                 {% endfor %}
                             </select>
                         </td>
                         <td>
-                            <input type="number" name="{{ item.id }}"
-                                   value="{{ item.guests }}"
-                                   class="form-control cart-qty guest-change"
-                                   data-cart-id="{{ item.id }}"
-                                   data-cart-change-url="{% url 'cart:cart_edit' %}">
-                                {% csrf_token %}
+                            <div class="input-group mb-3 flex-nowrap" style="width: 130px; min-width: 130px;">
+                                <button class="btn btn-outline-secondary btn-sm step-btn" type="button" data-action="minus">-
+                                </button>
+
+                                <input type="number"
+                                       name="guests"
+                                       class="form-control form-control-sm text-center cart-qty guest-change"
+                                       value="{{ item.guests }}"
+                                       min="1"
+                                       step="1"
+                                       data-cart-id="{{ item.id }}"
+                                       data-cart-change-url="{% url 'cart:cart_edit' %}"
+                                       readonly>
+
+                                <button class="btn btn-outline-secondary btn-sm step-btn" type="button" data-action="plus">+
+                                </button>
+                            </div>
                         </td>
                         <td>
-                            <input type="number" min="3" step="4" name="{{ item.id }}"
-                                   value="{{ item.nights }}"
-                                   class="form-control cart-qty night-change"
-                                   data-cart-id="{{ item.id }}"
-                                   data-cart-change-url="{% url 'cart:cart_edit' %}">
-                                {% csrf_token %}
+                            <div class="input-group mb-3 flex-nowrap" style="width: 130px; min-width: 130px;">
+                                <button class="btn btn-outline-secondary btn-sm step-btn" type="button" data-action="minus">-
+                                </button>
+
+                                <input type="number"
+                                       name="nights"
+                                       class="form-control form-control-sm text-center cart-qty night-change"
+                                       value="{{ item.nights }}"
+                                       min="3"
+                                       step="4"
+                                       data-cart-id="{{ item.id }}"
+                                       data-cart-change-url="{% url 'cart:cart_edit' %}"
+                                       readonly>
+
+                                <button class="btn btn-outline-secondary btn-sm step-btn" type="button" data-action="plus">+
+                                </button>
+                            </div>
+                            <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
                         </td>
                         <td>{{ item.flight_cost }}</td>
                         <td>{{ item.accommodation_cost }}</td>
                         <td>
                             <a href="{% url 'cart:remove' %}"
                                class="btn btn-danger remove-from-cart"
-                                data-cart-id="{{ item.id }}">
+                               data-cart-id="{{ item.id }}">
                                 {% csrf_token %}
                                 <i class="fa-regular fa-circle-xmark"></i>
                             </a>

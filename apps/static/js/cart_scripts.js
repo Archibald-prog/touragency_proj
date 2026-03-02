@@ -82,6 +82,26 @@ $(document).ready(function () {
         });
     });
 
+    // Универсальный обработчик для всех кнопок +/-
+    $(document).on("click", ".step-btn", function() {
+        const $button = $(this);
+        // Ищем ближайший инпут внутри той же группы (неважно, guest или night)
+        const $input = $button.closest(".input-group").find("input[type='number']");
+
+        // Берем значения из атрибутов конкретного инпута
+        const step = parseInt($input.attr("step")) || 1; // Если step не указан, шаг = 1
+        const min = parseInt($input.attr("min")) || 1;  // Если min не указан, минимум = 1
+        let currentValue = parseInt($input.val()) || min;
+
+        if ($button.data("action") === "plus") {
+            $input.val(currentValue + step);
+        } else if (currentValue > min) {
+            $input.val(currentValue - step);
+        }
+
+        $input.trigger("input");
+    });
+
     // 3. Маска телефона (с защитой от null)
     const phoneInput = document.getElementById('id_phone_number');
     if (phoneInput) {
