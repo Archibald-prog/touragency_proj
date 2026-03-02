@@ -14,6 +14,11 @@ DEBUG = env.bool('DJANGO_DEBUG', default=True)
 
 ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=[])
 
+CSRF_TRUSTED_ORIGINS = ['http://79.174.77.122']
+
+# Убирает предупреждение в Chrome при работе через HTTP
+SECURE_CROSS_ORIGIN_OPENER_POLICY = None
+
 # Application definition
 
 LOCAL_APPS = [
@@ -110,14 +115,14 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
-FORCE_SCRIPT_NAME = env('FORCE_SCRIPT_NAME', default='')
+FORCE_SCRIPT_NAME = env('FORCE_SCRIPT_NAME')
 STATIC_URL = f'{FORCE_SCRIPT_NAME}/static/'
 STATIC_ROOT = os.path.join(APPS_DIR, "static")
 # STATICFILES_DIRS = (
 #     os.path.join(APPS_DIR, "static"),
 # )
 
-MEDIA_URL = '/media/'
+MEDIA_URL = f'{FORCE_SCRIPT_NAME}/media/'
 MEDIA_ROOT = os.path.join(APPS_DIR, "media")
 
 # Default primary key field type
@@ -126,5 +131,5 @@ MEDIA_ROOT = os.path.join(APPS_DIR, "media")
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGOUT_REDIRECT_URL = 'main'
-LOGIN_REDIRECT_URL = 'main'
-LOGIN_URL = '/auth/login/'
+LOGIN_REDIRECT_URL = f'{FORCE_SCRIPT_NAME}/'
+LOGIN_URL = f'{FORCE_SCRIPT_NAME}/auth/login/'

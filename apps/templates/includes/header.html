@@ -74,7 +74,7 @@
                         </div>
                         {% if request.user.is_authenticated and request.user.is_superuser %}
                         <div>
-                            <a href="/admin" class="btn btn-warning">Админка</a>
+                            <a href="{% url 'admin:index' %}" class="btn btn-warning">Админка</a>
                         </div>
                         {% endif %}
                     </div>
@@ -102,7 +102,7 @@
                             data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
                         <i class="fa-solid fa-cart-shopping"></i>
                         <span id="goods-in-cart-count"
-                              class="badge text-bg-warning cart-badge
+                              class="goods-in-cart-count badge text-bg-warning cart-badge
                               bg-warning rounded-circle">
                             {{ carts.total_tours }}
                         </span>
@@ -203,8 +203,8 @@
                 <button class="btn p-1" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
                     <i class="fa-solid fa-cart-shopping"></i>
-                    <span class="badge text-bg-warning cart-badge bg-warning rounded-circle">
-<!--                        {{ carts.total_quantity }}-->
+                    <span class="goods-in-cart-count badge text-bg-warning cart-badge bg-warning rounded-circle">
+                        {{ carts.total_tours }}
                     </span>
                 </button>
             </div>

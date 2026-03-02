@@ -29,7 +29,7 @@
                             <select name="{{ item.id }}"
                             class="form-control roomclass-change"
                             data-cart-id="{{ item.id }}"
-                            data-cart-change-url="{% url 'cart:roomclass_edit' %}">
+                            data-cart-change-url="{% url 'cart:cart_edit' %}">
                             <option>Выберите номер</option>
                                 {% for roomclass in roomclasses %}
                                     <option value="{{ roomclass.id }}"
@@ -44,7 +44,7 @@
                                    value="{{ item.guests }}"
                                    class="form-control cart-qty guest-change"
                                    data-cart-id="{{ item.id }}"
-                                   data-cart-change-url="{% url 'cart:guest_edit' %}">
+                                   data-cart-change-url="{% url 'cart:cart_edit' %}">
                                 {% csrf_token %}
                         </td>
                         <td>
@@ -52,7 +52,7 @@
                                    value="{{ item.nights }}"
                                    class="form-control cart-qty night-change"
                                    data-cart-id="{{ item.id }}"
-                                   data-cart-change-url="{% url 'cart:night_edit' %}">
+                                   data-cart-change-url="{% url 'cart:cart_edit' %}">
                                 {% csrf_token %}
                         </td>
                         <td>{{ item.flight_cost }}</td>

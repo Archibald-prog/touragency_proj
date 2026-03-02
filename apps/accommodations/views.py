@@ -57,44 +57,47 @@ class CountryListView(ListView, GetAdditionalData):
     model = Accommodation
     template_name = "accommodations/country_list.html"
     paginate_by = 6
-    allow_empty = True
 
     def get_queryset(self):
         country_slug = self.kwargs["slug"]
-        q_objects = Q()
+        queryset = Accommodation.objects.get_extra_fields().filter(country__slug=country_slug)
         region_lst = self.request.GET.getlist("region")
-        if region_lst:
-            q_objects.add(Q(region__in=region_lst), Q.AND)
-
         available_lst = self.request.GET.getlist("roomclass")
+
+        filters = Q()
+        if region_lst:
+            filters &= Q(region__in=region_lst)
         if available_lst:
-            q_objects.add(
-                Q(accommodationavailability__room_class_id__in=available_lst),
-                Q.AND)
-            q_objects.add(
-                Q(accommodationavailability__availability__gt=0), Q.AND)
+            # Используем distinct(), так как фильтр по ManyToMany/ForeignKey может дублировать строки
+            filters &= Q(accommodationavailability__room_class_id__in=available_lst,
+                         accommodationavailability__availability__gt=0)
+            queryset = queryset.distinct()
 
-        if q_objects:
-            queryset = (Accommodation.objects.get_extra_fields().
-                        filter(q_objects, country__slug=country_slug))
+        queryset = queryset.filter(filters)
+
+        user_ordering = self.request.GET.get("orderby")
+        if user_ordering:
+            queryset = queryset.order_by(user_ordering, "id")
         else:
-            queryset = (Accommodation.objects.get_extra_fields().
-                        filter(country__slug=country_slug))
+            # Дефолтная сортировка
+            queryset = queryset.order_by("id")
 
-        ordering = self.get_ordering()
-        if ordering:
-            queryset = queryset.order_by(*(ordering,))
         return queryset
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        country = get_object_or_404(Country, slug=self.kwargs["slug"])
-        context["title"] = "Страна -" + str(country)
-        context["country"] = country
-        context["country_regions"] = self.get_regions(country)
-        context["available_accommodations"] = self.get_available(country)
-        return context
+        params = self.request.GET.copy()
+        if 'page' in params:
+            del params['page']
+        context['url_params'] = params.urlencode()
+        context["selected_regions"] = self.request.GET.getlist("region")
+        context["selected_roomclasses"] = self.request.GET.getlist("roomclass")
 
-    def get_ordering(self):
-        ordering = self.request.GET.get("orderby")
-        return ordering
+        country = get_object_or_404(Country, slug=self.kwargs["slug"])
+        context.update({
+            "title": f"Страна - {country}",
+            "country": country,
+            "country_regions": self.get_regions(country),
+            "available_accommodations": self.get_available(country),
+        })
+        return context

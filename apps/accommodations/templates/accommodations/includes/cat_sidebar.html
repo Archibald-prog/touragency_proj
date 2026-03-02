@@ -6,14 +6,16 @@
             <i class="fa-solid fa-filter"></i> Фильтры
         </button>
         <div class="collapse collapse-filters" id="collapseFilters">
-            <form action="{% url 'country_list' country.slug %}" method="get">
+            <form id="filter-form" action="" method="get">
                 <div class="filter-block">
                     <h5 class="section-title"><span>Фильтровать по региону</span></h5>
                     {% for key, val in country_regions.items %}
                     <div class="form-check d-flex justify-content-between">
                         <div>
-                            <input class="form-check-input" type="checkbox"
-                                   name="region" value="{{ key.id }}">
+
+                            <input class="form-check-input" type="checkbox" name="region" value="{{ key.id }}"
+                                {% if key.id|slugify in selected_regions %}checked{% endif %}>
+
                             <label class="form-check-label">
                                 {{ key.name }}
                             </label>
@@ -32,8 +34,11 @@
                     {% for key, val in available_accommodations.items %}
                     <div class="form-check d-flex justify-content-between">
                         <div>
+
                             <input class="form-check-input" type="checkbox"
-                                   name="roomclass" value="{{ key.id }}">
+                                   name="roomclass" value="{{ key.id }}"
+                            {% if key.id|slugify in selected_roomclasses %}checked{% endif %}>
+
                             <label class="form-check-label">
                                 {{ key.name }}
                             </label>
@@ -42,41 +47,6 @@
                     </div>
                     {% endfor %}
                 </div>
-
-<!--                <div class="filter-block">-->
-<!--                    <h5 class="section-title">-->
-<!--                        <span>Filter by type</span>-->
-<!--                    </h5>-->
-
-
-<!--                    <div class="form-check d-flex justify-content-between">-->
-<!--                        <div>-->
-<!--                            <input class="form-check-input" type="checkbox" value="" id="man">-->
-<!--                            <label class="form-check-label" for="man">-->
-<!--                                Man-->
-<!--                            </label>-->
-<!--                        </div>-->
-<!--                        <span class="badge border rounded-0">44</span>-->
-<!--                    </div>-->
-<!--                    <div class="form-check d-flex justify-content-between">-->
-<!--                        <div>-->
-<!--                            <input class="form-check-input" type="checkbox" value="" id="woman">-->
-<!--                            <label class="form-check-label" for="woman">-->
-<!--                                Woman-->
-<!--                            </label>-->
-<!--                        </div>-->
-<!--                        <span class="badge border rounded-0">105</span>-->
-<!--                    </div>-->
-<!--                    <div class="form-check d-flex justify-content-between">-->
-<!--                        <div>-->
-<!--                            <input class="form-check-input" type="checkbox" value="" id="baby">-->
-<!--                            <label class="form-check-label" for="baby">-->
-<!--                                Baby-->
-<!--                            </label>-->
-<!--                        </div>-->
-<!--                        <span class="badge border rounded-0">35</span>-->
-<!--                    </div>-->
-<!--                </div>-->
                 <div class="d-grid mb-3">
                     <button type="submit" class="btn btn-secondary btn-lg">Показать</button>
                 </div>

@@ -46,43 +46,22 @@ class CartRemove(CartMixin, View):
         return JsonResponse(response_data)
 
 
-class RoomclassEdit(CartMixin, View):
+class CartItemEditView(CartMixin, View):
     def post(self, request):
         cart_id = request.POST.get("cart_id")
         cart_item = Cart.objects.get(pk=int(cart_id))
 
-        item_roomclass = request.POST.get("roomclass")
-        if item_roomclass:
-            cart_item.room_class_id = item_roomclass
-            cart_item.save()
+        fields = {
+            "room_class_id": request.POST.get("roomclass"),
+            "guests": request.POST.get("guests"),
+            "nights": request.POST.get("nights"),
+        }
 
-        response_data = self.get_response_data(request)
-        return JsonResponse(response_data)
-
-
-class GuestNumEdit(CartMixin, View):
-    def post(self, request):
-        cart_id = request.POST.get("cart_id")
-        cart_item = Cart.objects.get(pk=int(cart_id))
-
-        item_guests = request.POST.get("guests")
-        if item_guests:
-            cart_item.guests = item_guests
-            cart_item.save()
-
-        response_data = self.get_response_data(request)
-        return JsonResponse(response_data)
-
-
-class NightNumEdit(CartMixin, View):
-    def post(self, request):
-        cart_id = request.POST.get("cart_id")
-        cart_item = Cart.objects.get(pk=int(cart_id))
-
-        item_nights = request.POST.get("nights")
-        if item_nights:
-            cart_item.nights = item_nights
-            cart_item.save()
+        for field, value in fields.items():
+            if value is not None:
+                setattr(cart_item, field, value)
+                cart_item.save()
+                break
 
         response_data = self.get_response_data(request)
         return JsonResponse(response_data)
