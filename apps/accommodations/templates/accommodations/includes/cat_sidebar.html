@@ -12,10 +12,9 @@
                     {% for key, val in country_regions.items %}
                     <div class="form-check d-flex justify-content-between">
                         <div>
-
-                            <input class="form-check-input" type="checkbox" name="region" value="{{ key.id }}"
+                            <input class="form-check-input" type="checkbox"
+                                   name="region" value="{{ key.id }}"
                                 {% if key.id|slugify in selected_regions %}checked{% endif %}>
-
                             <label class="form-check-label">
                                 {{ key.name }}
                             </label>
@@ -30,15 +29,12 @@
                     <div>
                         <h6 class="filter-subtitle"> всего объектов со свободными номерами:</h6>
                     </div>
-
                     {% for key, val in available_accommodations.items %}
                     <div class="form-check d-flex justify-content-between">
                         <div>
-
                             <input class="form-check-input" type="checkbox"
                                    name="roomclass" value="{{ key.id }}"
                             {% if key.id|slugify in selected_roomclasses %}checked{% endif %}>
-
                             <label class="form-check-label">
                                 {{ key.name }}
                             </label>

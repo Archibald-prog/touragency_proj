@@ -115,6 +115,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
+USE_X_FORWARDED_HOST = True
 FORCE_SCRIPT_NAME = env('FORCE_SCRIPT_NAME')
 STATIC_URL = f'{FORCE_SCRIPT_NAME}/static/'
 STATIC_ROOT = os.path.join(APPS_DIR, "static")

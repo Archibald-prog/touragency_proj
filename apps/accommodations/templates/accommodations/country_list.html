@@ -33,17 +33,20 @@
                     <div class="input-group mb-3">
                         <span class="input-group-text">Сортировать:</span>
                         <select class="form-select" name="orderby" form="filter-form">
-                            <option value="id" {% if request.GET.orderby == 'id' or not request.GET.orderby %}selected{% endif %}>
+                            <option value="id"
+                                {% if request.GET.orderby == 'id' or not request.GET.orderby %}selected{% endif %}>
                                 По умолчанию
                             </option>
                             <option value="name"
-                                    {% if request.GET.orderby == 'name' %}selected{% endif %}>
-                                    По имени
+                                {% if request.GET.orderby == 'name' %}selected{% endif %}>
+                                По имени
                             </option>
-                            <option value="start_price" {% if request.GET.orderby == 'start_price' %}selected{% endif %}>
+                            <option value="start_price"
+                                {% if request.GET.orderby == 'start_price' %}selected{% endif %}>
                                 По цене(по возрастанию)
                             </option>
-                            <option value='-start_price' {% if request.GET.orderby == "-start_price" %}selected{% endif %}>
+                            <option
+                                value='-start_price' {% if request.GET.orderby == "-start_price" %}selected{% endif %}>
                                 По цене (по убыванию)
                             </option>
                         </select>

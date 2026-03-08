@@ -41,7 +41,9 @@ $(document).ready(function () {
         const isAdding = $el.hasClass("add-to-cart");
         const url = $el.attr("href");
 
-        const postData = { csrfmiddlewaretoken: $("[name=csrfmiddlewaretoken]").val() };
+        const postData = {
+            csrfmiddlewaretoken: $("[name=csrfmiddlewaretoken]").val(),
+        };
         if (isAdding) {
             postData.accommodation_id = $el.data("accommodation-id");
         } else {
@@ -60,7 +62,9 @@ $(document).ready(function () {
 
     // 2. Изменение параметров тура (Select / Input)
     // Объединяем .roomclass-change, .guest-change, .night-change
-    $(document).on("change input", ".roomclass-change, .guest-change, .night-change", function () {
+    const cartSelectors = ".roomclass-change, .guest-change, .night-change";
+
+    $(document).on("change input", cartSelectors, function () {
         const $el = $(this);
         const postData = {
             cart_id: $el.data('cart-id'),
@@ -89,26 +93,28 @@ $(document).ready(function () {
         const $input = $button.closest(".input-group").find("input[type='number']");
 
         // Берем значения из атрибутов конкретного инпута
-        const step = parseInt($input.attr("step")) || 1; // Если step не указан, шаг = 1
-        const min = parseInt($input.attr("min")) || 1;  // Если min не указан, минимум = 1
+        const step = parseInt($input.attr("step")) || 1;
+        const min = parseInt($input.attr("min")) || 1;
         let currentValue = parseInt($input.val()) || min;
 
         if ($button.data("action") === "plus") {
             $input.val(currentValue + step);
+            $input.trigger("input");
         } else if (currentValue > min) {
             $input.val(currentValue - step);
+            $input.trigger("input");
         }
-
-        $input.trigger("input");
     });
 
     // 3. Маска телефона (с защитой от null)
     const phoneInput = document.getElementById('id_phone_number');
     if (phoneInput) {
         phoneInput.addEventListener('input', function (e) {
-            let x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+            let x = e.target.value.replace(/\D/g, '')
+                    .match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
             if (!x) return;
-            e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+            e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' +
+            x[2] + (x[3] ? '-' + x[3] : '');
         });
     }
 

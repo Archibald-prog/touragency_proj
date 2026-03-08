@@ -60,7 +60,8 @@ class CountryListView(ListView, GetAdditionalData):
 
     def get_queryset(self):
         country_slug = self.kwargs["slug"]
-        queryset = Accommodation.objects.get_extra_fields().filter(country__slug=country_slug)
+        queryset = Accommodation.objects.get_extra_fields().filter(
+            country__slug=country_slug)
         region_lst = self.request.GET.getlist("region")
         available_lst = self.request.GET.getlist("roomclass")
 
@@ -68,7 +69,8 @@ class CountryListView(ListView, GetAdditionalData):
         if region_lst:
             filters &= Q(region__in=region_lst)
         if available_lst:
-            # Используем distinct(), так как фильтр по ManyToMany/ForeignKey может дублировать строки
+            # Используем distinct(), так как фильтр по ManyToMany/ForeignKey
+            # может дублировать строки
             filters &= Q(accommodationavailability__room_class_id__in=available_lst,
                          accommodationavailability__availability__gt=0)
             queryset = queryset.distinct()
