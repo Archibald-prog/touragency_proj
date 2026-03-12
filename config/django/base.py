@@ -118,10 +118,11 @@ USE_TZ = True
 USE_X_FORWARDED_HOST = True
 FORCE_SCRIPT_NAME = env('FORCE_SCRIPT_NAME')
 STATIC_URL = f'{FORCE_SCRIPT_NAME}/static/'
-STATIC_ROOT = os.path.join(APPS_DIR, "static")
-# STATICFILES_DIRS = (
-#     os.path.join(APPS_DIR, "static"),
-# )
+STATIC_ROOT = os.path.join(APPS_DIR, "staticfiles")
+
+STATICFILES_DIRS = (
+    os.path.join(APPS_DIR, "static"),
+)
 
 MEDIA_URL = f'{FORCE_SCRIPT_NAME}/media/'
 MEDIA_ROOT = os.path.join(APPS_DIR, "media")
