@@ -1,0 +1,5024 @@
+[
+{
+    "model": "mainapp.contact",
+    "pk": 1,
+    "fields": {
+        "city": "Москва",
+        "phone": "8(095)3457890",
+        "email": "info@tagency.ru",
+        "address": "Варшавское шоссе, 142"
+    }
+},
+{
+    "model": "mainapp.contact",
+    "pk": 2,
+    "fields": {
+        "city": "Петербург",
+        "phone": "8(812)3476539",
+        "email": "info_spb@tagency.ru",
+        "address": "Литейный пр., д. 5/19"
+    }
+},
+{
+    "model": "mainapp.contact",
+    "pk": 3,
+    "fields": {
+        "city": "Екатеринбург",
+        "phone": "8(343)3457865",
+        "email": "info_yekat@tagency.ru",
+        "address": "Малышева., д. 9А"
+    }
+},
+{
+    "model": "accommodations.country",
+    "pk": 1,
+    "fields": {
+        "name": "Россия",
+        "slug": "rossiya",
+        "description": "Россия: курорты и места отдыха в России",
+        "country_image": "country_img/russia_img.png",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.country",
+    "pk": 2,
+    "fields": {
+        "name": "Турция",
+        "slug": "turtsiya",
+        "description": "Турция: курорты и места отдыха в Турции",
+        "country_image": "country_img/turkey_img.png",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.country",
+    "pk": 3,
+    "fields": {
+        "name": "Мальдивы",
+        "slug": "maldivyi",
+        "description": "Мальдивы: курорты и места отдыха на Мальдивах",
+        "country_image": "country_img/maldives_img.png",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.country",
+    "pk": 4,
+    "fields": {
+        "name": "Филиппины",
+        "slug": "filippinyi",
+        "description": "Филиппины: курорты и места отдыха на Филиппинах",
+        "country_image": "country_img/philippines_img.png",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.region",
+    "pk": 1,
+    "fields": {
+        "name": "Кисловодск",
+        "slug": "kislovodsk",
+        "country": 1,
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.region",
+    "pk": 2,
+    "fields": {
+        "name": "Ессентуки",
+        "slug": "essentuki",
+        "country": 1,
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.region",
+    "pk": 3,
+    "fields": {
+        "name": "Черкесск",
+        "slug": "cherkessk",
+        "country": 1,
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.region",
+    "pk": 4,
+    "fields": {
+        "name": "Архыз",
+        "slug": "arhyiz",
+        "country": 1,
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.region",
+    "pk": 5,
+    "fields": {
+        "name": "Домбай",
+        "slug": "dombaj",
+        "country": 1,
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.region",
+    "pk": 6,
+    "fields": {
+        "name": "Алания",
+        "slug": "alaniya",
+        "country": 2,
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.region",
+    "pk": 7,
+    "fields": {
+        "name": "Анталия",
+        "slug": "antaliya",
+        "country": 2,
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.region",
+    "pk": 8,
+    "fields": {
+        "name": "Манила",
+        "slug": "manila",
+        "country": 4,
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.region",
+    "pk": 9,
+    "fields": {
+        "name": "Пасай",
+        "slug": "pasaj",
+        "country": 4,
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.region",
+    "pk": 10,
+    "fields": {
+        "name": "Макати",
+        "slug": "makati",
+        "country": 4,
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.region",
+    "pk": 11,
+    "fields": {
+        "name": "Гули",
+        "slug": "guli",
+        "country": 3,
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.region",
+    "pk": 12,
+    "fields": {
+        "name": "Диффуши",
+        "slug": "diffushi",
+        "country": 3,
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.region",
+    "pk": 13,
+    "fields": {
+        "name": "Дангети",
+        "slug": "dangeti",
+        "country": 3,
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.region",
+    "pk": 14,
+    "fields": {
+        "name": "Маафуши",
+        "slug": "maafushi",
+        "country": 3,
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.region",
+    "pk": 15,
+    "fields": {
+        "name": "Дигура",
+        "slug": "digura",
+        "country": 3,
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.region",
+    "pk": 16,
+    "fields": {
+        "name": "Ган",
+        "slug": "gan",
+        "country": 3,
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.accommodation",
+    "pk": 1,
+    "fields": {
+        "name": "Солнечный",
+        "slug": "solnechnyij",
+        "description": "Живописный отель в Кисловодске",
+        "country": 1,
+        "region": 1,
+        "old_price": "80000.00",
+        "is_new": false,
+        "is_top": true,
+        "flight_cost_per_one": "30000.00",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.accommodation",
+    "pk": 2,
+    "fields": {
+        "name": "VERTEBRA",
+        "slug": "vertebra",
+        "description": "Курортный отель в Кисловодске",
+        "country": 1,
+        "region": 1,
+        "old_price": "75000.00",
+        "is_new": false,
+        "is_top": true,
+        "flight_cost_per_one": "23000.00",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.accommodation",
+    "pk": 3,
+    "fields": {
+        "name": "Водолей",
+        "slug": "vodolej",
+        "description": "Гостиница в Ессентуках",
+        "country": 1,
+        "region": 2,
+        "old_price": "71000.00",
+        "is_new": true,
+        "is_top": false,
+        "flight_cost_per_one": "19000.00",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.accommodation",
+    "pk": 4,
+    "fields": {
+        "name": "Амира парк",
+        "slug": "amira-park",
+        "description": "Отель в центре Кисловодска",
+        "country": 1,
+        "region": 1,
+        "old_price": "78000.00",
+        "is_new": true,
+        "is_top": false,
+        "flight_cost_per_one": "19000.00",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.accommodation",
+    "pk": 5,
+    "fields": {
+        "name": "Снежная королева",
+        "slug": "snezhnaya-koroleva",
+        "description": "Гостиница в центре Домбая",
+        "country": 1,
+        "region": 5,
+        "old_price": "85200.00",
+        "is_new": true,
+        "is_top": false,
+        "flight_cost_per_one": "21000.00",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.accommodation",
+    "pk": 6,
+    "fields": {
+        "name": "Интер",
+        "slug": "inter",
+        "description": "Комфортабельный отель в Ессентуках",
+        "country": 1,
+        "region": 2,
+        "old_price": "79000.00",
+        "is_new": false,
+        "is_top": true,
+        "flight_cost_per_one": "17000.00",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.accommodation",
+    "pk": 7,
+    "fields": {
+        "name": "Комфорт",
+        "slug": "komfort",
+        "description": "Гостевой дом \"Комфорт\" в центре станицы Ессентукской",
+        "country": 1,
+        "region": 2,
+        "old_price": "75000.00",
+        "is_new": true,
+        "is_top": false,
+        "flight_cost_per_one": "18000.00",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.accommodation",
+    "pk": 8,
+    "fields": {
+        "name": "Радужный Архыз",
+        "slug": "raduzhnyij-arhyiz",
+        "description": "База отдыха \"Радужный Архыз\"",
+        "country": 1,
+        "region": 4,
+        "old_price": "78000.00",
+        "is_new": true,
+        "is_top": false,
+        "flight_cost_per_one": "20000.00",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.accommodation",
+    "pk": 9,
+    "fields": {
+        "name": "Горский дом",
+        "slug": "gorskij-dom",
+        "description": "Комфортабельный отель в Домбае",
+        "country": 1,
+        "region": 5,
+        "old_price": "69000.00",
+        "is_new": true,
+        "is_top": false,
+        "flight_cost_per_one": "17000.00",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.accommodation",
+    "pk": 10,
+    "fields": {
+        "name": "Kleopatra Life 4*",
+        "slug": "kleopatra-life-4",
+        "description": "Уютный отель в Алании",
+        "country": 2,
+        "region": 6,
+        "old_price": "161000.00",
+        "is_new": false,
+        "is_top": true,
+        "flight_cost_per_one": "30000.00",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.accommodation",
+    "pk": 11,
+    "fields": {
+        "name": "Kemer Star Hotel 3*",
+        "slug": "kemer-star-hotel-3",
+        "description": "Отель в 40 км от Анталии",
+        "country": 2,
+        "region": 7,
+        "old_price": "150000.00",
+        "is_new": false,
+        "is_top": true,
+        "flight_cost_per_one": "28000.00",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.accommodation",
+    "pk": 12,
+    "fields": {
+        "name": "Miss Cleopatra Hotel 2*",
+        "slug": "miss-cleopatra-hotel-2",
+        "description": "Отель в центре Алании",
+        "country": 2,
+        "region": 6,
+        "old_price": "140000.00",
+        "is_new": true,
+        "is_top": false,
+        "flight_cost_per_one": "31000.00",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.accommodation",
+    "pk": 13,
+    "fields": {
+        "name": "Aroma Hotel Boutique",
+        "slug": "aroma-hotel-boutique",
+        "description": "Комфортабельный отель в 75 км от Анталии",
+        "country": 2,
+        "region": 7,
+        "old_price": "137000.00",
+        "is_new": true,
+        "is_top": false,
+        "flight_cost_per_one": "25000.00",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.accommodation",
+    "pk": 14,
+    "fields": {
+        "name": "Grand Barhan 4*",
+        "slug": "grand-barhan-4",
+        "description": "Уютный отель в центре Алании",
+        "country": 2,
+        "region": 6,
+        "old_price": "97000.00",
+        "is_new": false,
+        "is_top": true,
+        "flight_cost_per_one": "35000.00",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.accommodation",
+    "pk": 15,
+    "fields": {
+        "name": "Arsi Blue Beach 4*",
+        "slug": "arsi-blue-beach-4",
+        "description": "Комфортабельный отель в Алании",
+        "country": 2,
+        "region": 6,
+        "old_price": "81000.00",
+        "is_new": false,
+        "is_top": true,
+        "flight_cost_per_one": "28000.00",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.accommodation",
+    "pk": 16,
+    "fields": {
+        "name": "Arsi Enfi City Beach Hotel 4*",
+        "slug": "arsi-enfi-city-beach-hotel-4",
+        "description": "Отель в километре от центра Алании",
+        "country": 2,
+        "region": 6,
+        "old_price": "91000.00",
+        "is_new": false,
+        "is_top": true,
+        "flight_cost_per_one": "25000.00",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.accommodation",
+    "pk": 17,
+    "fields": {
+        "name": "Villa Sonata Hotel",
+        "slug": "villa-sonata-hotel",
+        "description": "Прекрасный отель в центре Алании",
+        "country": 2,
+        "region": 6,
+        "old_price": "91000.00",
+        "is_new": false,
+        "is_top": true,
+        "flight_cost_per_one": "23000.00",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.accommodation",
+    "pk": 18,
+    "fields": {
+        "name": "Belkon Hotel 4*",
+        "slug": "belkon-hotel-4",
+        "description": "Отель  в 20 км от Анталии",
+        "country": 2,
+        "region": 7,
+        "old_price": "84000.00",
+        "is_new": false,
+        "is_top": true,
+        "flight_cost_per_one": "24000.00",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.accommodation",
+    "pk": 19,
+    "fields": {
+        "name": "AYALA OCEAN VIEW 2*",
+        "slug": "ayala-ocean-view-2",
+        "description": "Живописный отель в Гули",
+        "country": 3,
+        "region": 11,
+        "old_price": "50000.00",
+        "is_new": true,
+        "is_top": false,
+        "flight_cost_per_one": "25000.00",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.accommodation",
+    "pk": 20,
+    "fields": {
+        "name": "ARAAMU HOLIDAYS & SPA 2*",
+        "slug": "araamu-holidays-and-spa-2",
+        "description": "Чудесный отель на острове Диффуши",
+        "country": 3,
+        "region": 12,
+        "old_price": "51000.00",
+        "is_new": false,
+        "is_top": true,
+        "flight_cost_per_one": "25000.00",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.accommodation",
+    "pk": 21,
+    "fields": {
+        "name": "ENDHERI SUNSET DHANGETHI GUEST HOUSES 2*",
+        "slug": "endheri-sunset-dhangethi-guest-houses-2",
+        "description": "Мини-отель в Дангети",
+        "country": 3,
+        "region": 13,
+        "old_price": "49000.00",
+        "is_new": false,
+        "is_top": true,
+        "flight_cost_per_one": "25000.00",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.accommodation",
+    "pk": 22,
+    "fields": {
+        "name": "KUE HOTELS MAAFUSHI 3*",
+        "slug": "kue-hotels-maafushi-3",
+        "description": "Живописный отель в Маафуши",
+        "country": 3,
+        "region": 14,
+        "old_price": "48000.00",
+        "is_new": true,
+        "is_top": false,
+        "flight_cost_per_one": "25000.00",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.accommodation",
+    "pk": 23,
+    "fields": {
+        "name": "SKY BEACH MALDIVES 2*",
+        "slug": "sky-beach-maldives-2",
+        "description": "Отель в городе Диффуши",
+        "country": 3,
+        "region": 12,
+        "old_price": "50000.00",
+        "is_new": false,
+        "is_top": true,
+        "flight_cost_per_one": "27000.00",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.accommodation",
+    "pk": 24,
+    "fields": {
+        "name": "EQUATOR VILLAGE GAN 3*",
+        "slug": "equator-village-gan-3",
+        "description": "Курортный отель на острове Ган",
+        "country": 3,
+        "region": 16,
+        "old_price": "51000.00",
+        "is_new": true,
+        "is_top": false,
+        "flight_cost_per_one": "28000.00",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.accommodation",
+    "pk": 25,
+    "fields": {
+        "name": "TME RETREATS DHIGURAH 2*",
+        "slug": "tme-retreats-dhigurah-2",
+        "description": "Гостевой дом в городе Дигура",
+        "country": 3,
+        "region": 15,
+        "old_price": "50000.00",
+        "is_new": true,
+        "is_top": false,
+        "flight_cost_per_one": "25000.00",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.accommodation",
+    "pk": 26,
+    "fields": {
+        "name": "AVYANNA GULHI BEACH HOTEL 4*",
+        "slug": "avyanna-gulhi-beach-hotel-4",
+        "description": "Отель на первой линии города Гули",
+        "country": 3,
+        "region": 11,
+        "old_price": "55000.00",
+        "is_new": false,
+        "is_top": true,
+        "flight_cost_per_one": "27000.00",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.accommodation",
+    "pk": 27,
+    "fields": {
+        "name": "KAANI BEACH HOTEL 3*",
+        "slug": "kaani-beach-hotel-3",
+        "description": "Отель на острове Маафуши",
+        "country": 3,
+        "region": 14,
+        "old_price": "51000.00",
+        "is_new": true,
+        "is_top": false,
+        "flight_cost_per_one": "26000.00",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.accommodation",
+    "pk": 28,
+    "fields": {
+        "name": "AMELIE HOTEL MANILA",
+        "slug": "amelie-hotel-manila",
+        "description": "Отель в городе Манила",
+        "country": 4,
+        "region": 8,
+        "old_price": "60000.00",
+        "is_new": false,
+        "is_top": true,
+        "flight_cost_per_one": "30000.00",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.accommodation",
+    "pk": 29,
+    "fields": {
+        "name": "HOLIDAY INN EXPRESS MANILA NEWPORT",
+        "slug": "holiday-inn-express-manila-newport",
+        "description": "Отель  в городе Пасай",
+        "country": 4,
+        "region": 9,
+        "old_price": "60000.00",
+        "is_new": true,
+        "is_top": false,
+        "flight_cost_per_one": "30000.00",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.accommodation",
+    "pk": 30,
+    "fields": {
+        "name": "HOTEL CELESTE MAKATI",
+        "slug": "hotel-celeste-makati",
+        "description": "Отель в центре города Макати",
+        "country": 4,
+        "region": 10,
+        "old_price": "60000.00",
+        "is_new": true,
+        "is_top": false,
+        "flight_cost_per_one": "30000.00",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.accommodation",
+    "pk": 31,
+    "fields": {
+        "name": "SEDA BGC",
+        "slug": "seda-bgc",
+        "description": "Отель  в самом центре Манилы",
+        "country": 4,
+        "region": 8,
+        "old_price": "60000.00",
+        "is_new": true,
+        "is_top": false,
+        "flight_cost_per_one": "30000.00",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.accommodation",
+    "pk": 32,
+    "fields": {
+        "name": "ARUGA APARTMENTS 4*",
+        "slug": "aruga-apartments-4",
+        "description": "Великолепный отель в Макати",
+        "country": 4,
+        "region": 10,
+        "old_price": "59000.00",
+        "is_new": false,
+        "is_top": true,
+        "flight_cost_per_one": "30000.00",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.accommodation",
+    "pk": 33,
+    "fields": {
+        "name": "CORO HOTEL MANILA 3*",
+        "slug": "coro-hotel-manila-3",
+        "description": "Отель в городе Манила",
+        "country": 4,
+        "region": 8,
+        "old_price": "58000.00",
+        "is_new": true,
+        "is_top": false,
+        "flight_cost_per_one": "30000.00",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.accommodation",
+    "pk": 34,
+    "fields": {
+        "name": "UNWND FLATS",
+        "slug": "unwnd-flats",
+        "description": "Великолепный отель в городе Манила",
+        "country": 4,
+        "region": 8,
+        "old_price": "61000.00",
+        "is_new": false,
+        "is_top": true,
+        "flight_cost_per_one": "30000.00",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.accommodation",
+    "pk": 35,
+    "fields": {
+        "name": "UNWND BOUTIQUE HOTEL MAKATI 3*",
+        "slug": "unwnd-boutique-hotel-makati-3",
+        "description": "Отличный отель в Маниле",
+        "country": 4,
+        "region": 8,
+        "old_price": "59000.00",
+        "is_new": false,
+        "is_top": true,
+        "flight_cost_per_one": "30000.00",
+        "is_active": true
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 1,
+    "fields": {
+        "name": "solnechny_card",
+        "image": "accommodation_images/solnechny_card.png",
+        "image_type": "c",
+        "accommodation": 1
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 2,
+    "fields": {
+        "name": "solnechny_slider-1",
+        "image": "accommodation_images/solnechny_slider-1.png",
+        "image_type": "s",
+        "accommodation": 1
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 3,
+    "fields": {
+        "name": "solnechny_slider-2",
+        "image": "accommodation_images/solnechny_slider-2.png",
+        "image_type": "s",
+        "accommodation": 1
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 4,
+    "fields": {
+        "name": "solnechny_slider-3",
+        "image": "accommodation_images/solnechny_slider-3.png",
+        "image_type": "s",
+        "accommodation": 1
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 5,
+    "fields": {
+        "name": "vertebra_card",
+        "image": "accommodation_images/vertebra_card.png",
+        "image_type": "c",
+        "accommodation": 2
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 6,
+    "fields": {
+        "name": "vertebra_slider-1",
+        "image": "accommodation_images/vertebra_slider-1.png",
+        "image_type": "s",
+        "accommodation": 2
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 7,
+    "fields": {
+        "name": "vertebra_slider-2",
+        "image": "accommodation_images/vertebra_slider-2.png",
+        "image_type": "s",
+        "accommodation": 2
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 8,
+    "fields": {
+        "name": "vertebra_slider-3",
+        "image": "accommodation_images/vertebra_slider-3.png",
+        "image_type": "s",
+        "accommodation": 2
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 9,
+    "fields": {
+        "name": "vodoley_card",
+        "image": "accommodation_images/vodoley_card.png",
+        "image_type": "c",
+        "accommodation": 3
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 10,
+    "fields": {
+        "name": "vodoley_slider-1",
+        "image": "accommodation_images/vodoley_slider-1.png",
+        "image_type": "s",
+        "accommodation": 3
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 11,
+    "fields": {
+        "name": "vodoley_slider-3",
+        "image": "accommodation_images/vodoley_slider-3.png",
+        "image_type": "s",
+        "accommodation": 3
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 12,
+    "fields": {
+        "name": "vodoley_slider-2",
+        "image": "accommodation_images/vodoley_slider-2.png",
+        "image_type": "s",
+        "accommodation": 3
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 13,
+    "fields": {
+        "name": "amira_card",
+        "image": "accommodation_images/amira_card.png",
+        "image_type": "c",
+        "accommodation": 4
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 14,
+    "fields": {
+        "name": "amira_slider-1",
+        "image": "accommodation_images/amira_slider-1.png",
+        "image_type": "s",
+        "accommodation": 4
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 15,
+    "fields": {
+        "name": "amira_slider-2",
+        "image": "accommodation_images/ahryz_slider-2.png",
+        "image_type": "s",
+        "accommodation": 4
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 16,
+    "fields": {
+        "name": "amira_slider-3",
+        "image": "accommodation_images/amira_slider-3.png",
+        "image_type": "s",
+        "accommodation": 4
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 17,
+    "fields": {
+        "name": "sneznaya_koroleva_card",
+        "image": "accommodation_images/sneznaya_koroleva_card.png",
+        "image_type": "c",
+        "accommodation": 5
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 18,
+    "fields": {
+        "name": "sneznaya_koroleva_slider-1",
+        "image": "accommodation_images/sneznaya_koroleva_slider-1.png",
+        "image_type": "s",
+        "accommodation": 5
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 19,
+    "fields": {
+        "name": "sneznaya_koroleva_slider-2",
+        "image": "accommodation_images/sneznaya_koroleva_slider-2.png",
+        "image_type": "s",
+        "accommodation": 5
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 20,
+    "fields": {
+        "name": "inter_card",
+        "image": "accommodation_images/inter_card.png",
+        "image_type": "c",
+        "accommodation": 6
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 21,
+    "fields": {
+        "name": "inter_slider-1",
+        "image": "accommodation_images/inter_slider-1.png",
+        "image_type": "s",
+        "accommodation": 6
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 22,
+    "fields": {
+        "name": "inter_slider-2",
+        "image": "accommodation_images/inter_slider-2.png",
+        "image_type": "s",
+        "accommodation": 6
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 23,
+    "fields": {
+        "name": "inter_slider-3",
+        "image": "accommodation_images/inter_slider-3.png",
+        "image_type": "s",
+        "accommodation": 6
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 24,
+    "fields": {
+        "name": "comfort_card",
+        "image": "accommodation_images/comfort_card.png",
+        "image_type": "c",
+        "accommodation": 7
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 25,
+    "fields": {
+        "name": "comfort_slider-1",
+        "image": "accommodation_images/comfort_slider-1.png",
+        "image_type": "s",
+        "accommodation": 7
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 26,
+    "fields": {
+        "name": "comfort_slider-2",
+        "image": "accommodation_images/comfort_slider-2.png",
+        "image_type": "s",
+        "accommodation": 7
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 27,
+    "fields": {
+        "name": "comfort_slider-3",
+        "image": "accommodation_images/comfort_slider-3.png",
+        "image_type": "s",
+        "accommodation": 7
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 28,
+    "fields": {
+        "name": "ahryz_card",
+        "image": "accommodation_images/ahryz_card.png",
+        "image_type": "c",
+        "accommodation": 8
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 29,
+    "fields": {
+        "name": "ahryz_slider-1",
+        "image": "accommodation_images/ahryz_slider-1.png",
+        "image_type": "s",
+        "accommodation": 8
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 30,
+    "fields": {
+        "name": "ahryz_slider-2",
+        "image": "accommodation_images/ahryz_slider-2_V7X0cRE.png",
+        "image_type": "s",
+        "accommodation": 8
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 31,
+    "fields": {
+        "name": "gorsky_dom_card",
+        "image": "accommodation_images/gorsky_dom_card.png",
+        "image_type": "c",
+        "accommodation": 9
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 32,
+    "fields": {
+        "name": "gorsky_dom_slider-1",
+        "image": "accommodation_images/gorsky_dom_slider-1.png",
+        "image_type": "s",
+        "accommodation": 9
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 33,
+    "fields": {
+        "name": "gorsky_dom_slider-2",
+        "image": "accommodation_images/gorsky_dom_slider-2.png",
+        "image_type": "s",
+        "accommodation": 9
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 34,
+    "fields": {
+        "name": "gorsky_dom_slider-3",
+        "image": "accommodation_images/gorsky_dom_slider-3.png",
+        "image_type": "s",
+        "accommodation": 9
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 35,
+    "fields": {
+        "name": "kleopatra_life_card",
+        "image": "accommodation_images/kleopatra_life_card.png",
+        "image_type": "c",
+        "accommodation": 10
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 36,
+    "fields": {
+        "name": "kleopatra_life_slider-1",
+        "image": "accommodation_images/kleopatra_life_slider-1.png",
+        "image_type": "s",
+        "accommodation": 10
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 37,
+    "fields": {
+        "name": "kleopatra_life_slider-2",
+        "image": "accommodation_images/kleopatra_life_slider-2.png",
+        "image_type": "s",
+        "accommodation": 10
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 38,
+    "fields": {
+        "name": "kemer_star_card",
+        "image": "accommodation_images/kemer_star_card.png",
+        "image_type": "c",
+        "accommodation": 11
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 39,
+    "fields": {
+        "name": "kemer_star_slider-1",
+        "image": "accommodation_images/kemer_star_slider-1.png",
+        "image_type": "s",
+        "accommodation": 11
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 40,
+    "fields": {
+        "name": "kemer_star_slider-2",
+        "image": "accommodation_images/kemer_star_slider-2.png",
+        "image_type": "s",
+        "accommodation": 11
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 41,
+    "fields": {
+        "name": "kemer_star_slider-3",
+        "image": "accommodation_images/kemer_star_slider-3.png",
+        "image_type": "s",
+        "accommodation": 11
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 42,
+    "fields": {
+        "name": "miss_cleopatra_card",
+        "image": "accommodation_images/miss_cleopatra_card.png",
+        "image_type": "c",
+        "accommodation": 12
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 43,
+    "fields": {
+        "name": "miss_cleopatra_slider-1",
+        "image": "accommodation_images/miss_cleopatra_slider-1.png",
+        "image_type": "s",
+        "accommodation": 12
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 44,
+    "fields": {
+        "name": "miss_cleopatra_slider-2",
+        "image": "accommodation_images/miss_cleopatra_slider-2.png",
+        "image_type": "s",
+        "accommodation": 12
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 45,
+    "fields": {
+        "name": "miss_cleopatra_slider-3",
+        "image": "accommodation_images/miss_kleopatra_slider-3.png",
+        "image_type": "s",
+        "accommodation": 12
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 46,
+    "fields": {
+        "name": "aroma_hotel_card",
+        "image": "accommodation_images/aroma_hotel_card.png",
+        "image_type": "c",
+        "accommodation": 13
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 47,
+    "fields": {
+        "name": "aroma_hotel_slider-1",
+        "image": "accommodation_images/aroma_hotel_slider-1.png",
+        "image_type": "s",
+        "accommodation": 13
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 48,
+    "fields": {
+        "name": "aroma_hotel_slider-2",
+        "image": "accommodation_images/aroma_hotel_slider-2.png",
+        "image_type": "s",
+        "accommodation": 13
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 49,
+    "fields": {
+        "name": "aroma_hotel_slider-3",
+        "image": "accommodation_images/aroma_hotel_slider-3.png",
+        "image_type": "s",
+        "accommodation": 13
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 50,
+    "fields": {
+        "name": "grand_barhan_card",
+        "image": "accommodation_images/grand_barhan_card.png",
+        "image_type": "c",
+        "accommodation": 14
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 51,
+    "fields": {
+        "name": "grand_barhan_slider-1",
+        "image": "accommodation_images/grand_barhan_slider-1.jpg.png",
+        "image_type": "s",
+        "accommodation": 14
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 52,
+    "fields": {
+        "name": "grand_barhan_slider-2",
+        "image": "accommodation_images/grand_barhan_slider-2.png",
+        "image_type": "s",
+        "accommodation": 14
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 53,
+    "fields": {
+        "name": "grand_barhan_slider-3",
+        "image": "accommodation_images/grand_barhan_slider-3.png",
+        "image_type": "s",
+        "accommodation": 14
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 54,
+    "fields": {
+        "name": "arsi_blue_beach_card",
+        "image": "accommodation_images/arsi_blue_beach_card.png",
+        "image_type": "c",
+        "accommodation": 15
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 55,
+    "fields": {
+        "name": "arsi_blue_beach_slider-1",
+        "image": "accommodation_images/arsi_blue_beach_slider-1.png",
+        "image_type": "s",
+        "accommodation": 15
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 56,
+    "fields": {
+        "name": "arsi_blue_beach_slider-2",
+        "image": "accommodation_images/arsi_blue_beach_slider-2.png",
+        "image_type": "s",
+        "accommodation": 15
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 57,
+    "fields": {
+        "name": "arsi_blue_beach_slider-3",
+        "image": "accommodation_images/arsi_blue_beach_slider-3.png",
+        "image_type": "s",
+        "accommodation": 15
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 58,
+    "fields": {
+        "name": "arsi_enfi_city_beach_hotel_card",
+        "image": "accommodation_images/arsi_enfi_city_beach_hotel_card.png",
+        "image_type": "c",
+        "accommodation": 16
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 59,
+    "fields": {
+        "name": "arsi_enfi_city_beach_hotel_slider-1",
+        "image": "accommodation_images/arsi_enfi_city_beach_hotel_slider-1.png",
+        "image_type": "s",
+        "accommodation": 16
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 60,
+    "fields": {
+        "name": "arsi_enfi_city_beach_hotel_slider-2",
+        "image": "accommodation_images/arsi_enfi_city_beach_hotel_slider-2.png",
+        "image_type": "s",
+        "accommodation": 16
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 61,
+    "fields": {
+        "name": "arsi_enfi_city_beach_hotel_slider-3",
+        "image": "accommodation_images/arsi_enfi_city_beach_hotel_slider-3.png",
+        "image_type": "s",
+        "accommodation": 16
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 62,
+    "fields": {
+        "name": "villa_sonata_hotlel_card",
+        "image": "accommodation_images/villa_sonata_hotel_card_.png",
+        "image_type": "c",
+        "accommodation": 17
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 63,
+    "fields": {
+        "name": "villa_sonata_hotlel_slider-1",
+        "image": "accommodation_images/villa_sonata_hotel_slider-1.png",
+        "image_type": "s",
+        "accommodation": 17
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 64,
+    "fields": {
+        "name": "villa_sonata_hotlel_slider-2",
+        "image": "accommodation_images/villa_sonata_hotel_slider-2.png",
+        "image_type": "s",
+        "accommodation": 17
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 65,
+    "fields": {
+        "name": "villa_sonata_hotlel_slider-3",
+        "image": "accommodation_images/villa_sonata_hotel_slider-3.png",
+        "image_type": "s",
+        "accommodation": 17
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 66,
+    "fields": {
+        "name": "belkon_hotel_card",
+        "image": "accommodation_images/belkon_hotel_card.png",
+        "image_type": "c",
+        "accommodation": 18
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 67,
+    "fields": {
+        "name": "belkon_hotel_slider-1",
+        "image": "accommodation_images/belkon_hotel_slider-1.png",
+        "image_type": "s",
+        "accommodation": 18
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 68,
+    "fields": {
+        "name": "belkon_hotel_slider-2",
+        "image": "accommodation_images/belkon_hotel_slider-2.png",
+        "image_type": "s",
+        "accommodation": 18
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 69,
+    "fields": {
+        "name": "belkon_hotel_slider-3",
+        "image": "accommodation_images/belkon_hotel_slider-3.png",
+        "image_type": "s",
+        "accommodation": 18
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 70,
+    "fields": {
+        "name": "ayala_ocean_card",
+        "image": "accommodation_images/ayala_ocean_card.png",
+        "image_type": "c",
+        "accommodation": 19
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 71,
+    "fields": {
+        "name": "ayala_ocean_slider_1",
+        "image": "accommodation_images/ayala_ocean_slider_1.png",
+        "image_type": "s",
+        "accommodation": 19
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 72,
+    "fields": {
+        "name": "ayala_ocean_slider_2",
+        "image": "accommodation_images/ayala_ocean_slider_2.png",
+        "image_type": "s",
+        "accommodation": 19
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 73,
+    "fields": {
+        "name": "ayala_ocean_slider_3",
+        "image": "accommodation_images/ayala_ocean_slider_3.png",
+        "image_type": "s",
+        "accommodation": 19
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 74,
+    "fields": {
+        "name": "araamu_holiday_card",
+        "image": "accommodation_images/araamu_holidays_card.png",
+        "image_type": "c",
+        "accommodation": 20
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 75,
+    "fields": {
+        "name": "araamu_holiday_slider_1",
+        "image": "accommodation_images/araamu_holidays_slider_1.png",
+        "image_type": "s",
+        "accommodation": 20
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 76,
+    "fields": {
+        "name": "araamu_holiday_slider_2",
+        "image": "accommodation_images/araamu_holidays_slider_2.png",
+        "image_type": "s",
+        "accommodation": 20
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 77,
+    "fields": {
+        "name": "endhery_sunset_card",
+        "image": "accommodation_images/endhery_sunset_card.png",
+        "image_type": "c",
+        "accommodation": 21
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 78,
+    "fields": {
+        "name": "endhery_sunset_slider_1",
+        "image": "accommodation_images/endhery_sunset_slider_1.png",
+        "image_type": "s",
+        "accommodation": 21
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 79,
+    "fields": {
+        "name": "endhery_sunset_slider_2",
+        "image": "accommodation_images/endhery_sunset_slider_2.png",
+        "image_type": "s",
+        "accommodation": 21
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 80,
+    "fields": {
+        "name": "endhery_sunset_slider_3",
+        "image": "accommodation_images/endhery_sunset_slider_3.png",
+        "image_type": "s",
+        "accommodation": 21
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 81,
+    "fields": {
+        "name": "kue_hotels_card",
+        "image": "accommodation_images/kue_hotels_card.png",
+        "image_type": "c",
+        "accommodation": 22
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 82,
+    "fields": {
+        "name": "kue_hotels_slider_1",
+        "image": "accommodation_images/kue_hotels_slider_1.png",
+        "image_type": "s",
+        "accommodation": 22
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 83,
+    "fields": {
+        "name": "kue_hotels_slider_2",
+        "image": "accommodation_images/kue_hotels_slider_2.png",
+        "image_type": "s",
+        "accommodation": 22
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 84,
+    "fields": {
+        "name": "kue_hotels_slider_3",
+        "image": "accommodation_images/kue_hotels_slider_3.png",
+        "image_type": "s",
+        "accommodation": 22
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 85,
+    "fields": {
+        "name": "sky_beach_maldives_card",
+        "image": "accommodation_images/sky_beach_maldives_card.png",
+        "image_type": "c",
+        "accommodation": 23
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 86,
+    "fields": {
+        "name": "sky_beach_maldives_slider_1",
+        "image": "accommodation_images/sky_beach_maldives_slider_1.png",
+        "image_type": "s",
+        "accommodation": 23
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 87,
+    "fields": {
+        "name": "sky_beach_maldives_slider_2",
+        "image": "accommodation_images/sky_beach_maldives_slider_2.png",
+        "image_type": "s",
+        "accommodation": 23
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 88,
+    "fields": {
+        "name": "sky_beach_maldives_slider_3",
+        "image": "accommodation_images/sky_beach_maldives_slider_3.png",
+        "image_type": "s",
+        "accommodation": 23
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 89,
+    "fields": {
+        "name": "equator_village_card",
+        "image": "accommodation_images/equator_village_card.png",
+        "image_type": "c",
+        "accommodation": 24
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 90,
+    "fields": {
+        "name": "equator_village_slider_1",
+        "image": "accommodation_images/equator_village_slider_1.png",
+        "image_type": "s",
+        "accommodation": 24
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 91,
+    "fields": {
+        "name": "equator_village_slider_2",
+        "image": "accommodation_images/equator_village_slider_2.png",
+        "image_type": "s",
+        "accommodation": 24
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 92,
+    "fields": {
+        "name": "equator_village_slider_3",
+        "image": "accommodation_images/equator_village_slider_3.png",
+        "image_type": "s",
+        "accommodation": 24
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 93,
+    "fields": {
+        "name": "tme_retreats_card",
+        "image": "accommodation_images/tme_retreats_card.png",
+        "image_type": "c",
+        "accommodation": 25
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 94,
+    "fields": {
+        "name": "tme_retreats_slider_1",
+        "image": "accommodation_images/tme_retreats_slider_1.png",
+        "image_type": "s",
+        "accommodation": 25
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 95,
+    "fields": {
+        "name": "tme_retreats_slider_2",
+        "image": "accommodation_images/tme_retreats_slider_2.png",
+        "image_type": "s",
+        "accommodation": 25
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 96,
+    "fields": {
+        "name": "tme_retreats_slider_3",
+        "image": "accommodation_images/tme_retreats_slider_3.png",
+        "image_type": "s",
+        "accommodation": 25
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 97,
+    "fields": {
+        "name": "avyanna_gulhi_beach_card",
+        "image": "accommodation_images/avyanna_gulhi_beach_card.png",
+        "image_type": "c",
+        "accommodation": 26
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 98,
+    "fields": {
+        "name": "avyanna_gulhi_beach_slider_1",
+        "image": "accommodation_images/avyanna_gulhi_beach_slider_1.png",
+        "image_type": "s",
+        "accommodation": 26
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 99,
+    "fields": {
+        "name": "avyanna_gulhi_beach_slider_2",
+        "image": "accommodation_images/avyanna_gulhi_beach_slider_2.png",
+        "image_type": "s",
+        "accommodation": 26
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 100,
+    "fields": {
+        "name": "kaani_beach_hotel_card",
+        "image": "accommodation_images/kaani_beach_hotel_card.png",
+        "image_type": "c",
+        "accommodation": 27
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 101,
+    "fields": {
+        "name": "kaani_beach_hotel_slider_1",
+        "image": "accommodation_images/kaani_beach_hotel_slider_1.png",
+        "image_type": "s",
+        "accommodation": 27
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 102,
+    "fields": {
+        "name": "kaani_beach_hotel_slider_2",
+        "image": "accommodation_images/kaani_beach_hotel_slider_2.png",
+        "image_type": "s",
+        "accommodation": 27
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 103,
+    "fields": {
+        "name": "amelie_hotel_manila_card",
+        "image": "accommodation_images/amelie_hotel_manila_card.png",
+        "image_type": "c",
+        "accommodation": 28
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 104,
+    "fields": {
+        "name": "amelie_hotel_manila_slider_1",
+        "image": "accommodation_images/amelie_hotel_manila_slider_1.png",
+        "image_type": "s",
+        "accommodation": 28
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 105,
+    "fields": {
+        "name": "amelie_hotel_manila_slider_2",
+        "image": "accommodation_images/amelie_hotel_manila_slider_2.png",
+        "image_type": "s",
+        "accommodation": 28
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 106,
+    "fields": {
+        "name": "amelie_hotel_manila_slider_3",
+        "image": "accommodation_images/amelie_hotel_manila_slider_3.png",
+        "image_type": "s",
+        "accommodation": 28
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 107,
+    "fields": {
+        "name": "holiday_inn_express_card",
+        "image": "accommodation_images/holiday_inn_express_card.png",
+        "image_type": "c",
+        "accommodation": 29
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 108,
+    "fields": {
+        "name": "holiday_inn_express_slider_1",
+        "image": "accommodation_images/holiday_inn_express_slider_1.png",
+        "image_type": "s",
+        "accommodation": 29
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 109,
+    "fields": {
+        "name": "holiday_inn_express_slider_2",
+        "image": "accommodation_images/holiday_inn_express_slider_2.png",
+        "image_type": "s",
+        "accommodation": 29
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 110,
+    "fields": {
+        "name": "holiday_inn_express_slider_3",
+        "image": "accommodation_images/holiday_inn_express_slider_3.png",
+        "image_type": "s",
+        "accommodation": 29
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 111,
+    "fields": {
+        "name": "hotel_celeste_makati_card",
+        "image": "accommodation_images/hotel_celeste_makati_card.png",
+        "image_type": "c",
+        "accommodation": 30
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 112,
+    "fields": {
+        "name": "hotel_celeste_makati_slider_1",
+        "image": "accommodation_images/hotel_celeste_makati_slider_1.png",
+        "image_type": "s",
+        "accommodation": 30
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 113,
+    "fields": {
+        "name": "hotel_celeste_makati_slider_2",
+        "image": "accommodation_images/hotel_celeste_makati_slider_2.png",
+        "image_type": "s",
+        "accommodation": 30
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 114,
+    "fields": {
+        "name": "sega_bgc_card",
+        "image": "accommodation_images/seda_bgc_card.png",
+        "image_type": "c",
+        "accommodation": 31
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 115,
+    "fields": {
+        "name": "sega_bgc_slider_1",
+        "image": "accommodation_images/seda_bgc_slider_1.png",
+        "image_type": "s",
+        "accommodation": 31
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 116,
+    "fields": {
+        "name": "sega_bgc_slider_2",
+        "image": "accommodation_images/seda_bgc_slider_2.png",
+        "image_type": "s",
+        "accommodation": 31
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 117,
+    "fields": {
+        "name": "sega_bgc_slider_3",
+        "image": "accommodation_images/seda_bgc_slider_3.png",
+        "image_type": "s",
+        "accommodation": 31
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 118,
+    "fields": {
+        "name": "aruga_apartments_card",
+        "image": "accommodation_images/aruga_apartments_card.png",
+        "image_type": "c",
+        "accommodation": 32
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 119,
+    "fields": {
+        "name": "aruga_apartments_slider_1",
+        "image": "accommodation_images/aruga_apartments_slider_1.png",
+        "image_type": "s",
+        "accommodation": 32
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 120,
+    "fields": {
+        "name": "aruga_apartments_slider_2",
+        "image": "accommodation_images/aruga_apartments_slider_2.png",
+        "image_type": "s",
+        "accommodation": 32
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 121,
+    "fields": {
+        "name": "aruga_apartments_slider_3",
+        "image": "accommodation_images/aruga_apartments_slider_3.png",
+        "image_type": "s",
+        "accommodation": 32
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 122,
+    "fields": {
+        "name": "coro_hotel_card",
+        "image": "accommodation_images/coro_hotel_card.png",
+        "image_type": "c",
+        "accommodation": 33
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 123,
+    "fields": {
+        "name": "coro_hotel_slider_1",
+        "image": "accommodation_images/coro_hotel_slider_1.png",
+        "image_type": "s",
+        "accommodation": 33
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 124,
+    "fields": {
+        "name": "coro_hotel_slider_2",
+        "image": "accommodation_images/coro_hotel_slider_2.png",
+        "image_type": "s",
+        "accommodation": 33
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 125,
+    "fields": {
+        "name": "coro_hotel_slider_3",
+        "image": "accommodation_images/coro_hotel_slider_3.png",
+        "image_type": "s",
+        "accommodation": 33
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 126,
+    "fields": {
+        "name": "unwnd_flats_card",
+        "image": "accommodation_images/unwnd_flats_card.png",
+        "image_type": "c",
+        "accommodation": 34
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 127,
+    "fields": {
+        "name": "unwnd_flats_slider_1",
+        "image": "accommodation_images/unwnd_flats_slider_1.png",
+        "image_type": "s",
+        "accommodation": 34
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 128,
+    "fields": {
+        "name": "unwnd_flats_slider_2",
+        "image": "accommodation_images/unwnd_flats_slider_2.png",
+        "image_type": "s",
+        "accommodation": 34
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 129,
+    "fields": {
+        "name": "unwnd_flats_slider_3",
+        "image": "accommodation_images/unwnd_flats_slider_3.png",
+        "image_type": "s",
+        "accommodation": 34
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 130,
+    "fields": {
+        "name": "unwnd_boutique_hotel_card",
+        "image": "accommodation_images/unwnd_boutique_hotel_card.png",
+        "image_type": "c",
+        "accommodation": 35
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 131,
+    "fields": {
+        "name": "unwnd_boutique_hotel_slider_1",
+        "image": "accommodation_images/unwnd_boutique_hotel_slider_1.png",
+        "image_type": "s",
+        "accommodation": 35
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 132,
+    "fields": {
+        "name": "unwnd_boutique_hotel_slider_2",
+        "image": "accommodation_images/unwnd_boutique_hotel_slider_2.png",
+        "image_type": "s",
+        "accommodation": 35
+    }
+},
+{
+    "model": "accommodations.accommodationimage",
+    "pk": 133,
+    "fields": {
+        "name": "unwnd_boutique_hotel_slider_3",
+        "image": "accommodation_images/unwnd_boutique_hotel_slider_3.png",
+        "image_type": "s",
+        "accommodation": 35
+    }
+},
+{
+    "model": "accommodations.roomclass",
+    "pk": 1,
+    "fields": {
+        "name": "single"
+    }
+},
+{
+    "model": "accommodations.roomclass",
+    "pk": 2,
+    "fields": {
+        "name": "standard"
+    }
+},
+{
+    "model": "accommodations.roomclass",
+    "pk": 3,
+    "fields": {
+        "name": "comfort"
+    }
+},
+{
+    "model": "accommodations.roomclass",
+    "pk": 4,
+    "fields": {
+        "name": "deluxe"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 1,
+    "fields": {
+        "accommodation": 1,
+        "room_class": 1,
+        "cost_per_night": "3100.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 2,
+    "fields": {
+        "accommodation": 1,
+        "room_class": 2,
+        "cost_per_night": "5000.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 3,
+    "fields": {
+        "accommodation": 1,
+        "room_class": 3,
+        "cost_per_night": "7200.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 4,
+    "fields": {
+        "accommodation": 1,
+        "room_class": 4,
+        "cost_per_night": "9000.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 5,
+    "fields": {
+        "accommodation": 2,
+        "room_class": 1,
+        "cost_per_night": "3400.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 6,
+    "fields": {
+        "accommodation": 2,
+        "room_class": 2,
+        "cost_per_night": "5100.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 7,
+    "fields": {
+        "accommodation": 2,
+        "room_class": 3,
+        "cost_per_night": "7300.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 8,
+    "fields": {
+        "accommodation": 2,
+        "room_class": 4,
+        "cost_per_night": "9200.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 9,
+    "fields": {
+        "accommodation": 3,
+        "room_class": 1,
+        "cost_per_night": "3800.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 10,
+    "fields": {
+        "accommodation": 3,
+        "room_class": 2,
+        "cost_per_night": "5250.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 11,
+    "fields": {
+        "accommodation": 3,
+        "room_class": 3,
+        "cost_per_night": "7300.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 12,
+    "fields": {
+        "accommodation": 3,
+        "room_class": 4,
+        "cost_per_night": "9500.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 13,
+    "fields": {
+        "accommodation": 4,
+        "room_class": 1,
+        "cost_per_night": "3500.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 14,
+    "fields": {
+        "accommodation": 4,
+        "room_class": 2,
+        "cost_per_night": "5200.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 15,
+    "fields": {
+        "accommodation": 4,
+        "room_class": 3,
+        "cost_per_night": "7300.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 16,
+    "fields": {
+        "accommodation": 4,
+        "room_class": 4,
+        "cost_per_night": "9400.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 17,
+    "fields": {
+        "accommodation": 5,
+        "room_class": 1,
+        "cost_per_night": "3250.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 18,
+    "fields": {
+        "accommodation": 5,
+        "room_class": 2,
+        "cost_per_night": "5400.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 19,
+    "fields": {
+        "accommodation": 5,
+        "room_class": 3,
+        "cost_per_night": "7100.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 20,
+    "fields": {
+        "accommodation": 5,
+        "room_class": 4,
+        "cost_per_night": "9300.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 21,
+    "fields": {
+        "accommodation": 6,
+        "room_class": 1,
+        "cost_per_night": "3200.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 22,
+    "fields": {
+        "accommodation": 6,
+        "room_class": 2,
+        "cost_per_night": "5250.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 23,
+    "fields": {
+        "accommodation": 6,
+        "room_class": 3,
+        "cost_per_night": "7100.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 24,
+    "fields": {
+        "accommodation": 6,
+        "room_class": 4,
+        "cost_per_night": "9200.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 25,
+    "fields": {
+        "accommodation": 7,
+        "room_class": 1,
+        "cost_per_night": "3600.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 26,
+    "fields": {
+        "accommodation": 7,
+        "room_class": 2,
+        "cost_per_night": "5400.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 27,
+    "fields": {
+        "accommodation": 7,
+        "room_class": 3,
+        "cost_per_night": "7300.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 28,
+    "fields": {
+        "accommodation": 7,
+        "room_class": 4,
+        "cost_per_night": "9500.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 29,
+    "fields": {
+        "accommodation": 8,
+        "room_class": 1,
+        "cost_per_night": "3300.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 30,
+    "fields": {
+        "accommodation": 8,
+        "room_class": 2,
+        "cost_per_night": "5200.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 31,
+    "fields": {
+        "accommodation": 8,
+        "room_class": 3,
+        "cost_per_night": "7400.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 32,
+    "fields": {
+        "accommodation": 8,
+        "room_class": 4,
+        "cost_per_night": "9500.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 33,
+    "fields": {
+        "accommodation": 9,
+        "room_class": 1,
+        "cost_per_night": "3100.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 34,
+    "fields": {
+        "accommodation": 9,
+        "room_class": 2,
+        "cost_per_night": "5100.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 35,
+    "fields": {
+        "accommodation": 9,
+        "room_class": 3,
+        "cost_per_night": "7200.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 36,
+    "fields": {
+        "accommodation": 9,
+        "room_class": 4,
+        "cost_per_night": "9400.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 37,
+    "fields": {
+        "accommodation": 10,
+        "room_class": 1,
+        "cost_per_night": "6200.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 38,
+    "fields": {
+        "accommodation": 10,
+        "room_class": 2,
+        "cost_per_night": "10000.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 39,
+    "fields": {
+        "accommodation": 10,
+        "room_class": 3,
+        "cost_per_night": "14000.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 40,
+    "fields": {
+        "accommodation": 10,
+        "room_class": 4,
+        "cost_per_night": "18000.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 41,
+    "fields": {
+        "accommodation": 11,
+        "room_class": 1,
+        "cost_per_night": "5400.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 42,
+    "fields": {
+        "accommodation": 11,
+        "room_class": 2,
+        "cost_per_night": "8200.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 43,
+    "fields": {
+        "accommodation": 11,
+        "room_class": 3,
+        "cost_per_night": "13100.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 44,
+    "fields": {
+        "accommodation": 11,
+        "room_class": 4,
+        "cost_per_night": "16500.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 45,
+    "fields": {
+        "accommodation": 12,
+        "room_class": 1,
+        "cost_per_night": "6000.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 46,
+    "fields": {
+        "accommodation": 12,
+        "room_class": 2,
+        "cost_per_night": "8000.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 47,
+    "fields": {
+        "accommodation": 12,
+        "room_class": 3,
+        "cost_per_night": "9500.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 48,
+    "fields": {
+        "accommodation": 12,
+        "room_class": 4,
+        "cost_per_night": "13000.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 49,
+    "fields": {
+        "accommodation": 13,
+        "room_class": 1,
+        "cost_per_night": "7000.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 50,
+    "fields": {
+        "accommodation": 13,
+        "room_class": 2,
+        "cost_per_night": "9800.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 51,
+    "fields": {
+        "accommodation": 13,
+        "room_class": 3,
+        "cost_per_night": "14000.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 52,
+    "fields": {
+        "accommodation": 13,
+        "room_class": 4,
+        "cost_per_night": "18200.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 53,
+    "fields": {
+        "accommodation": 14,
+        "room_class": 1,
+        "cost_per_night": "7000.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 54,
+    "fields": {
+        "accommodation": 14,
+        "room_class": 2,
+        "cost_per_night": "9700.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 55,
+    "fields": {
+        "accommodation": 14,
+        "room_class": 3,
+        "cost_per_night": "13800.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 56,
+    "fields": {
+        "accommodation": 14,
+        "room_class": 4,
+        "cost_per_night": "16700.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 57,
+    "fields": {
+        "accommodation": 15,
+        "room_class": 1,
+        "cost_per_night": "7000.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 58,
+    "fields": {
+        "accommodation": 15,
+        "room_class": 2,
+        "cost_per_night": "8900.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 59,
+    "fields": {
+        "accommodation": 15,
+        "room_class": 3,
+        "cost_per_night": "14000.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 60,
+    "fields": {
+        "accommodation": 15,
+        "room_class": 4,
+        "cost_per_night": "17000.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 61,
+    "fields": {
+        "accommodation": 16,
+        "room_class": 1,
+        "cost_per_night": "7000.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 62,
+    "fields": {
+        "accommodation": 16,
+        "room_class": 2,
+        "cost_per_night": "9800.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 63,
+    "fields": {
+        "accommodation": 16,
+        "room_class": 3,
+        "cost_per_night": "13900.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 64,
+    "fields": {
+        "accommodation": 16,
+        "room_class": 4,
+        "cost_per_night": "17900.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 65,
+    "fields": {
+        "accommodation": 17,
+        "room_class": 1,
+        "cost_per_night": "6900.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 66,
+    "fields": {
+        "accommodation": 17,
+        "room_class": 2,
+        "cost_per_night": "9900.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 67,
+    "fields": {
+        "accommodation": 17,
+        "room_class": 3,
+        "cost_per_night": "13800.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 68,
+    "fields": {
+        "accommodation": 17,
+        "room_class": 4,
+        "cost_per_night": "17000.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 69,
+    "fields": {
+        "accommodation": 18,
+        "room_class": 1,
+        "cost_per_night": "7000.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 70,
+    "fields": {
+        "accommodation": 18,
+        "room_class": 2,
+        "cost_per_night": "9600.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 71,
+    "fields": {
+        "accommodation": 18,
+        "room_class": 3,
+        "cost_per_night": "13600.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 72,
+    "fields": {
+        "accommodation": 18,
+        "room_class": 4,
+        "cost_per_night": "17000.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 73,
+    "fields": {
+        "accommodation": 19,
+        "room_class": 1,
+        "cost_per_night": "6700.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 74,
+    "fields": {
+        "accommodation": 19,
+        "room_class": 2,
+        "cost_per_night": "8000.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 75,
+    "fields": {
+        "accommodation": 19,
+        "room_class": 3,
+        "cost_per_night": "9500.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 76,
+    "fields": {
+        "accommodation": 19,
+        "room_class": 4,
+        "cost_per_night": "10637.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 77,
+    "fields": {
+        "accommodation": 20,
+        "room_class": 1,
+        "cost_per_night": "7000.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 78,
+    "fields": {
+        "accommodation": 20,
+        "room_class": 2,
+        "cost_per_night": "8200.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 79,
+    "fields": {
+        "accommodation": 20,
+        "room_class": 3,
+        "cost_per_night": "9200.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 80,
+    "fields": {
+        "accommodation": 20,
+        "room_class": 4,
+        "cost_per_night": "9800.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 81,
+    "fields": {
+        "accommodation": 21,
+        "room_class": 1,
+        "cost_per_night": "6500.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 82,
+    "fields": {
+        "accommodation": 21,
+        "room_class": 2,
+        "cost_per_night": "7200.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 83,
+    "fields": {
+        "accommodation": 21,
+        "room_class": 3,
+        "cost_per_night": "9500.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 84,
+    "fields": {
+        "accommodation": 21,
+        "room_class": 4,
+        "cost_per_night": "10700.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 85,
+    "fields": {
+        "accommodation": 22,
+        "room_class": 1,
+        "cost_per_night": "7500.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 86,
+    "fields": {
+        "accommodation": 22,
+        "room_class": 2,
+        "cost_per_night": "8600.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 87,
+    "fields": {
+        "accommodation": 22,
+        "room_class": 3,
+        "cost_per_night": "9700.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 88,
+    "fields": {
+        "accommodation": 22,
+        "room_class": 4,
+        "cost_per_night": "12000.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 89,
+    "fields": {
+        "accommodation": 23,
+        "room_class": 1,
+        "cost_per_night": "6500.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 90,
+    "fields": {
+        "accommodation": 23,
+        "room_class": 2,
+        "cost_per_night": "8000.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 91,
+    "fields": {
+        "accommodation": 23,
+        "room_class": 3,
+        "cost_per_night": "9500.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 92,
+    "fields": {
+        "accommodation": 23,
+        "room_class": 4,
+        "cost_per_night": "10600.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 93,
+    "fields": {
+        "accommodation": 24,
+        "room_class": 1,
+        "cost_per_night": "6800.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 94,
+    "fields": {
+        "accommodation": 24,
+        "room_class": 2,
+        "cost_per_night": "7700.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 95,
+    "fields": {
+        "accommodation": 24,
+        "room_class": 3,
+        "cost_per_night": "9000.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 96,
+    "fields": {
+        "accommodation": 24,
+        "room_class": 4,
+        "cost_per_night": "10400.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 97,
+    "fields": {
+        "accommodation": 25,
+        "room_class": 1,
+        "cost_per_night": "6600.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 98,
+    "fields": {
+        "accommodation": 25,
+        "room_class": 2,
+        "cost_per_night": "8000.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 99,
+    "fields": {
+        "accommodation": 25,
+        "room_class": 3,
+        "cost_per_night": "9500.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 100,
+    "fields": {
+        "accommodation": 25,
+        "room_class": 4,
+        "cost_per_night": "10100.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 101,
+    "fields": {
+        "accommodation": 26,
+        "room_class": 1,
+        "cost_per_night": "7400.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 102,
+    "fields": {
+        "accommodation": 26,
+        "room_class": 2,
+        "cost_per_night": "8700.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 103,
+    "fields": {
+        "accommodation": 26,
+        "room_class": 3,
+        "cost_per_night": "9800.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 104,
+    "fields": {
+        "accommodation": 26,
+        "room_class": 4,
+        "cost_per_night": "11400.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 105,
+    "fields": {
+        "accommodation": 27,
+        "room_class": 1,
+        "cost_per_night": "6800.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 106,
+    "fields": {
+        "accommodation": 27,
+        "room_class": 2,
+        "cost_per_night": "7200.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 107,
+    "fields": {
+        "accommodation": 27,
+        "room_class": 3,
+        "cost_per_night": "8400.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 108,
+    "fields": {
+        "accommodation": 27,
+        "room_class": 4,
+        "cost_per_night": "10200.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 109,
+    "fields": {
+        "accommodation": 28,
+        "room_class": 1,
+        "cost_per_night": "6000.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 110,
+    "fields": {
+        "accommodation": 28,
+        "room_class": 2,
+        "cost_per_night": "7500.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 111,
+    "fields": {
+        "accommodation": 28,
+        "room_class": 3,
+        "cost_per_night": "8500.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 112,
+    "fields": {
+        "accommodation": 28,
+        "room_class": 4,
+        "cost_per_night": "10000.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 113,
+    "fields": {
+        "accommodation": 29,
+        "room_class": 1,
+        "cost_per_night": "7300.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 114,
+    "fields": {
+        "accommodation": 29,
+        "room_class": 2,
+        "cost_per_night": "8100.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 115,
+    "fields": {
+        "accommodation": 29,
+        "room_class": 3,
+        "cost_per_night": "9200.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 116,
+    "fields": {
+        "accommodation": 29,
+        "room_class": 4,
+        "cost_per_night": "10300.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 117,
+    "fields": {
+        "accommodation": 30,
+        "room_class": 1,
+        "cost_per_night": "6300.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 118,
+    "fields": {
+        "accommodation": 30,
+        "room_class": 2,
+        "cost_per_night": "7200.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 119,
+    "fields": {
+        "accommodation": 30,
+        "room_class": 3,
+        "cost_per_night": "8500.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 120,
+    "fields": {
+        "accommodation": 30,
+        "room_class": 4,
+        "cost_per_night": "10300.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 121,
+    "fields": {
+        "accommodation": 31,
+        "room_class": 1,
+        "cost_per_night": "6700.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 122,
+    "fields": {
+        "accommodation": 31,
+        "room_class": 2,
+        "cost_per_night": "7500.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 123,
+    "fields": {
+        "accommodation": 31,
+        "room_class": 3,
+        "cost_per_night": "8900.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 124,
+    "fields": {
+        "accommodation": 31,
+        "room_class": 4,
+        "cost_per_night": "10100.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 125,
+    "fields": {
+        "accommodation": 32,
+        "room_class": 1,
+        "cost_per_night": "7000.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 126,
+    "fields": {
+        "accommodation": 32,
+        "room_class": 2,
+        "cost_per_night": "8100.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 127,
+    "fields": {
+        "accommodation": 32,
+        "room_class": 3,
+        "cost_per_night": "9200.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 128,
+    "fields": {
+        "accommodation": 32,
+        "room_class": 4,
+        "cost_per_night": "11400.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 129,
+    "fields": {
+        "accommodation": 33,
+        "room_class": 1,
+        "cost_per_night": "6300.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 130,
+    "fields": {
+        "accommodation": 33,
+        "room_class": 2,
+        "cost_per_night": "7600.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 131,
+    "fields": {
+        "accommodation": 33,
+        "room_class": 3,
+        "cost_per_night": "8800.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 132,
+    "fields": {
+        "accommodation": 33,
+        "room_class": 4,
+        "cost_per_night": "10400.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 133,
+    "fields": {
+        "accommodation": 34,
+        "room_class": 1,
+        "cost_per_night": "8100.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 134,
+    "fields": {
+        "accommodation": 34,
+        "room_class": 2,
+        "cost_per_night": "9400.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 135,
+    "fields": {
+        "accommodation": 34,
+        "room_class": 3,
+        "cost_per_night": "10600.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 136,
+    "fields": {
+        "accommodation": 34,
+        "room_class": 4,
+        "cost_per_night": "12000.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 137,
+    "fields": {
+        "accommodation": 35,
+        "room_class": 1,
+        "cost_per_night": "6400.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 138,
+    "fields": {
+        "accommodation": 35,
+        "room_class": 2,
+        "cost_per_night": "7300.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 139,
+    "fields": {
+        "accommodation": 35,
+        "room_class": 3,
+        "cost_per_night": "8500.00"
+    }
+},
+{
+    "model": "accommodations.accommodationcost",
+    "pk": 140,
+    "fields": {
+        "accommodation": 35,
+        "room_class": 4,
+        "cost_per_night": "10100.00"
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 1,
+    "fields": {
+        "accommodation": 1,
+        "room_class": 1,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 2,
+    "fields": {
+        "accommodation": 1,
+        "room_class": 2,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 3,
+    "fields": {
+        "accommodation": 1,
+        "room_class": 3,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 4,
+    "fields": {
+        "accommodation": 1,
+        "room_class": 4,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 5,
+    "fields": {
+        "accommodation": 2,
+        "room_class": 1,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 6,
+    "fields": {
+        "accommodation": 2,
+        "room_class": 2,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 7,
+    "fields": {
+        "accommodation": 2,
+        "room_class": 3,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 8,
+    "fields": {
+        "accommodation": 2,
+        "room_class": 4,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 9,
+    "fields": {
+        "accommodation": 3,
+        "room_class": 1,
+        "availability": 0
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 10,
+    "fields": {
+        "accommodation": 3,
+        "room_class": 2,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 11,
+    "fields": {
+        "accommodation": 3,
+        "room_class": 3,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 12,
+    "fields": {
+        "accommodation": 3,
+        "room_class": 4,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 13,
+    "fields": {
+        "accommodation": 4,
+        "room_class": 1,
+        "availability": 9
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 14,
+    "fields": {
+        "accommodation": 4,
+        "room_class": 2,
+        "availability": 7
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 15,
+    "fields": {
+        "accommodation": 4,
+        "room_class": 3,
+        "availability": 4
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 16,
+    "fields": {
+        "accommodation": 4,
+        "room_class": 4,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 17,
+    "fields": {
+        "accommodation": 5,
+        "room_class": 1,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 18,
+    "fields": {
+        "accommodation": 5,
+        "room_class": 2,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 19,
+    "fields": {
+        "accommodation": 5,
+        "room_class": 3,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 20,
+    "fields": {
+        "accommodation": 5,
+        "room_class": 4,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 21,
+    "fields": {
+        "accommodation": 6,
+        "room_class": 1,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 22,
+    "fields": {
+        "accommodation": 6,
+        "room_class": 2,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 23,
+    "fields": {
+        "accommodation": 6,
+        "room_class": 3,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 24,
+    "fields": {
+        "accommodation": 6,
+        "room_class": 4,
+        "availability": 4
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 25,
+    "fields": {
+        "accommodation": 7,
+        "room_class": 1,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 26,
+    "fields": {
+        "accommodation": 7,
+        "room_class": 2,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 27,
+    "fields": {
+        "accommodation": 7,
+        "room_class": 3,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 28,
+    "fields": {
+        "accommodation": 7,
+        "room_class": 4,
+        "availability": 4
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 29,
+    "fields": {
+        "accommodation": 8,
+        "room_class": 1,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 30,
+    "fields": {
+        "accommodation": 8,
+        "room_class": 2,
+        "availability": 9
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 31,
+    "fields": {
+        "accommodation": 8,
+        "room_class": 3,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 32,
+    "fields": {
+        "accommodation": 8,
+        "room_class": 4,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 33,
+    "fields": {
+        "accommodation": 9,
+        "room_class": 1,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 34,
+    "fields": {
+        "accommodation": 9,
+        "room_class": 2,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 35,
+    "fields": {
+        "accommodation": 9,
+        "room_class": 3,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 36,
+    "fields": {
+        "accommodation": 9,
+        "room_class": 4,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 37,
+    "fields": {
+        "accommodation": 10,
+        "room_class": 1,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 38,
+    "fields": {
+        "accommodation": 10,
+        "room_class": 2,
+        "availability": 9
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 39,
+    "fields": {
+        "accommodation": 10,
+        "room_class": 3,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 40,
+    "fields": {
+        "accommodation": 10,
+        "room_class": 4,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 41,
+    "fields": {
+        "accommodation": 11,
+        "room_class": 1,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 42,
+    "fields": {
+        "accommodation": 11,
+        "room_class": 2,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 43,
+    "fields": {
+        "accommodation": 11,
+        "room_class": 3,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 44,
+    "fields": {
+        "accommodation": 11,
+        "room_class": 4,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 45,
+    "fields": {
+        "accommodation": 12,
+        "room_class": 1,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 46,
+    "fields": {
+        "accommodation": 12,
+        "room_class": 2,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 47,
+    "fields": {
+        "accommodation": 12,
+        "room_class": 3,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 48,
+    "fields": {
+        "accommodation": 12,
+        "room_class": 4,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 49,
+    "fields": {
+        "accommodation": 13,
+        "room_class": 1,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 50,
+    "fields": {
+        "accommodation": 13,
+        "room_class": 2,
+        "availability": 0
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 51,
+    "fields": {
+        "accommodation": 13,
+        "room_class": 3,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 52,
+    "fields": {
+        "accommodation": 13,
+        "room_class": 4,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 53,
+    "fields": {
+        "accommodation": 14,
+        "room_class": 1,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 54,
+    "fields": {
+        "accommodation": 14,
+        "room_class": 2,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 55,
+    "fields": {
+        "accommodation": 14,
+        "room_class": 3,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 56,
+    "fields": {
+        "accommodation": 14,
+        "room_class": 4,
+        "availability": 0
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 57,
+    "fields": {
+        "accommodation": 15,
+        "room_class": 1,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 58,
+    "fields": {
+        "accommodation": 15,
+        "room_class": 2,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 59,
+    "fields": {
+        "accommodation": 15,
+        "room_class": 3,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 60,
+    "fields": {
+        "accommodation": 15,
+        "room_class": 4,
+        "availability": 4
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 61,
+    "fields": {
+        "accommodation": 16,
+        "room_class": 1,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 62,
+    "fields": {
+        "accommodation": 16,
+        "room_class": 2,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 63,
+    "fields": {
+        "accommodation": 16,
+        "room_class": 3,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 64,
+    "fields": {
+        "accommodation": 16,
+        "room_class": 4,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 65,
+    "fields": {
+        "accommodation": 17,
+        "room_class": 1,
+        "availability": 8
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 66,
+    "fields": {
+        "accommodation": 17,
+        "room_class": 2,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 67,
+    "fields": {
+        "accommodation": 17,
+        "room_class": 3,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 68,
+    "fields": {
+        "accommodation": 17,
+        "room_class": 4,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 69,
+    "fields": {
+        "accommodation": 18,
+        "room_class": 1,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 70,
+    "fields": {
+        "accommodation": 18,
+        "room_class": 2,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 71,
+    "fields": {
+        "accommodation": 18,
+        "room_class": 3,
+        "availability": 0
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 72,
+    "fields": {
+        "accommodation": 18,
+        "room_class": 4,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 73,
+    "fields": {
+        "accommodation": 19,
+        "room_class": 1,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 74,
+    "fields": {
+        "accommodation": 19,
+        "room_class": 2,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 75,
+    "fields": {
+        "accommodation": 19,
+        "room_class": 3,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 76,
+    "fields": {
+        "accommodation": 19,
+        "room_class": 4,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 77,
+    "fields": {
+        "accommodation": 20,
+        "room_class": 1,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 78,
+    "fields": {
+        "accommodation": 20,
+        "room_class": 3,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 79,
+    "fields": {
+        "accommodation": 20,
+        "room_class": 2,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 80,
+    "fields": {
+        "accommodation": 20,
+        "room_class": 4,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 81,
+    "fields": {
+        "accommodation": 21,
+        "room_class": 1,
+        "availability": 3
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 82,
+    "fields": {
+        "accommodation": 21,
+        "room_class": 2,
+        "availability": 3
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 83,
+    "fields": {
+        "accommodation": 21,
+        "room_class": 3,
+        "availability": 2
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 84,
+    "fields": {
+        "accommodation": 21,
+        "room_class": 4,
+        "availability": 2
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 85,
+    "fields": {
+        "accommodation": 22,
+        "room_class": 1,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 86,
+    "fields": {
+        "accommodation": 22,
+        "room_class": 2,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 87,
+    "fields": {
+        "accommodation": 22,
+        "room_class": 3,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 88,
+    "fields": {
+        "accommodation": 22,
+        "room_class": 4,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 89,
+    "fields": {
+        "accommodation": 23,
+        "room_class": 1,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 90,
+    "fields": {
+        "accommodation": 23,
+        "room_class": 2,
+        "availability": 8
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 91,
+    "fields": {
+        "accommodation": 23,
+        "room_class": 3,
+        "availability": 4
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 92,
+    "fields": {
+        "accommodation": 23,
+        "room_class": 4,
+        "availability": 4
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 93,
+    "fields": {
+        "accommodation": 24,
+        "room_class": 1,
+        "availability": 8
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 94,
+    "fields": {
+        "accommodation": 24,
+        "room_class": 2,
+        "availability": 9
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 95,
+    "fields": {
+        "accommodation": 24,
+        "room_class": 3,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 96,
+    "fields": {
+        "accommodation": 24,
+        "room_class": 4,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 97,
+    "fields": {
+        "accommodation": 25,
+        "room_class": 1,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 98,
+    "fields": {
+        "accommodation": 25,
+        "room_class": 2,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 99,
+    "fields": {
+        "accommodation": 25,
+        "room_class": 3,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 100,
+    "fields": {
+        "accommodation": 25,
+        "room_class": 4,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 101,
+    "fields": {
+        "accommodation": 26,
+        "room_class": 1,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 102,
+    "fields": {
+        "accommodation": 26,
+        "room_class": 2,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 103,
+    "fields": {
+        "accommodation": 26,
+        "room_class": 3,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 104,
+    "fields": {
+        "accommodation": 26,
+        "room_class": 4,
+        "availability": 4
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 105,
+    "fields": {
+        "accommodation": 27,
+        "room_class": 1,
+        "availability": 8
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 106,
+    "fields": {
+        "accommodation": 27,
+        "room_class": 2,
+        "availability": 7
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 107,
+    "fields": {
+        "accommodation": 27,
+        "room_class": 3,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 108,
+    "fields": {
+        "accommodation": 27,
+        "room_class": 4,
+        "availability": 4
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 109,
+    "fields": {
+        "accommodation": 28,
+        "room_class": 1,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 110,
+    "fields": {
+        "accommodation": 28,
+        "room_class": 2,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 111,
+    "fields": {
+        "accommodation": 28,
+        "room_class": 3,
+        "availability": 6
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 112,
+    "fields": {
+        "accommodation": 28,
+        "room_class": 4,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 113,
+    "fields": {
+        "accommodation": 29,
+        "room_class": 1,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 114,
+    "fields": {
+        "accommodation": 29,
+        "room_class": 2,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 115,
+    "fields": {
+        "accommodation": 29,
+        "room_class": 3,
+        "availability": 6
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 116,
+    "fields": {
+        "accommodation": 29,
+        "room_class": 4,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 117,
+    "fields": {
+        "accommodation": 30,
+        "room_class": 1,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 118,
+    "fields": {
+        "accommodation": 30,
+        "room_class": 2,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 119,
+    "fields": {
+        "accommodation": 30,
+        "room_class": 3,
+        "availability": 4
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 120,
+    "fields": {
+        "accommodation": 30,
+        "room_class": 4,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 121,
+    "fields": {
+        "accommodation": 31,
+        "room_class": 1,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 122,
+    "fields": {
+        "accommodation": 31,
+        "room_class": 2,
+        "availability": 8
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 123,
+    "fields": {
+        "accommodation": 31,
+        "room_class": 3,
+        "availability": 3
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 124,
+    "fields": {
+        "accommodation": 31,
+        "room_class": 4,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 125,
+    "fields": {
+        "accommodation": 32,
+        "room_class": 1,
+        "availability": 9
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 126,
+    "fields": {
+        "accommodation": 32,
+        "room_class": 2,
+        "availability": 8
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 127,
+    "fields": {
+        "accommodation": 32,
+        "room_class": 3,
+        "availability": 6
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 128,
+    "fields": {
+        "accommodation": 32,
+        "room_class": 4,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 129,
+    "fields": {
+        "accommodation": 33,
+        "room_class": 1,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 130,
+    "fields": {
+        "accommodation": 33,
+        "room_class": 2,
+        "availability": 7
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 131,
+    "fields": {
+        "accommodation": 33,
+        "room_class": 3,
+        "availability": 4
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 132,
+    "fields": {
+        "accommodation": 33,
+        "room_class": 4,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 133,
+    "fields": {
+        "accommodation": 34,
+        "room_class": 1,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 134,
+    "fields": {
+        "accommodation": 34,
+        "room_class": 2,
+        "availability": 10
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 135,
+    "fields": {
+        "accommodation": 34,
+        "room_class": 3,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 136,
+    "fields": {
+        "accommodation": 34,
+        "room_class": 4,
+        "availability": 6
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 137,
+    "fields": {
+        "accommodation": 35,
+        "room_class": 1,
+        "availability": 7
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 138,
+    "fields": {
+        "accommodation": 35,
+        "room_class": 2,
+        "availability": 8
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 139,
+    "fields": {
+        "accommodation": 35,
+        "room_class": 3,
+        "availability": 5
+    }
+},
+{
+    "model": "accommodations.accommodationavailability",
+    "pk": 140,
+    "fields": {
+        "accommodation": 35,
+        "room_class": 4,
+        "availability": 4
+    }
+},
+{
+    "model": "accommodations.accommodationfeatures",
+    "pk": 1,
+    "fields": {
+        "accommodation": 1,
+        "detailed_desc": "\"Солнечный\" - современная здравница нового поколения в Кисловодске. Яркие, красивые современные корпуса, многочисленные водные каскады и фонтаны на территории, интересное расположение - и до центров досуга и бизнеса, и до крупнейшего в Европе Курортного парка. Санаторий предлагает классическое санаторное лечение, специализированные и общеоздоровительные программы. Здесь новейшая лечебно-оздоровительная база, спортивный зал и самый большой в Кисловодске аква-термальный комплекс с бассейном и специальными чашами для детей, диетическое питание по системе \"шведский» стол\", рестораны, кафе, культурно-познавательные мероприятия и детская анимация.",
+        "country": 1,
+        "region": 1
+    }
+},
+{
+    "model": "accommodations.accommodationfeatures",
+    "pk": 2,
+    "fields": {
+        "accommodation": 2,
+        "detailed_desc": "Курортный отель \"VERTEBRA\" расположен в центре Кисловодска и специализируется на лечении заболеваний опорно-двигательного аппарата и неврологических заболеваний. На всей территории отеля доступен бесплатный Wi-Fi. В 1 минуте ходьбы от отеля работают кафе, почта, банки, стоматология, аптека, нарзанная галерея.",
+        "country": 1,
+        "region": 1
+    }
+},
+{
+    "model": "accommodations.accommodationfeatures",
+    "pk": 3,
+    "fields": {
+        "accommodation": 3,
+        "detailed_desc": "Гостиница \"Водолей\" расположена в курортном городе Ессентуки, в 5 минутах ходьбы от питьевой галереи Ессентуки №4 и №2. В распоряжении гостей 20 номеров. На территории гостиницы есть парковочная зона, Wi-Fi, рядом супермаркеты. В гостинице работает круглосуточная стойка регистрации.",
+        "country": 1,
+        "region": 2
+    }
+},
+{
+    "model": "accommodations.accommodationfeatures",
+    "pk": 4,
+    "fields": {
+        "accommodation": 4,
+        "detailed_desc": "Отель \"Амира парк\" расположен в историческом центре города-курорта Кисловодска, в непосредственной близости от знаменитого Курортного парка и его основных достопримечательностей. В шаговой доступности находятся основные достопримечательности города. К услугам гостей отеля большой выбор экскурсионных туров, которые можно приобрести у администратора отеля при заселении. Развитая сеть городского автотранспорта, хорошо оснащенные номера различной площади и комфортности, делают пребывание в отеле удобным как для группового/ индивидуального/ семейного отдыха, так и для деловых визитов. В шаговой доступности остановки общественного транспорта, супермаркет и мини-рынок.",
+        "country": 1,
+        "region": 1
+    }
+},
+{
+    "model": "accommodations.accommodationfeatures",
+    "pk": 5,
+    "fields": {
+        "accommodation": 5,
+        "detailed_desc": "Гостиница \"Снежная Королева\" расположена в центре курорта Домбай, недалеко от подъемников. До маятниковой канатной дороги - 650 метров, до гондольной канатной дороги - 500 метров, до кресельной канатной дороги - 530 метров. К услугам гостей на территории отеля - кафе, две сауны , два мангала, автостоянка,  прачечная и сушилка для одежды, а также сейф у администратора, Wi-Fi.",
+        "country": 1,
+        "region": 5
+    }
+},
+{
+    "model": "accommodations.accommodationfeatures",
+    "pk": 6,
+    "fields": {
+        "accommodation": 6,
+        "detailed_desc": "Отель \"Интер\" расположен в г. Ессентуки. Построен в 2007 году, в 2023 прошел реновацию. В отеле комфортабельные номера со всеми удобствами, интерьер оформлен в современном стиле. В распоряжении гостей - санузел в номере, косметика (средства гигиены) в ванной, фен, индивидуальный кондиционер, спутниковое/ кабельное TV.",
+        "country": 1,
+        "region": 2
+    }
+},
+{
+    "model": "accommodations.accommodationfeatures",
+    "pk": 7,
+    "fields": {
+        "accommodation": 7,
+        "detailed_desc": "Гостевой дом \"Комфорт\" находится в центре станицы Ессентукской, в долине реки Подкумок, на высоте 600-650 м над уровнем моря. Гости могут насладиться умиротворяющей атмосферой природы, домашним уютом гостевого дома или могут заняться активным отдыхом. Отель находится в непосредственной близости от главных достопримечательностей: музея истории города Ессентуки, Курортного парка, парка культуры и отдыха имени Кирова. В отеле есть детский центр и бесплатная парковка, рядом находятся кафе и рестораны.",
+        "country": 1,
+        "region": 2
+    }
+},
+{
+    "model": "accommodations.accommodationfeatures",
+    "pk": 8,
+    "fields": {
+        "accommodation": 8,
+        "detailed_desc": "База отдыха \"Радужный Архыз\" находится в Архызе, в уединенном месте, вдали от автомобильных дорог, в окружении леса и гор. Рядом - скала Карча-Тёбе, горнолыжный курорт и Софийские озера. Добраться до базы отдыха можно на разных видах транспорта. Для каждого шале организована своя каминная зона. Есть парковка на территории.",
+        "country": 1,
+        "region": 4
+    }
+},
+{
+    "model": "accommodations.accommodationfeatures",
+    "pk": 9,
+    "fields": {
+        "accommodation": 9,
+        "detailed_desc": "Небольшой отель \"Горский дом\" с комфортными номерами находится в тихом районе Домбая. Рядом с отелем: Маятниковая канатная дорога и Горнолыжный однокресельный подъемник. 5-этажный корпус с мансардой разместился на спокойной улице поселка, с которой открываются красивые виды на лес и горы. Отдыхающих ожидают комфортабельные номера разных категорий комфорта. В каждом имеется индивидуальный санузел с душем или ванной, есть телевизор и электрочайник, доступен беспроводной интернет, в ряде комнат предусмотрены террасы или балконы. В отеле работает кафетерий, где отдыхающим подаются блюда кавказской и европейской кухни. В распоряжении гостей сауна, а для автовладельцев предусмотрена парковка.",
+        "country": 1,
+        "region": 5
+    }
+},
+{
+    "model": "accommodations.accommodationfeatures",
+    "pk": 10,
+    "fields": {
+        "accommodation": 10,
+        "detailed_desc": "Отель Kleopatra Life 4* расположен в Алании. Построен в 2015 году, в 2018 году прошел реновацию. В номерах имеется балкон, кондиционер, душ, телевизор. Пляж находится в 20 метрах. За дополнительную плату можно арендовать шезлонги. Отель предоставляет ряд дополнительных услуг - массаж, сауна, парная (также за дополнительную плату).",
+        "country": 2,
+        "region": 6
+    }
+},
+{
+    "model": "accommodations.accommodationfeatures",
+    "pk": 11,
+    "fields": {
+        "accommodation": 11,
+        "detailed_desc": "Kemer Star Hotel 3* - расположен в городе Кемер, в 40 км от Анталии. Год строительства: 2002, Год реновации: 2021-2022. В номерах имеется балкон, душ, кондиционер, спутниковое ТВ с телеканалом на русском языке. Пляж находится на расстоянии 500 м через дорогу. За дополнительную плату можно арендовать шезлонги, пляжные полотенца, солнцезащитные зонты. На территории отеля имеется крытый бассейн.",
+        "country": 2,
+        "region": 7
+    }
+},
+{
+    "model": "accommodations.accommodationfeatures",
+    "pk": 12,
+    "fields": {
+        "accommodation": 12,
+        "detailed_desc": "Miss Cleopatra Hotel 2* - расположен в Алании, в 100 м от центра города. Год строительства: 1986, Год реновации: 2024. В номерах имеется балкон, душ, кондиционер, спутниковое ТВ с телеканалом на русском языке. Пляж находится на расстоянии 50 м. Имеется детский бассейн, ресторан. Уборка в номере производится ежедневно,  смена постельного белья - три раза в неделю, смена полотенец - три раза в неделю.",
+        "country": 2,
+        "region": 6
+    }
+},
+{
+    "model": "accommodations.accommodationfeatures",
+    "pk": 13,
+    "fields": {
+        "accommodation": 13,
+        "detailed_desc": "Aroma Hotel Boutique - расположен в 17 км от г. Сиде и в 75 км от Анталии. Год строительства: 2019, Год реновации: 2020. В номерах имеется балкон, душ, кондиционер, спутниковое ТВ с телеканалом на русском языке. У отеля имеется собственный песчано-галечный пляж, расположенный на расстоянии 50 м.  За дополнительную плату можно арендовать шезлонги, пляжные полотенца, солнцезащитные зонты.",
+        "country": 2,
+        "region": 7
+    }
+},
+{
+    "model": "accommodations.accommodationfeatures",
+    "pk": 14,
+    "fields": {
+        "accommodation": 14,
+        "detailed_desc": "Grand Barhan 4* расположен в 3 км от центра Алании, в 135 км от аэропорта Анталия и в 40 км от аэропорта в городе Газипаша. Песчано-галечный общественный пляж находится всего в 5 метрах через дорогу от гостиницы. На территории отеля имеется один крытый бассейн. В отеле есть ресторан с фиксированным меню, тренажерный зал. Общее число мест в отеле - 102.",
+        "country": 2,
+        "region": 6
+    }
+},
+{
+    "model": "accommodations.accommodationfeatures",
+    "pk": 15,
+    "fields": {
+        "accommodation": 15,
+        "detailed_desc": "Arsi Blue Beach 4* расположен в 130 км от аэропорта в г. Анталия и в 5 км от центра Алании. Год строительства отеля - 2014-й, год реновации - 2024-й. Песчано-галечный общественный пляж находится всего в 200 метрах. За дополнительную плату предоставляются пляжные зонты и шезлонги. На территории отеля имеется один крытый бассейн. Кроме того, за дополнительную плату можно приобрести импортные алкогольные напитки, вино в бутылках, турецкий кофе, коктейли, айран, соки в бутылках, мороженое.",
+        "country": 2,
+        "region": 6
+    }
+},
+{
+    "model": "accommodations.accommodationfeatures",
+    "pk": 16,
+    "fields": {
+        "accommodation": 16,
+        "detailed_desc": "Arsi Enfi City Beach Hotel 4* расположен в 130 км от аэропорта в г. Анталия и в 1 км от центра Алании. Год строительства: 2018, Год реновации: 2018. Песчано-галечный общественный пляж находится всего в 200 метрах.  В номерах имеется балкон, душ, кондиционер, спутниковое ТВ с телеканалом на русском языке. Уборка номеров производится ежедневно, смена полотенец и постельного белья - один раз в 3 дня.",
+        "country": 2,
+        "region": 6
+    }
+},
+{
+    "model": "accommodations.accommodationfeatures",
+    "pk": 17,
+    "fields": {
+        "accommodation": 17,
+        "detailed_desc": "Villa Sonata Hotel  расположен в 130 км от аэропорта в г. Анталия и в 1,5 км от центра Алании. Год строительства: 1996, Год реновации: 2015. Песчано-галечный общественный пляж находится всего в 200 метрах. На территории отеля имеются два открытых бассейна, массажный салон, SPA-центр.",
+        "country": 2,
+        "region": 6
+    }
+},
+{
+    "model": "accommodations.accommodationfeatures",
+    "pk": 18,
+    "fields": {
+        "accommodation": 18,
+        "detailed_desc": "Belkon Hotel 4* расположен в 20 км от Анталии. Год строительства: 2005, Год реновации: 2019. Отель с ухоженной компактной зеленой территорией, подойдет для спокойного бюджетного отдыха всей семьей. Недалеко от The Land of Legends Theme Park и Shopping Centers. В номерах имеется фен, душ, кондиционер, спутниковое ТВ с телеканалом на русском языке.",
+        "country": 2,
+        "region": 7
+    }
+},
+{
+    "model": "accommodations.accommodationfeatures",
+    "pk": 19,
+    "fields": {
+        "accommodation": 19,
+        "detailed_desc": "Отель расположен в городе Гули, всего в нескольких шагах от девственно чистого пляжа, приглашает вас ощутить высочайший уровень комфорта в уютных номерах, из которых открываются захватывающие виды на остров, океан и завораживающие закаты. В номерах установлен кондиционер, сейф и телевизор с плоским экраном. Среди прочих удобств — письменный стол и чайник, а также собственная ванная комната с биде.",
+        "country": 3,
+        "region": 11
+    }
+},
+{
+    "model": "accommodations.accommodationfeatures",
+    "pk": 20,
+    "fields": {
+        "accommodation": 20,
+        "detailed_desc": "Отель расположен на острове Диффуши, в 37 км от аэропорта Велана. Общее число номеров в отеле - 32. В отеле имеется ресторан, работающий с 7:30 до 21:30. У отеля есть собственный пляж, где бесплатно предоставляются пляжные полотенца. В номерах имеется фен, душ, кондиционер. Уборка номеров производится ежедневно, смена полотенец и постельного белья - один раз в 3 дня.",
+        "country": 3,
+        "region": 12
+    }
+},
+{
+    "model": "accommodations.accommodationfeatures",
+    "pk": 21,
+    "fields": {
+        "accommodation": 21,
+        "detailed_desc": "Отель расположен в городе Дангети, в 87 км от города Мале. Отуда до отеля можно добраться за 90 мин на скоростном катере. Общее число номеров в отеле - 10. Есть ресторан. В номерах имеется фен, душ, кондиционер. Уборка номеров производится ежедневно, смена полотенец и постельного белья - один раз в 3 дня.",
+        "country": 3,
+        "region": 13
+    }
+},
+{
+    "model": "accommodations.accommodationfeatures",
+    "pk": 22,
+    "fields": {
+        "accommodation": 22,
+        "detailed_desc": "Отель расположен в городе Маафуши, в 800 м от такой достопримечательности, как Пляж Бикини. Из окон открывается вид на город, среди удобств есть терраса. В распоряжении гостей отеля с 3 звездами — общий лаундж, а также номера с кондиционером, бесплатным Wi-Fi и собственной ванной комнатой. В распоряжении гостей доставка еды и напитков, круглосуточная стойка регистрации и услуга обмена валют.",
+        "country": 3,
+        "region": 14
+    }
+},
+{
+    "model": "accommodations.accommodationfeatures",
+    "pk": 23,
+    "fields": {
+        "accommodation": 23,
+        "detailed_desc": "Отель в городе Диффуши, расположенный в 600 м от такой достопримечательности, как Пляж Дифуши. В числе удобств — частный пляж, терраса и ресторан. Среди удобств отеля — открытый бассейн, а также номера с кондиционером, бесплатным Wi-Fi и собственной ванной комнатой. В распоряжении гостей доставка еды и напитков, банкомат и организация экскурсий.",
+        "country": 3,
+        "region": 12
+    }
+},
+{
+    "model": "accommodations.accommodationfeatures",
+    "pk": 24,
+    "fields": {
+        "accommodation": 24,
+        "detailed_desc": "Курортный отель Equator Village с открытым бассейном и собственным пляжем расположен на острове Ган, в 1 км от Международного аэропорта Ган. В местах общего пользования действует бесплатный Wi-Fi. В номерах есть кондиционер, телевизор с кабельными каналами, гостиная зона, мини-бар, электрический чайник, а также собственная ванная комната с душем, феном и бесплатными туалетно-косметическими принадлежностями. Из окон открывается вид на море. На территории отеля есть теннисный корт.",
+        "country": 3,
+        "region": 16
+    }
+},
+{
+    "model": "accommodations.accommodationfeatures",
+    "pk": 25,
+    "fields": {
+        "accommodation": 25,
+        "detailed_desc": "Гостевой дом на первой линии города Дигура. В распоряжении гостей сад, частный пляж и общий лаундж. Есть семейные номера и терраса. Имеется открытый бассейн, в каждом номере есть платяной шкаф. В распоряжении гостей — собственная ванная комната с биде и бесплатными туалетно-косметическими принадлежностями. Из окон некоторых номеров открывается вид на море.",
+        "country": 3,
+        "region": 15
+    }
+},
+{
+    "model": "accommodations.accommodationfeatures",
+    "pk": 26,
+    "fields": {
+        "accommodation": 26,
+        "detailed_desc": "Отель на первой линии города Гули. В распоряжении гостей сад, частный пляж и терраса. Гости могут воспользоваться доставкой еды и напитков, а также детской игровой площадкой. Работает круглосуточная стойка регистрации. Можно воспользоваться трансфером от/до аэропорта. Есть бесплатный Wi-Fi на всей территории отеля.",
+        "country": 3,
+        "region": 11
+    }
+},
+{
+    "model": "accommodations.accommodationfeatures",
+    "pk": 27,
+    "fields": {
+        "accommodation": 27,
+        "detailed_desc": "Отель находится на острове Маафуши, на солнечном пляже в окружении кокосовых пальм. На территории отеля гости могут заняться дайвингом и сноркелингом, устраивать пикники на островах и наблюдать за дельфинами. К услугам гостей терраса для загара на крыше и бесплатный Wi-Fi. Все номера оснащены 32-дюймовым телевизором с плоским экраном, мини-баром и сейфом. С собственного балкона открывается вид на город или море.",
+        "country": 3,
+        "region": 14
+    }
+},
+{
+    "model": "accommodations.accommodationfeatures",
+    "pk": 28,
+    "fields": {
+        "accommodation": 28,
+        "detailed_desc": "Отель находится в городе Манила. К услугам гостей номера с кондиционером и бесплатным Wi-Fi, собственный ресторан, фитнес-центр, бассейн и крытая терраса на крыше для проведения различных мероприятий. Отель находится в 3 минутах ходьбы от торгового центра Robinson's Place Manila и в 5 минутах езды от океанариума «Манила Оушен Парк» и парка Ризаль. Поездка на автомобиле до торгового центра SM City Mall of Asia занимает 15 минут. Международный аэропорт имени Бениньо Акино расположен в 30 минутах езды.",
+        "country": 4,
+        "region": 8
+    }
+},
+{
+    "model": "accommodations.accommodationfeatures",
+    "pk": 29,
+    "fields": {
+        "accommodation": 29,
+        "detailed_desc": "Отель расположен в городе Пасай, всего в 2 минутах езды от международного аэропорта имени Ниноя Акино (терминал 3). Этот отель идеально подходит для простых и комфортных путешествий, что делает его отличным выбором как для деловых поездок, так и для отдыха. Гости могут дойти пешком за 5 минут до пешеходного моста The Runway Manila, откуда можно напрямую попасть в аэропорт.",
+        "country": 4,
+        "region": 9
+    }
+},
+{
+    "model": "accommodations.accommodationfeatures",
+    "pk": 30,
+    "fields": {
+        "accommodation": 30,
+        "detailed_desc": "Отель расположен в центре города Макати, в нескольких минутах ходьбы от торговых центров Greenbelt и Glorietta. В этом бутик-отеле в европейском стиле к услугам гостей гидромассажная ванна, ресторан, бесплатный Wi-Fi и парковка. Стильные номера отеля Céleste оснащены телевизором с плоским экраном, док-станцией для iPod, сейфом и принадлежностями для чая/кофе. Кроме того, в каждом номере обустроена отделанная мрамором ванная комната с душем.",
+        "country": 4,
+        "region": 10
+    }
+},
+{
+    "model": "accommodations.accommodationfeatures",
+    "pk": 31,
+    "fields": {
+        "accommodation": 31,
+        "detailed_desc": "Отель расположен в самом центре Манилы. Интерьер отеля выполнен в современном стиле, к услугам гостей фитнес-центр, бар на крыше и бесплатный Wi-Fi на всей территории. В каждом номере отеля есть кондиционер, телевизор с плоским экраном, док-станция для iPod, мини-бар и собственная ванная комната с феном и бесплатными туалетными принадлежностями. Бассейн и завтрак сделают пребывание в отеле еще более приятным.",
+        "country": 4,
+        "region": 8
+    }
+},
+{
+    "model": "accommodations.accommodationfeatures",
+    "pk": 32,
+    "fields": {
+        "accommodation": 32,
+        "detailed_desc": "Отель удобно расположен в эксклюзивном и хорошо охраняемом торговом центре Rockwell Center в городе Макати и предлагает великолепные апартаменты, полностью меблированные в современном азиатском стиле. Предлагаются номера разного уровня - от студий класса люкс до двухкомнатных апартаментов. Каждые апартаменты с кондиционером включают в себя хорошо оборудованную кухню, просторную гостиную и обеденную зоны, стиральную и сушильную машины, телевизор с плоским экраном и кабельными каналами, электронный сейф, собственные ванные комнаты с банными принадлежностями, душевую кабину с подогревом и фен.",
+        "country": 4,
+        "region": 10
+    }
+},
+{
+    "model": "accommodations.accommodationfeatures",
+    "pk": 33,
+    "fields": {
+        "accommodation": 33,
+        "detailed_desc": "Отель в городе Манила, расположенный в 1,3 км от такой достопримечательности, как Торговый центр Power Plant. Среди удобств — открытый бассейн, бар и бесплатная частная парковка. В распоряжении гостей отеля с 4 звездами — доставка еды и напитков, круглосуточная стойка регистрации и бесплатный Wi-Fi. Этот вариант размещения с номерами для некурящих находится в 2,2 км от следующей достопримечательности: Торговый центр Glorietta.",
+        "country": 4,
+        "region": 8
+    }
+},
+{
+    "model": "accommodations.accommodationfeatures",
+    "pk": 34,
+    "fields": {
+        "accommodation": 34,
+        "detailed_desc": "Отель в городе Манила, расположенный в менее чем 1 км и 2,6 км от таких достопримечательностей, как Торговый центр Power Plant и Торговый центр Glorietta. В распоряжении гостей бар и номера с бесплатным Wi-Fi. Из окон отеля с 3 звездами открывается вид на город. Гости могут воспользоваться сауной и гидромассажной ванной. Отель находится в 4,4 км и 4,4 км соответственно от таких достопримечательностей, как Торговый центр Bonifacio High Street и Торговый центр SM Megamall.",
+        "country": 4,
+        "region": 8
+    }
+},
+{
+    "model": "accommodations.accommodationfeatures",
+    "pk": 35,
+    "fields": {
+        "accommodation": 35,
+        "detailed_desc": "Отель в городе Манила, расположенный в менее чем 1 км и 2,3 км от торгового центра Power Plant и Glorietta. В распоряжении гостей номера с кондиционером и собственная ванная комната. В числе прочих удобств — ресторан, доставка еды и напитков и круглосуточная стойка регистрации, а также бесплатный Wi-Fi на всей территории. В баре можно заказать напитки.",
+        "country": 4,
+        "region": 8
+    }
+}
+]
