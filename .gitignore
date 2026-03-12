@@ -1,6 +1,8 @@
 /.idea/
 __pycache__/
 db.sqlite3
+staticfiles/
+tagency_env/
 media/
 .env
 settings.py
